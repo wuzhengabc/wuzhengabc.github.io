@@ -1,356 +1,439 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE html>
 <html>
 <head>
-<title>吴争个人博客</title>
-<link rel="icon" href="images/home.ico" type="image/x-icon"/>
+	<title>Home</title>
+	<link href="css/style1.css" rel="stylesheet">
+	<link href="css/animations.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+	<!--//theme-style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Freelancer-plus Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--fonts-->
+	<link href='http://fonts.useso.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.useso.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<!--//fonts-->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
 
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link href="css/style.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/lightbox.css">
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+			});
+		});
 
-<!-- jQuery (necessary JavaScript plugins) -->
-<script type='text/javascript' src="js/jquery-1.11.1.min.js"></script>
-<!-- Custom Theme files -->
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Titillium+Web:400,600,700,300' rel='stylesheet' type='text/css'>
-<!-- Custom Theme files -->
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Game Spot Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		$(window).scroll(function(){
+			var scrollTop=$(this).scrollTop();
+			console.log(scrollTop);
+			var d = document.getElementById("topheader");			
+		})
 
-  
+		function OnClickFilters(obj)
+		{							
+			obj.setAttribute("class", "active");
+			var filters = new Array();
+			filters[0] = document.getElementById("all1");
+			filters[1] = document.getElementById("app1");
+			filters[2] = document.getElementById("card1");
+			filters[3] = document.getElementById("icon1");
+			filters[4] = document.getElementById("set1");
+			filters[5] = document.getElementById("add1");
+
+			for (i=0;i<filters.length;i++)
+			{
+				if(filters[i].getAttribute("id") != obj.getAttribute("id"))
+					filters[i].setAttribute("class", "");
+			}
+		}
+	</script>	
 </head>
-<body>
-<!-- header -->
-<div class="banner">
-	 <div class="container">
-		 <div class="headr-right">
-				<div class="details">
-					<ul>
-						<li><a href="mailto:@example.com"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>sdsx_wz@163.com</a></li>
-						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+86)187 6480 3013</li>
-					</ul>
-			  </div>
-		 </div>
-		 <div class="banner_head_top">
-			  <div class="logo">
-					 <h1><a href="index.html">Game<span class="glyphicon glyphicon-knight" aria-hidden="true"></span><span>Spot</span></a></h1>
-			 </div>	
-			 <div class="top-menu">	 
-			     <div class="content white">
-					 <nav class="navbar navbar-default">
-						 <div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>				
-						 </div>
-						 <!--/navbar header-->		
-						 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							 <ul class="nav navbar-nav">
-								 <li class="active"><a href="index.html">Home</a></li>
-								 <li><a href="about.html">About</a></li>
-								 <li class="dropdown">
-									<a href="#" class="scroll dropdown-toggle" data-toggle="dropdown">Reviews<b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="review.html">Review 1</a></li>
-										<li><a href="review.html">Review 2</a></li>
-										<li><a href="review.html">Review 3</a></li>
-									</ul>
-								 </li>					
-								 <li><a href="gallery.html">Gallery</a></li>
-								 <li><a href="shortcodes.html">Shortcodes</a></li>
-								 <li><a href="contact.html">Contact</a></li>
-							 </ul>
-							</div>
-						  <!--/navbar collapse-->
-					 </nav>
-					  <!--/navbar-->
-				 </div>
-					 <div class="clearfix"></div>
-					<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
-			  </div>
-				 <div class="clearfix"></div>
-		  </div>
-		  <div class="banner-info">
-			 <h3>Welcome to our Website</h3>
-			 <h2>Fast Racing</h2>
-		  </div>
-		  <div class="social">
-				<ul>
-					<li><a href="#"><span class="fa"> </span></a></li>
-					<li><a href="#"><span class="tw"> </span></a></li>
-					<li><a href="#"><span class="g"> </span></a></li>
-					<li><a href="#"><span class="in"> </span></a></li>
-					<li><a href="#"><span class="pin"> </span></a></li>
-				</ul>
-				<div class="clearfix"></div>
-		 </div>
-	 </div>	 
-</div>
-<!---->
-<div class="welcome">
-	 <div class="container">
-		 <div class="welcome-info">
-				<h3>Welcome</h3>
-				<h4>Lorem ipsum dolor sit amet consectetur adipiscing elit.</h4>
-				<p>Morbi condimentum imperdiet placerat. Nullam in nisl eget turpis convallis venenatis. Cras cursus elementum justo nec bibendum. Donec quis nisi cursus, vestibulum elit eget, sagittis ligula.</p>
-	     </div>
-	 </div>
-</div>
-<!---->  
-<div class="content">
-	 <div class="container">
-		  <div class="col-md-8 content-left">
-			 <div class="information">
-				 <h4>Information</h4>
-				 <div class="information_grids">
-					 <div class="info">					 
-						 <p>" Etiam ante arcu, vestibulum diam. Curabitur quis lectus. Pellentesque dictum odio velit.</p>
-						 <a href="about.html">Read more</a>
-					 </div>
-					 <div class="info-pic">	
-						 <img src="images/ps.png" class="img-responsive" alt=""/>
-					 </div>
-					 <div class="clearfix"></div>
-				 </div>				 
-			 </div>
-			 <div class="games-grids">
-					 <div class="game-grid-left">
-						 <div class="grid1">
-							 <h5 class="act"><a href="single.html">Action</a></h5>
-							 <a href="single.html"><img src="images/c1.jpg" class="img-responsive" alt=""/></a>
-							 <div class="grid1-info">
-								 <h4><a href="single.html">Watch Dogs</a></h4>
-								 <p>Integer ut leo vitae nibh cursus aliquetr Sed, condimentum bibendum nibh accumsan vel.</p>								 
-							 </div>
-							 <div class="more">
-							 <a href="single.html">Read more</a>
-							 </div>
-						 </div>
-						 <div class="grid2">
-							 <h5 class="race"><a href="single.html">Racing</a></h5>
-							 <a href="single.html"><img src="images/c2.jpg" class="img-responsive" alt=""/></a>
-							 <div class="grid1-info">
-								 <h4><a href="single.html">Monster Racing</a></h4>
-								 <p>Integer ut leo vitae nibh cursus aliquetr Sed, condimentum bibendum nibh accumsan vel.</p>								 
-							 </div>
-							 <div class="more">
-							 <a href="single.html">Read more</a>
-							 </div>
-						 </div>
-					 </div>
-					 
-					 <div class="game-grid-right">
-						 <div class="grid3">
-							 <h5 class="sport"><a href="single.html">Sports</a></h5>
-							 <a href="single.html"><img src="images/c3.jpg" class="img-responsive" alt=""/></a>
-							 <div class="grid1-info">
-								 <h4><a href="single.html">FIFA 2015</a></h4>
-								 <p>Integer ut leo vitae nibh cursus aliquetr Sed, condimentum bibendum nibh accumsan vel.</p>								 
-							 </div>
-							 <div class="more">
-							 <a href="single.html">Read more</a>
-							 </div>
-						 </div>
-						 <div class="grid4">
-							 <h5 class="arc"><a href="single.html">Arcade</a></h5>
-							 <a href="single.html"><img src="images/c4.jpg" class="img-responsive" alt=""/></a>
-							 <div class="grid1-info">
-								 <h4><a href="single.html">Skylanders</a></h4>
-								 <p>Integer ut leo vitae nibh cursus aliquetr Sed, condimentum bibendum nibh accumsan vel.</p>								 
-							 </div>
-							 <div class="more">
-							 <a href="single.html">Read more</a>
-							 </div>
-						 </div>
-					 </div>
-					 <div class="clearfix"></div>
-				 </div>
-		  </div>
-          <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >企业网站模板</a></div>
-		  <div class="col-md-4 content-right">
-			  <!-- Nav tabs -->
-                    <ul class="nav nav-tabs nav2" role="tablist">
-                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Trending</a></li>
-                    <li role="presentation" ><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Recent Posts</a></li>
-                    </ul>
-               <!-- Tab panes -->
-              <div class="tab-content">
-						<div role="tabpanel" class="tab-pane active re-pad2" id="home">
-						   <div class="game1">
-								<div class="col-md-3 tab-pic">
-									<a href="single.html"><img src="images/tr1.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-pic-info">
-								<h4><a href="single.html">Angry Birds</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="game1">
-								<div class="col-md-3 tab-pic">
-									<a href="single.html"><img src="images/tr3.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-pic-info">
-								<h4><a href="single.html">Vice City GTA</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="game1">
-								<div class="col-md-3 tab-pic">
-									<a href="single.html"><img src="images/tr2.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-pic-info">
-								<h4><a href="single.html">Call Of Duty</a></h4>
-								<p>Lorem Ipsum is simply dummy text of the printing industry.</p>
-								</div>
-								<div class="clearfix"></div>
-							</div>
+<body class="front">
+<header class="header fixed clearfix">
+				<div class="container">
+					<div class="container">	
+						<div class="logo">
+							<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
 						</div>
-						<div role="tabpanel" class="tab-pane re-pad2" id="profile">
-							<div class="game-post">
-								<div class="col-md-3 tab-pic">
-									<a href="single.html"><img src="images/tr4.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-post-info">
-								<h4><a href="single.html">IronMan</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								</div>
-								<div class="clearfix"></div>
+						<div class="header-bottom">
+							<div class="top-nav">
+								<span class="menu"> </span>
+								<ul>
+									<li  ><a href="#home" class="scroll">Home</a></li>
+									<li><a href="#services" class="scroll"> Services</a></li>
+									<li><a href="#portfolio" class="scroll">Portfolio </a></li>
+									<li><a href="blog.html" >Blog</a></li>
+									<li><a href="contact.html">contact</a></li>
+								</ul>
+								<!--script-->
+								<script>
+									$("span.menu").click(function(){
+										$(".top-nav ul").slideToggle(500, function(){
+										});
+									});
+								</script>
 							</div>
-							<div class="game-post">
-								<div class="col-md-3 tab-pic">
-									<a href="single.html"><img src="images/tr5.jpg" alt="/" class="img-responsive"></a>
+							<!-- start search-->
+							<div class="search-box">
+								<div id="sb-search" class="sb-search">
+									<form>
+										<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+										<input class="sb-search-submit" type="submit" value="">
+										<span class="sb-icon-search"> </span>
+									</form>
 								</div>
-								<div class="col-md-9 tab-post-info">
-								<h4><a href="single.html">God Of War</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								</div>
-								<div class="clearfix"></div>
 							</div>
-							<div class="game-post">
-								<div class="col-md-3 tab-pic">
-									<a href="single.html"><img src="images/tr6.jpg" alt="/" class="img-responsive"></a>
-								</div>
-								<div class="col-md-9 tab-post-info">
-								<h4><a href="single.html">Need For Speed</a></h4>
-								<p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2015 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
-								</div>
-								<div class="clearfix"></div>
+							<!----search-scripts---->
+							<script src="js/classie.js"></script>
+							<script src="js/uisearch.js"></script>
+							<script>
+								new UISearch( document.getElementById( 'sb-search' ) );
+							</script>
+							<!----//search-scripts---->
+
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</header>
+			<!-- main-container end -->
+			<script type="text/javascript" src="plugins/modernizr.js"></script>
+
+			<!-- Initialization of Plugins -->
+			<script type="text/javascript" src="js/template.js"></script>
+	<!---->
+	
+	<div class="container">		
+		<div class="banner">
+			<div class="banner-matter">
+				<h2>Creative Ideas Live Here</h2>
+				<p>Aliquam suscipit vel nulla quis eleifend. Maecenas vitae tristique ante. Sed sit amet vehicula libero.</p>		
+			</div>
+			<div class="tv">
+				<img class="img-responsive" src="images/tv.png" alt="">
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<!---->
+	<div class="container">	
+		<div class="works" id="portfolio">
+			<div class=" port-top">									
+				<h3 class="port">Latest Works</h3>
+				<ul id="filters">
+					<li id = "all1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app card icon set sit web">All</span></li>
+					<li id = "app1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app">WEB</span></li>
+					<li id = "card1" onclick="OnClickFilters(this)"><span class="filter" data-filter="card"> MOBILE </span></li>
+					<li id = "icon1" onclick="OnClickFilters(this)"><span class="filter" data-filter="icon"> PHOTOGRAPHY</span></li>
+					<li id = "set1" onclick="OnClickFilters(this)"><span class="filter" data-filter="set"> DESIGN</span></li>
+					<li id = "add1" onclick="OnClickFilters(this)"><span class="filter" data-filter="add"> TYPE</span></li>
+				</ul>
+				<div class="clearfix"> </div>
+			</div>
+			<div id="portfoliolist">
+				<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper ">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi.jpg" alt="" ></img>
+							<div style="position:absolute;width:100px;height:100px;z-index:9999;left:0;top:0;"> neirong </div>
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>Photo</span>									
+									<button>View photo</button>
+								</h2>
 							</div>
-						</div>                   
-			 </div>
-			 <!---->
-			 <div class="category blog-ctgry">
-					<h4>Top Games</h4>
-					<div class="list-group">
-						<a href="#" class="list-group-item">Cras justo odio</a>
-						<a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-						<a href="#" class="list-group-item">Morbi leo risus</a>
-						<a href="#" class="list-group-item">Porta ac consectetur ac</a>
-						<a href="#" class="list-group-item">Vestibulum at eros</a>
-						<a href="#" class="list-group-item">Quisque elementum </a>
-						<a href="#" class="list-group-item">Vestibulum eleifend</a>
-						<a href="#" class="list-group-item">Donec sit amet justo </a>
+						</a>																			
 					</div>
-			 </div>	
-			 <div class="photo-gallery">
-				 <h4>Photo Gallery</h4>
-				 <div class="gallery-1">
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p2.jpg" data-lightbox="example-set"><img class="example-image" src="images/p2.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="images/p1.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="images/p3.jpg" alt=""/></a>
-					</div>
-					<div class="clearfix"></div>
-				 </div>
-				 <div class="gallery-1">
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="images/p4.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p5.jpg" data-lightbox="example-set"><img class="example-image" src="images/p5.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p6.jpg" data-lightbox="example-set"><img class="example-image" src="images/p6.jpg" alt=""/></a>
-					</div>
-					<div class="clearfix"></div>
-				 </div>
-				 <div class="gallery-1">
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p1.jpg" data-lightbox="example-set"><img class="example-image" src="images/p1.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p3.jpg" data-lightbox="example-set"><img class="example-image" src="images/p3.jpg" alt=""/></a>
-					</div>
-					<div class="col-md-4 gallery-grid-pic">
-						<a class="example-image-link" href="images/p4.jpg" data-lightbox="example-set"><img class="example-image" src="images/p4.jpg" alt=""/></a>
-					</div>
-					<div class="clearfix"></div>
-				 </div>
+				</div>				
+				<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi1.jpg" alt=""  />
+							<div class="b-wrapper" class="b-link-stripe b-animate-go">
+								<h2 class="b-animate b-from-left ">	
+									<span>Photo</span>									
+									<button>View photo</button>
+								</h2>
+							</div>
+						</a>	
 
-			 </div>
+					</div>
+				</div>		
+				<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi2.jpg"  alt="" />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>Photo</span>									
+									<button>View photo</button>
+								</h2>
+							</div>
+						</a>	
 
-		  </div>
-		  <div class="clearfix"></div>
-	 </div>
-</div>
-<script src="js/lightbox-plus-jquery.min.js"></script>
+					</div>
+				</div>				
+				<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper ">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi3.jpg" alt=""  />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>Photo</span>									
+									<button>View photo</button>
+								</h2>
+							</div>
+						</a>							
+					</div>
+				</div>	
+				<div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper ">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi4.jpg" alt=""  />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>Photo</span>									
+									<button>View photo</button>
+								</h2>
+							</div>	
+						</a>	
 
-<!-- footer -->
-<div class="footer">
-	 <div class="container">
-		 <div class="footer-grids">
-			 <div class="col-md-6 news-ltr">
-				 <h4>Newsletter</h4>
-				 <p>Aenean sagittis est eget elit pulvinar cursus. Lorem ipsum consectetur adipiscing elit. Phasellus non purus at risus consequat finibus.</p>
-				 <form>					 
-					  <input type="text" class="text" value="Enter Email" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Enter Email';}">
-					 <input type="submit" value="Subscribe">
-					 <div class="clearfix"></div>
-				 </form>			 
-			 </div>
-			 <div class="col-md-3 ftr-grid">
-				 <h3>Categories</h3>
-				 <ul class="ftr-list">
-					 <li><a href="#">Action</a></li>
-					 <li><a href="#">Racing</a></li>
-					 <li><a href="#">Adventure</a></li>
-					 <li><a href="#">Simulation</a></li>
-					 <li><a href="#">Bike</a></li>
-				 </ul>							 
-			 </div>	
-			 <div class="col-md-3 ftr-grid">
-				 <h3>Platform</h3>
-				 <ul class="ftr-list">
-					 <li><a href="#">Pc</a></li>
-					 <li><a href="#">Ps4</a></li>
-					 <li><a href="#">XBOX 360</a></li>					 
-					 <li><a href="#">XBOX ONE</a></li>
-					 <li><a href="#">PSP</a></li>
-				 </ul>				 
-			 </div>			 	
-			 <div class="clearfix"></div>
-		 </div>
-	 </div>
-</div>
-<!---->
-<div class="copywrite">
-	 <div class="container">
-		 <p>Copyright &copy; 2015.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
-	 </div>
-</div>
-<!---->
+					</div>
+				</div>			
+				<div class="portfolio set mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi5.jpg" alt=""  />
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>Photo</span>									
+									<button>View photo</button>
+								</h2>
+							</div>
 
-</body>
-</html>
+						</a>	
+
+					</div>
+				</div>
+
+				<div class="clearfix"> </div>
+			</div>	
+			<!-- Script for gallery Here -->
+			<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+			<script type="text/javascript">
+				$(function () {
+
+					var filterList = {
+						
+						init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+
+							},
+							
+							hoverEffect: function () {
+
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+									);				
+
+							}
+
+						};
+						
+						// Run the show!
+						filterList.init();
+					});	
+				</script>
+				<!-- Gallery Script Ends -->
+			</div>
+		</div>
+		<!---->
+		<div class="container">	
+			<div class="service" id="services">
+				<div class=" service-top">									
+					<h3 class="ser">Our Services</h3>
+					<p class="sed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
+					<div class="clearfix"> </div>
+				</div>
+				<div class=" services-grid">
+					<div class="col-md-4 service-grid">
+						<a href="single.html"><img class="img-responsive" src="images/s1.png" alt=" "></a>
+						<h5>Flat Design</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>
+					<div class="col-md-4 service-grid">
+						<a href="single.html"><img class="img-responsive" src="images/s2.png" alt=" "></a>
+						<h5>Great Ideas</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>
+					<div class="col-md-4 service-grid">
+						<a href="single.html"><img class="img-responsive" src="images/s3.png" alt=" "></a>
+						<h5>Browser  Compatibility</h5>
+						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+					</div>		
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<div class="container">
+			<div class="meet">
+				<div class=" team-top">									
+					<h3 class="team">Meet the Team</h3>
+					<p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
+					<div class="clearfix"> </div>
+				</div>
+				<div class=" team-grid">
+					<div class="col-md-4 grid-team">
+						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
+						<h4>JOHN SMITH</h4>
+						<h5>Creative Director</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+						<ul class="social-in">
+							<li><a href="#"><i> </i></a></li>						
+							<li><a href="#"><i class="thumblr"> </i></a></li>
+							<li><a href="#"><i class="pin"> </i></a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-4  grid-team">
+						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
+						<h4>JOHN SMITH</h4>
+						<h5>Creative Director</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+						<ul class="social-in">
+							<li><a href="#"><i> </i></a></li>						
+							<li><a href="#"><i class="thumblr"> </i></a></li>
+							<li><a href="#"><i class="pin"> </i></a></li>
+
+						</ul>
+					</div>
+					<div class="col-md-4  grid-team">
+						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
+						<h4>JOHN SMITH</h4>
+						<h5>Creative Director</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+						<ul class="social-in">
+							<li><a href="#"><i> </i></a></li>						
+							<li><a href="#"><i class="thumblr"> </i></a></li>
+							<li><a href="#"><i class="pin"> </i></a></li>
+
+						</ul>
+					</div>		
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<div class="footer" >
+			<div class="container">
+				<div class="footer-top" >
+					<div class="col-md-4 twitter">
+						
+						<h4>Latest Tweets</h4>
+						<div class="twitter-in">
+							<p>PSD Template: Flat One Page Website <p>
+								<a href="#" >http://bit.ly/1kfcA8M </a>
+								<span>27 Oct 2014</span>
+							</div>
+							<div class="twitter-in">
+								<p>PSD Template: Flat One Page Website <p>
+									<a href="#" >http://bit.ly/1kfcA8M </a>
+									<span>27 Oct 2014</span>
+								</div>
+							</div>
+
+							<div class="col-md-4 twitter">
+
+								<h4>Instagram</h4>
+								<ul class="box-in">
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+									<li><a href="#"></a></li>
+
+								</ul>
+							</div>
+
+							<div class="col-md-4 twitter">
+								<h4>Contact Us</h4>
+								<div class="contact">
+									<form>
+										<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+										<input type="text" class="text" value="Email " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email ';}">
+										<textarea cols="10" rows="3" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+									</form>
+									<div class="submit">
+										<form>
+											<input type="submit" value="SEND">
+										</form>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+							<div class="clearfix"></div>
+						</div>
+						<div class="footer-bottom">
+							<ul class="social">
+								<li><a href="#"><i> </i></a></li>						
+								<li><a href="#"><i class="facebook"> </i></a></li>
+								<li><a href="#"><i class="html"> </i></a></li>
+								<li><a href="#"><i class="dot"> </i></a></li>
+							</ul>
+							<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.</p>
+							<div class="clearfix"></div>
+						</div>						
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+					 		*/
+
+					 		$().UItoTop({ easingType: 'easeOutQuart' });
+
+					 	});
+					 </script>
+					 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+					</div>
+				</body>
+				</html>
