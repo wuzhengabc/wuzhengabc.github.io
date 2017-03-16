@@ -300,15 +300,15 @@ tbody {
 	border-bottom: none;
 }
 .header {
-	padding: 20px 0;
-	border-bottom: 1px solid #eaeaea;
-	background-color: #fff;
+	padding: 10px 0;
+	border-bottom: 0px solid #eaeaea;
+	background-color: rgba(134,229,201,0.95);
 }
 .header.header-small {
 	padding: 10px 0;
 }
 .banner {
-	background-color: #f1f1f1;
+	background:transparent;
 	border-bottom: 1px solid #eaeaea;
 }
 .page-intro {
@@ -749,9 +749,9 @@ tbody {
 	z-index: 1006;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	border-bottom: 1px solid #f1f1f1;
-	padding: 7px 0;
-	background-color: rgba(255, 255, 255, 0.95);
+	border-bottom: 0px solid #f1f1f1;
+	padding: 0px 0;
+	background-color: rgba(134,229,201,0.95);
 }
 .fixed-header-on.boxed .header.fixed {
 	left: auto;

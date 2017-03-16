@@ -4,6 +4,33 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
+ .wrappertop
+ {
+ 	font-size:20px;
+ 	color:#fff;
+    position:absolute; 
+    top:4%; 
+    left:5%; 
+    width:95%; 
+    height:20%
+    }
+    .wrapperbottom
+ {
+ 	color:#fff;
+ 	background-color: rgb(39,159,124);
+    position:absolute; 
+    top:54%; 
+    left:5%; 
+    height:35%;
+    border-radius: 5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    float: left;
+    }
+    .litleTile
+ {
+ 	text-align: center;
+    }
 body{
 	background:#f4f4f4;
 	font-family: 'Open Sans', sans-serif;	
@@ -199,7 +226,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 .sb-icon-search {
 	color: #FFF;
-	background:#F4F4F4 url('../images/search.png') no-repeat 0px -4px;
+	background:#86e5c9 url('../images/search.png') no-repeat 0px -4px;
 	z-index: 90;
 }
 /* Open state */

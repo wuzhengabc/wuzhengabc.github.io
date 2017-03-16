@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title>吴争碎碎念集结地</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/home.ico" />
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -36,8 +37,7 @@
 
 		$(window).scroll(function(){
 			var scrollTop=$(this).scrollTop();
-			console.log(scrollTop);
-			var d = document.getElementById("topheader");			
+
 		})
 
 		function OnClickFilters(obj)
@@ -59,57 +59,58 @@
 		}
 	</script>	
 </head>
-<!--<body style="background-image:url('images/main_texture.png');background-position:center; background-repeat:repeat-y">-->
-<body style="background-color:rgb(241,241,241);">
-	<header class="header fixed clearfix">
-		<div class="container">
-			<div class="container">	
-				<div class="logo">
-					<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
-				</div>
-				<div class="header-bottom">
-					<div class="top-nav">
-						<span class="menu"> </span>
-						<ul>
-							<li  ><a href="#home" class="scroll">Home</a></li>
-							<li><a href="#services" class="scroll"> Services</a></li>
-							<li><a href="#portfolio" class="scroll">Portfolio </a></li>
-							<li><a href="blog.html" >Blog</a></li>
-							<li><a href="contact.html">contact</a></li>
-						</ul>
-						<!--script-->
-						<script>
-							$("span.menu").click(function(){
-								$(".top-nav ul").slideToggle(500, function(){
-								});
-							});
-						</script>
-					</div>
-					<!-- start search-->
-					<div class="search-box">
-						<div id="sb-search" class="sb-search">
-							<form>
-								<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-								<input class="sb-search-submit" type="submit" value="">
-								<span class="sb-icon-search"> </span>
-							</form>
-						</div>
-					</div>
-					<!----search-scripts---->
-					<script src="js/classie.js"></script>
-					<script src="js/uisearch.js"></script>
+<body style="background-image:url('images/main_texture.png');background-position:center; background-repeat:repeat-y">
+	<!--<body style="background-color:rgb(241,241,241);">-->
+	
+	<!--header fixed clearfix 标题栏始终在顶部-->
+	<div class="header" id="home">
+		<div class="container">	
+			<div class="logo">
+				<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+			</div>
+			<div class="header-bottom">
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li  ><a href="#home" class="scroll">首页</a></li>
+						<li><a href="#portfolio" class="scroll"> 文章 </a></li>
+						<li><a href="#services" class="scroll"> 其他 </a></li>
+						<li><a href="blog.html" >博客</a></li>
+						<li><a href="contact.html">联系我</a></li>
+					</ul>
+					<!--script-->
 					<script>
-						new UISearch( document.getElementById( 'sb-search' ) );
+						$("span.menu").click(function(){
+							$(".top-nav ul").slideToggle(500, function(){
+							});
+						});
 					</script>
-					<!----//search-scripts---->
-
-					<div class="clearfix"> </div>
 				</div>
+				<!-- start search-->				
+				<!--
+				<div class="search-box">
+					<div id="sb-search" class="sb-search">
+						<form>
+							<input class="sb-search-input" placeholder="输入关键字..." type="search" name="search" id="search">
+							<input class="sb-search-submit" type="submit" value="">
+							<span class="sb-icon-search"> </span>
+						</form>
+					</div>
+				</div>
+				-->
+				<!----search-scripts---->
+				<script src="js/classie.js"></script>
+				<script src="js/uisearch.js"></script>
+				<script>
+					new UISearch( document.getElementById( 'sb-search' ) );
+				</script>
+				<!----//search-scripts---->
+
 				<div class="clearfix"> </div>
 			</div>
+			<div class="clearfix"> </div>
 		</div>
-	</header>
-	<!---->
+	</div>
 	
 	<div class="container">		
 		<div class="banner">
@@ -127,102 +128,156 @@
 	<div class="container">	
 		<div class="works" id="portfolio">
 			<div class=" port-top">									
-				<h3 class="port">Latest Works</h3>
+				<h3 class="port">最新发布</h3>
+				<!--  app:Unity3D/card:C#/icon:Java/set:C++/add:其他  -->
 				<ul id="filters">
-					<li id = "all1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app card icon set sit web add">All</span></li>
-					<li id = "app1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app">WEB</span></li>
-					<li id = "card1" onclick="OnClickFilters(this)"><span class="filter" data-filter="card"> MOBILE </span></li>
-					<li id = "icon1" onclick="OnClickFilters(this)"><span class="filter" data-filter="icon"> PHOTOGRAPHY</span></li>
-					<li id = "set1" onclick="OnClickFilters(this)"><span class="filter" data-filter="set"> DESIGN</span></li>
-					<li id = "add1" onclick="OnClickFilters(this)"><span class="filter" data-filter="add"> TYPE</span></li>
+					<li id = "all1" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="app card icon set sit web add">All</span></li>
+					<li id = "app1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app"> Unity3D </span></li>
+					<li id = "card1" onclick="OnClickFilters(this)"><span class="filter" data-filter="card"> C# </span></li>
+					<li id = "icon1" onclick="OnClickFilters(this)"><span class="filter" data-filter="icon"> Java</span></li>
+					<li id = "set1" onclick="OnClickFilters(this)"><span class="filter" data-filter="set"> C++</span></li>
+					<li id = "add1" onclick="OnClickFilters(this)"><span class="filter" data-filter="add"> 其他</span></li>
 				</ul>
 				<div class="clearfix"> </div>
 			</div>
 			<div id="portfoliolist">
+
 				<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper ">		
 						<a href="single.html" class="b-link-stripe b-animate-go">
 							<img class="img-responsive" src="images/pi.jpg" alt="" ></img>
-							<div style="position:absolute;width:100px;height:100px;z-index:9999;left:0;top:0;"> neirong </div>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp Unity3D &nbsp&nbsp</div></div>	
+							</div>
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left ">	
-									<span>Photo</span>									
-									<button>View photo</button>
+									<span>456</span>									
+									<button>Read More</button>
 								</h2>
 							</div>
 						</a>																			
 					</div>
-				</div>				
-				<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi1.jpg" alt=""  />
-							<div class="b-wrapper" class="b-link-stripe b-animate-go">
-								<h2 class="b-animate b-from-left ">	
-									<span>Photo</span>									
-									<button>View photo</button>
-								</h2>
-							</div>
-						</a>	
-
-					</div>
-				</div>		
+				</div>	
 				<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper">		
+					<div class="portfolio-wrapper ">		
 						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi2.jpg"  alt="" />
+							<img class="img-responsive" src="images/pi1.jpg" alt="" ></img>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp C# &nbsp&nbsp</div></div>	
+							</div>
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left ">	
-									<span>Photo</span>									
-									<button>View photo</button>
+									<span>456</span>									
+									<button>Read More</button>
 								</h2>
 							</div>
-						</a>	
-
+						</a>																			
 					</div>
-				</div>				
+				</div>		
 				<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper ">		
 						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi3.jpg" alt=""  />
+							<img class="img-responsive" src="images/pi2.jpg" alt="" ></img>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp Unity3D &nbsp&nbsp</div></div>	
+							</div>
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left ">	
-									<span>Photo</span>									
-									<button>View photo</button>
+									<span>456</span>									
+									<button>Read More</button>
 								</h2>
 							</div>
-						</a>							
+						</a>																			
 					</div>
-				</div>	
+				</div>		
+				<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper ">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi3.jpg" alt="" ></img>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp Java &nbsp&nbsp</div></div>	
+							</div>
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>456</span>									
+									<button>Read More</button>
+								</h2>
+							</div>
+						</a>																			
+					</div>
+				</div>		
+				<div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper ">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi4.jpg" alt="" ></img>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp C++ &nbsp&nbsp</div></div>	
+							</div>
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>456</span>									
+									<button>Read More</button>
+								</h2>
+							</div>
+						</a>																			
+					</div>
+				</div>		
 				<div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
 					<div class="portfolio-wrapper ">		
 						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi4.jpg" alt=""  />
+							<img class="img-responsive" src="images/pi5.jpg" alt="" ></img>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp 其他 &nbsp&nbsp</div></div>	
+							</div>
 							<div class="b-wrapper">
 								<h2 class="b-animate b-from-left ">	
-									<span>Photo</span>									
-									<button>View photo</button>
-								</h2>
-							</div>	
-						</a>	
-
-					</div>
-				</div>			
-				<div class="portfolio set mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi5.jpg" alt=""  />
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>Photo</span>									
-									<button>View photo</button>
+									<span>456</span>									
+									<button>Read More</button>
 								</h2>
 							</div>
-
-						</a>	
-
+						</a>																			
 					</div>
-				</div>
+				</div>		
+				<div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper ">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi5.jpg" alt="" ></img>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp 其他 &nbsp&nbsp</div></div>	
+							</div>
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>456</span>									
+									<button>Read More</button>
+								</h2>
+							</div>
+						</a>																			
+					</div>
+				</div>		
+				<div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
+					<div class="portfolio-wrapper ">		
+						<a href="single.html" class="b-link-stripe b-animate-go">
+							<img class="img-responsive" src="images/pi5.jpg" alt="" ></img>
+							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
+								<div class="wrappertop" >我是大标题的</div>	
+								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp 其他 &nbsp&nbsp</div></div>	
+							</div>
+							<div class="b-wrapper">
+								<h2 class="b-animate b-from-left ">	
+									<span>456</span>									
+									<button>Read More</button>
+								</h2>
+							</div>
+						</a>																			
+					</div>
+				</div>	
 
 				<div class="clearfix"> </div>
 			</div>	

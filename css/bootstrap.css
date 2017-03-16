@@ -739,13 +739,6 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-
-.container2 {
-  position: fixed;
-  z-index: 999;
-  background-color: rgba(39,159,124,0.7);
-  width: 100%;
-}
 @media (min-width: 768px) {
   .container {
     width: 750px;
