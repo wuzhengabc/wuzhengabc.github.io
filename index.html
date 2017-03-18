@@ -1,493 +1,460 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>吴争碎碎念集结地</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/home.ico" />
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<!-- Custom Theme files -->
-	<!--theme-style-->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-	<!--//theme-style-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Freelancer-plus Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+    <title>吴争碎碎念集结地</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/common/favicon.png" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Freelancer-plus Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-	
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
 
-	<link href="css/style1.css" rel="stylesheet">
-	<link href="css/animations.css" rel="stylesheet">
-	<script type="text/javascript" src="js/modernizr.js"></script>
-	<script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
 
-	<script type="application/x-javascript"> 
-		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
-		function hideURLbar(){ window.scrollTo(0,1); } 
-	</script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-			});
-		});
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
 
-		$(window).scroll(function(){
-			var scrollTop=$(this).scrollTop();
+    <script type="application/x-javascript">
 
-		})
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
 
-		function OnClickFilters(obj)
-		{							
-			obj.setAttribute("class", "active");
-			var filters = new Array();
-			filters[0] = document.getElementById("all1");
-			filters[1] = document.getElementById("app1");
-			filters[2] = document.getElementById("card1");
-			filters[3] = document.getElementById("icon1");
-			filters[4] = document.getElementById("set1");
-			filters[5] = document.getElementById("add1");
+        $(window).scroll(function () {
+            var scrollTop = $(this).scrollTop();
 
-			for (i=0;i<filters.length;i++)
-			{
-				if(filters[i].getAttribute("id") != obj.getAttribute("id"))
-					filters[i].setAttribute("class", "");
-			}
-		}
-	</script>	
+        })
+
+        function OnClickFilters(obj) {
+            obj.setAttribute("class", "active");
+            var filters = new Array();
+            filters[0] = document.getElementById("all1");
+            filters[1] = document.getElementById("app1");
+            filters[2] = document.getElementById("card1");
+            filters[3] = document.getElementById("icon1");
+            filters[4] = document.getElementById("set1");
+            filters[5] = document.getElementById("add1");
+
+            for (i = 0; i < filters.length; i++) {
+                if (filters[i].getAttribute("id") != obj.getAttribute("id"))
+                    filters[i].setAttribute("class", "");
+            }
+        }
+    </script>
 </head>
-<body style="background-image:url('images/main_texture.png');background-position:center; background-repeat:repeat-y">
-	<!--<body style="background-color:rgb(241,241,241);">-->
-	
-	<!--header fixed clearfix 标题栏始终在顶部-->
-	<div class="header" id="home">
-		<div class="container">	
-			<div class="logo">
-				<h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
-			</div>
-			<div class="header-bottom">
-				<div class="top-nav">
-					<span class="menu"> </span>
-					<ul>
-						<li  ><a href="#home" class="scroll">首页</a></li>
-						<li><a href="#portfolio" class="scroll"> 文章 </a></li>
-						<li><a href="#services" class="scroll"> 其他 </a></li>
-						<li><a href="blog.html" >博客</a></li>
-						<li><a href="contact.html">联系我</a></li>
-					</ul>
-					<!--script-->
-					<script>
-						$("span.menu").click(function(){
-							$(".top-nav ul").slideToggle(500, function(){
-							});
-						});
-					</script>
-				</div>
-				<!-- start search-->				
-				<!--
-				<div class="search-box">
-					<div id="sb-search" class="sb-search">
-						<form>
-							<input class="sb-search-input" placeholder="输入关键字..." type="search" name="search" id="search">
-							<input class="sb-search-submit" type="submit" value="">
-							<span class="sb-icon-search"> </span>
-						</form>
-					</div>
-				</div>
-				-->
-				<!----search-scripts---->
-				<script src="js/classie.js"></script>
-				<script src="js/uisearch.js"></script>
-				<script>
-					new UISearch( document.getElementById( 'sb-search' ) );
-				</script>
-				<!----//search-scripts---->
+<body class="bodycolor">
+    <!--<body style="background-color:rgb(241,241,241);">-->
+    <script type="text/javascript" src="js/bgeffect.js"></script>
 
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	
-	<div class="container">		
-		<div class="banner">
-			<div class="banner-matter">
-				<h2>Creative Ideas Live Here</h2>
-				<p>Aliquam suscipit vel nulla quis eleifend. Maecenas vitae tristique ante. Sed sit amet vehicula libero.</p>		
-			</div>
-			<div class="tv">
-				<img class="img-responsive" src="images/tv.png" alt="">
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!---->
-	<div class="container">	
-		<div class="works" id="portfolio">
-			<div class=" port-top">									
-				<h3 class="port">最新发布</h3>
-				<!--  app:Unity3D/card:C#/icon:Java/set:C++/add:其他  -->
-				<ul id="filters">
-					<li id = "all1" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="app card icon set sit web add">All</span></li>
-					<li id = "app1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app"> Unity3D </span></li>
-					<li id = "card1" onclick="OnClickFilters(this)"><span class="filter" data-filter="card"> C# </span></li>
-					<li id = "icon1" onclick="OnClickFilters(this)"><span class="filter" data-filter="icon"> Java</span></li>
-					<li id = "set1" onclick="OnClickFilters(this)"><span class="filter" data-filter="set"> C++</span></li>
-					<li id = "add1" onclick="OnClickFilters(this)"><span class="filter" data-filter="add"> 其他</span></li>
-				</ul>
-				<div class="clearfix"> </div>
-			</div>
-			<div id="portfoliolist">
+    <!--header fixed clearfix 标题栏始终在顶部-->
+    <div class="header"  id="home">
+        <div class="container">
+            <div class="logo" >
+                <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+            </div>
+            <div class="header-bottom">
+                <div class="top-nav">
+                    <span class="menu"> </span>
+                    <ul>
+                        <li><a href="#toptop" class="scroll">首页</a></li>
+                        <li><a href="#portfolio" class="scroll"> 最新 </a></li>
+                        <li><a href="#services" class="scroll"> 项目 </a></li>
+                        <li><a href="#meet" class="scroll"> 捐助 </a></li>
+                        <li><a href="articlelist.html">博客</a></li>
+                        <li><a href="contact.html">联系我</a></li>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function () {
+                            $(".top-nav ul").slideToggle(500, function () {
+                            });
+                        });
+                    </script>
+                </div>
+                <!-- start search-->
+                <!--
+                <div class="search-box">
+                    <div id="sb-search" class="sb-search">
+                        <form>
+                            <input class="sb-search-input" placeholder="输入关键字..." type="search" name="search" id="search">
+                            <input class="sb-search-submit" type="submit" value="">
+                            <span class="sb-icon-search"> </span>
+                        </form>
+                    </div>
+                </div>
+                -->
+                <!----search-scripts---->
+                <script src="js/classie.js"></script>
+                <script src="js/uisearch.js"></script>
+                <script>
+                    new UISearch(document.getElementById('sb-search'));
+                </script>
+                <!----//search-scripts---->
 
-				<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp Unity3D &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>	
-				<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi1.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp C# &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>		
-				<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi2.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp Unity3D &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>		
-				<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi3.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp Java &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>		
-				<div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi4.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp C++ &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>		
-				<div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi5.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp 其他 &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>		
-				<div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi5.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp 其他 &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>		
-				<div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
-					<div class="portfolio-wrapper ">		
-						<a href="single.html" class="b-link-stripe b-animate-go">
-							<img class="img-responsive" src="images/pi5.jpg" alt="" ></img>
-							<div style="position:absolute;width:100%;height:30%;z-index:auto;left:0;top:70%;background-color:rgba(38,38,38,0.7)"> 
-								<div class="wrappertop" >我是大标题的</div>	
-								<div class="wrapperbottom" ><div class="litleTile">&nbsp&nbsp 其他 &nbsp&nbsp</div></div>	
-							</div>
-							<div class="b-wrapper">
-								<h2 class="b-animate b-from-left ">	
-									<span>456</span>									
-									<button>Read More</button>
-								</h2>
-							</div>
-						</a>																			
-					</div>
-				</div>	
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
 
-				<div class="clearfix"> </div>
-			</div>	
-			<!-- Script for gallery Here -->
-			<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-			<script type="text/javascript">
-				$(function () {
+    <div class="container" id="toptop">
+        <div class="banner">
+            <div class="banner-matter">
+                <h2>永远相信美好的事情即将发生</h2>
+                <p>成为一个有梦想的人</p>
+            </div>
+            <div class="tv">
+                <img class="img-responsive" src="images/tv.png" alt="">
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!---->
 
-					var filterList = {
-						
-						init: function () {
-							
-								// MixItUp plugin
-								// http://mixitup.io
-								$('#portfoliolist').mixitup({
-									targetSelector: '.portfolio',
-									filterSelector: '.filter',
-									effects: ['fade'],
-									easing: 'snap',
-									// call the hover effect
-									onMixEnd: filterList.hoverEffect()
-								});				
+    <div class="container">
+        <div class="works" id="portfolio">
+            <div class=" port-top">
+                <h3 class="port">最新发布</h3>
+                <!--  app:Unity3D/card:C#/icon:Java/set:C++/add:其他  -->
+                <ul id="filters">
+                    <li id="all1" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="app card icon set sit web add">All</span></li>
+                    <li id="app1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app"> Unity3D </span></li>
+                    <li id="card1" onclick="OnClickFilters(this)"><span class="filter" data-filter="card"> C# </span></li>
+                    <li id="icon1" onclick="OnClickFilters(this)"><span class="filter" data-filter="icon"> Java </span></li>
+                    <li id="set1" onclick="OnClickFilters(this)"><span class="filter" data-filter="set"> 分享 </span></li>
+                    <li id="add1" onclick="OnClickFilters(this)"><span class="filter" data-filter="add"> 资源 </span></li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+            <div id="portfoliolist">
+                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper ">
+                        <a href="single.html" class="b-link-stripe b-animate-go">
+                            <img class="img-responsive" src="images/pi.jpg" alt=""></img>
+                            <div class="bg">
+                                <div class="wrappertop"><span class="mainTile">我是一个大标题标题标题标题标题标</span></div>
+                                <div class="wrapperbottom"><span class="litleTile">Unity3D</span></div>
+                            </div>
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left ">
+                                    <span>456</span>
+                                    <button>Read More</button>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper ">
+                        <a href="single.html" class="b-link-stripe b-animate-go">
+                            <img class="img-responsive" src="images/pi1.jpg" alt=""></img>
+                            <div class="bg">
+                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
+                                <div class="wrapperbottom"><span class="litleTile">C#</span></div>
+                            </div>
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left ">
+                                    <span>456</span>
+                                    <button>Read More</button>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper ">
+                        <a href="single.html" class="b-link-stripe b-animate-go">
+                            <img class="img-responsive" src="images/pi2.jpg" alt=""></img>
+                            <div class="bg">
+                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
+                                <div class="wrapperbottom"><span class="litleTile">Unity3D</span></div>
+                            </div>
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left ">
+                                    <span>456</span>
+                                    <button>Read More</button>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper ">
+                        <a href="single.html" class="b-link-stripe b-animate-go">
+                            <img class="img-responsive" src="images/pi3.jpg" alt=""></img>
+                            <div class="bg">
+                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
+                                <div class="wrapperbottom"><span class="litleTile">Java</span></div>
+                            </div>
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left ">
+                                    <span>456</span>
+                                    <button>Read More</button>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper ">
+                        <a href="single.html" class="b-link-stripe b-animate-go">
+                            <img class="img-responsive" src="images/pi4.jpg" alt=""></img>
+                            <div class="bg">
+                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
+                                <div class="wrapperbottom"><span class="litleTile">分享</span></div>
+                            </div>
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left ">
+                                    <span>456</span>
+                                    <button>Read More</button>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
+                    <div class="portfolio-wrapper ">
+                        <a href="https://github.com/hustcc/canvas-nest.js" class="b-link-stripe b-animate-go">
+                            <img class="img-responsive" src="images/pi5.jpg" alt=""></img>
+                            <div class="bg">
+                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
+                                <div class="wrapperbottom"><span class="litleTile">资源</span></div>
+                            </div>
+                            <div class="b-wrapper">
+                                <h2 class="b-animate b-from-left ">
+                                    <span>456</span>
+                                    <button>Read More</button>
+                                </h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
 
-							},
-							
-							hoverEffect: function () {
+                <div class="clearfix"> </div>
+            </div>
+            <!-- Script for gallery Here -->
+            <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+            <script type="text/javascript">
+                $(function () {
 
-								// Simple parallax effect
-								$('#portfoliolist .portfolio').hover(
-									function () {
-										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
-									},
-									function () {
-										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-									}		
-									);				
+                    var filterList = {
 
-							}
+                        init: function () {
 
-						};
-						
-						// Run the show!
-						filterList.init();
-					});	
-				</script>
-				<!-- Gallery Script Ends -->
-			</div>
-		</div>
-		<!---->
-		<div class="container">	
-			<div class="service" id="services">
-				<div class=" service-top">									
-					<h3 class="ser">Our Services</h3>
-					<p class="sed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
-					<div class="clearfix"> </div>
-				</div>
-				<div class=" services-grid">
-					<div class="col-md-4 service-grid">
-						<a href="single.html"><img class="img-responsive" src="images/s1.png" alt=" "></a>
-						<h5>Flat Design</h5>
-						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-					</div>
-					<div class="col-md-4 service-grid">
-						<a href="single.html"><img class="img-responsive" src="images/s2.png" alt=" "></a>
-						<h5>Great Ideas</h5>
-						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-					</div>
-					<div class="col-md-4 service-grid">
-						<a href="single.html"><img class="img-responsive" src="images/s3.png" alt=" "></a>
-						<h5>Browser  Compatibility</h5>
-						<p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
-					</div>		
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-		<!---->
-		<div class="container">
-			<div class="meet">
-				<div class=" team-top">									
-					<h3 class="team">Meet the Team</h3>
-					<p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
-					<div class="clearfix"> </div>
-				</div>
-				<div class=" team-grid">
-					<div class="col-md-4 grid-team">
-						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-						<h4>JOHN SMITH</h4>
-						<h5>Creative Director</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-						<ul class="social-in">
-							<li><a href="#"><i> </i></a></li>						
-							<li><a href="#"><i class="thumblr"> </i></a></li>
-							<li><a href="#"><i class="pin"> </i></a></li>
+                            // MixItUp plugin
+                            // http://mixitup.io
+                            $('#portfoliolist').mixitup({
+                                targetSelector: '.portfolio',
+                                filterSelector: '.filter',
+                                effects: ['fade'],
+                                easing: 'snap',
+                                // call the hover effect
+                                onMixEnd: filterList.hoverEffect()
+                            });
 
-						</ul>
-					</div>
-					<div class="col-md-4  grid-team">
-						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-						<h4>JOHN SMITH</h4>
-						<h5>Creative Director</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-						<ul class="social-in">
-							<li><a href="#"><i> </i></a></li>						
-							<li><a href="#"><i class="thumblr"> </i></a></li>
-							<li><a href="#"><i class="pin"> </i></a></li>
+                        },
 
-						</ul>
-					</div>
-					<div class="col-md-4  grid-team">
-						<a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-						<h4>JOHN SMITH</h4>
-						<h5>Creative Director</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-						<ul class="social-in">
-							<li><a href="#"><i> </i></a></li>						
-							<li><a href="#"><i class="thumblr"> </i></a></li>
-							<li><a href="#"><i class="pin"> </i></a></li>
+                        hoverEffect: function () {
 
-						</ul>
-					</div>		
-					<div class="clearfix"> </div>
-				</div>
-			</div>
-		</div>
-		<!---->
-		<div class="footer" >
-			<div class="container">
-				<div class="footer-top" >
-					<div class="col-md-4 twitter">
-						
-						<h4>Latest Tweets</h4>
-						<div class="twitter-in">
-							<p>PSD Template: Flat One Page Website <p>
-								<a href="#" >http://bit.ly/1kfcA8M </a>
-								<span>27 Oct 2014</span>
-							</div>
-							<div class="twitter-in">
-								<p>PSD Template: Flat One Page Website <p>
-									<a href="#" >http://bit.ly/1kfcA8M </a>
-									<span>27 Oct 2014</span>
-								</div>
-							</div>
+                            // Simple parallax effect
+                            $('#portfoliolist .portfolio').hover(
+                                function () {
+                                    $(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
+                                    $(this).find('img').stop().animate({ top: -30 }, 500, 'easeOutQuad');
+                                },
+                                function () {
+                                    $(this).find('.label').stop().animate({ bottom: -40 }, 200, 'easeInQuad');
+                                    $(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
+                                }
+                                );
 
-							<div class="col-md-4 twitter">
+                        }
 
-								<h4>Instagram</h4>
-								<ul class="box-in">
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
-									<li><a href="#"></a></li>
+                    };
 
-								</ul>
-							</div>
+                    // Run the show!
+                    filterList.init();
+                });
+            </script>
+            <!-- Gallery Script Ends -->
+        </div>
+    </div>
+    <!---->
+    <div class="container">
+        <div class="service" id="services">
+            <div class=" service-top">
+                <h3 class="ser">Our Services</h3>
+                <p class="sed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
+                <div class="clearfix"> </div>
+            </div>
+            <div class=" services-grid">
+                <div class="col-md-4 service-grid">
+                    <a href="single.html"><img class="img-responsive" src="images/s1.png" alt=" "></a>
+                    <h5>Flat Design</h5>
+                    <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </div>
+                <div class="col-md-4 service-grid">
+                    <a href="single.html"><img class="img-responsive" src="images/s2.png" alt=" "></a>
+                    <h5>Great Ideas</h5>
+                    <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </div>
+                <div class="col-md-4 service-grid">
+                    <a href="single.html"><img class="img-responsive" src="images/s3.png" alt=" "></a>
+                    <h5>Browser  Compatibility</h5>
+                    <p>Praesent interdum blandit quam. Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="container">
+        <div class="meet" id="meet">
+            <div class=" team-top">
+                <h3 class="team">Meet the Team</h3>
+                <p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
+                <div class="clearfix"> </div>
+            </div>
+            <div class=" team-grid">
+                <div class="col-md-4 grid-team">
+                    <a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
+                    <h4>JOHN SMITH</h4>
+                    <h5>Creative Director</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+                    <ul class="social-in">
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i class="thumblr"> </i></a></li>
+                        <li><a href="#"><i class="pin"> </i></a></li>
 
-							<div class="col-md-4 twitter">
-								<h4>Contact Us</h4>
-								<div class="contact">
-									<form>
-										<input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-										<input type="text" class="text" value="Email " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email ';}">
-										<textarea cols="10" rows="3" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
-									</form>
-									<div class="submit">
-										<form>
-											<input type="submit" value="SEND">
-										</form>
-									</div>
-									<div class="clearfix"></div>
-								</div>
-							</div>
+                    </ul>
+                </div>
+                <div class="col-md-4  grid-team">
+                    <a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
+                    <h4>JOHN SMITH</h4>
+                    <h5>Creative Director</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+                    <ul class="social-in">
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i class="thumblr"> </i></a></li>
+                        <li><a href="#"><i class="pin"> </i></a></li>
 
-							<div class="clearfix"></div>
-						</div>
-						<div class="footer-bottom">
-							<ul class="social">
-								<li><a href="#"><i> </i></a></li>						
-								<li><a href="#"><i class="facebook"> </i></a></li>
-								<li><a href="#"><i class="html"> </i></a></li>
-								<li><a href="#"><i class="dot"> </i></a></li>
-							</ul>
-							<p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.</p>
-							<div class="clearfix"></div>
-						</div>						
-					</div>
-					<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear' 
-					 		};
-					 		*/
+                    </ul>
+                </div>
+                <div class="col-md-4  grid-team">
+                    <a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
+                    <h4>JOHN SMITH</h4>
+                    <h5>Creative Director</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
+                    <ul class="social-in">
+                        <li><a href="#"><i> </i></a></li>
+                        <li><a href="#"><i class="thumblr"> </i></a></li>
+                        <li><a href="#"><i class="pin"> </i></a></li>
 
-					 		$().UItoTop({ easingType: 'easeOutQuart' });
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="col-md-4 twitter">
 
-					 	});
-					 </script>
-					 <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+                    <h4>Latest Tweets</h4>
+                    <div class="twitter-in">
+                        <p>PSD Template: Flat One Page Website <p>
+                            <a href="#">http://bit.ly/1kfcA8M </a>
+                            <span>27 Oct 2014</span>
+                    </div>
+                    <div class="twitter-in">
+                        <p>PSD Template: Flat One Page Website <p>
+                            <a href="#">http://bit.ly/1kfcA8M </a>
+                            <span>27 Oct 2014</span>
+                    </div>
+                </div>
 
-					</div>
-				</body>
-				</html>
+                <div class="col-md-4 twitter">
+
+                    <h4>Instagram</h4>
+                    <ul class="box-in">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-md-4 twitter">
+                    <h4>Contact Us</h4>
+                    <div class="contact">
+                        <form>
+                            <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
+                            <input type="text" class="text" value="Email " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email ';}">
+                            <textarea cols="10" rows="3" value="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+                        </form>
+                        <div class="submit">
+                            <form>
+                                <input type="submit" value="SEND">
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-bottom">
+                <ul class="social">
+                    <li><a href="#"><i> </i></a></li>
+                    <li><a href="#"><i class="facebook"> </i></a></li>
+                    <li><a href="#"><i class="html"> </i></a></li>
+                    <li><a href="#"><i class="dot"> </i></a></li>
+                </ul>
+                <p class="footer-class">Copyright &copy; 2015.Company name All rights reserved.</p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*
+                var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear'
+                };
+                */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+    </div>
+</body>
+</html>
