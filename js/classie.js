@@ -39,6 +39,7 @@
     else {
         hasClass = function (elem, c) {
             return classReg(c).test(elem.className);
+            
         };
         addClass = function (elem, c) {
             if (!hasClass(elem, c)) {

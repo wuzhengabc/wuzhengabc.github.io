@@ -17,7 +17,6 @@
         function addToPrototype(name, method) {
             Window.prototype[name] = HTMLDocument.prototype[name] = Element.prototype[name] = method;
         }
-
         var registry = [];
 
         addToPrototype("addEventListener", function (type, listener) {

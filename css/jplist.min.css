@@ -482,39 +482,39 @@
     }
 
     .jplist-panel .jplist-views .jplist-list-view {
-        background: url('../img/icons/list-btn.png') no-repeat 50% 50%;
+        background: url('../images/icons/list-btn.png') no-repeat 50% 50%;
     }
 
     .jplist-panel .jplist-views .jplist-grid-view {
-        background: url('../img/icons/grid-btn-disabled.png') no-repeat 50% 50%;
+        background: url('../images/icons/grid-btn-disabled.png') no-repeat 50% 50%;
     }
 
     .jplist-panel .jplist-views .jplist-thumbs-view {
-        background: url('../img/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
+        background: url('../images/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
     }
 
 .jplist-grid-view .jplist-panel .jplist-views .jplist-list-view {
-    background: url('../img/icons/list-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/list-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-grid-view .jplist-panel .jplist-views .jplist-grid-view {
-    background: url('../img/icons/grid-btn.png') no-repeat 50% 50%;
+    background: url('../images/icons/grid-btn.png') no-repeat 50% 50%;
 }
 
 .jplist-grid-view .jplist-panel .jplist-views .jplist-thumbs-view {
-    background: url('../img/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-thumbs-view .jplist-panel .jplist-views .jplist-list-view {
-    background: url('../img/icons/list-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/list-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-thumbs-view .jplist-panel .jplist-views .jplist-grid-view {
-    background: url('../img/icons/grid-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/grid-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-thumbs-view .jplist-panel .jplist-views .jplist-thumbs-view {
-    background: url('../img/icons/thumbs-btn.png') no-repeat 50% 50%;
+    background: url('../images/icons/thumbs-btn.png') no-repeat 50% 50%;
 }
 
 .jplist-grid-view .list-item {
@@ -585,9 +585,8 @@
 }
 
 .title {    
-    height: 35px;
+    height:30px;
     padding-left: 20px;
-    padding-top: 9px;
     font-size: 18px;
     overflow: hidden;
     line-height: 1.5em;
@@ -598,15 +597,29 @@
 }
 
 .date {
-    padding: 10px;
+    padding:17px 10px 17px 10px;
     background-color: rgba(39,159,124,1);
-    font-size: 18px;    
+    font-size: 19px;    
     float: left;
     color: #fff;
 }
 
 .keywords {
     color: #440e00;
+}
+
+.tag {
+    height: 35px;
+    font-size: 13px;
+    overflow: hidden;
+    color: #0381bb;
+    border-top:1px dashed rgba(0, 0, 0, 0.61);
+    border-bottom:0px dashed rgba(0, 0, 0, 0.61);
+    border-left:0px dashed rgba(0, 0, 0, 0.61);
+    border-right:0px dashed rgba(0, 0, 0, 0.61);
+    margin:0 0 0 129px;
+    padding:5px 0px 5px 0;
+    width:710px;
 }
 
 .like {
@@ -628,10 +641,10 @@
     border-radius: 3px;
 }
 .desc {
-    padding: 10px 30px 0px 0px;
+    padding: 4px 30px 0px 0px;
     color: #111;
     float: left;
-    line-height: 2.5em;
+    line-height: 2.1em;
 }
 
 .price {
@@ -677,7 +690,7 @@
 
     .list .list-item {
         height: 170px;
-        margin: 15px;
+        margin: 15px 0px;
         float: left;
         overflow: hidden;
     -webkit-box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);
@@ -737,46 +750,46 @@
     }
 
     .jplist-panel .jplist-views .jplist-list-view {
-        background: url('../img/icons/list-btn.png') no-repeat 50% 50%;
+        background: url('../images/icons/list-btn.png') no-repeat 50% 50%;
     }
 
     .jplist-panel .jplist-views .jplist-grid-view {
-        background: url('../img/icons/grid-btn-disabled.png') no-repeat 50% 50%;
+        background: url('../images/icons/grid-btn-disabled.png') no-repeat 50% 50%;
     }
 
     .jplist-panel .jplist-views .jplist-thumbs-view {
-        background: url('../img/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
+        background: url('../images/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
     }
 
 .jplist-grid-view .jplist-panel .jplist-views .jplist-list-view {
-    background: url('../img/icons/list-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/list-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-grid-view .jplist-panel .jplist-views .jplist-grid-view {
-    background: url('../img/icons/grid-btn.png') no-repeat 50% 50%;
+    background: url('../images/icons/grid-btn.png') no-repeat 50% 50%;
 }
 
 .jplist-grid-view .jplist-panel .jplist-views .jplist-thumbs-view {
-    background: url('../img/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/thumbs-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-thumbs-view .jplist-panel .jplist-views .jplist-list-view {
-    background: url('../img/icons/list-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/list-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-thumbs-view .jplist-panel .jplist-views .jplist-grid-view {
-    background: url('../img/icons/grid-btn-disabled.png') no-repeat 50% 50%;
+    background: url('../images/icons/grid-btn-disabled.png') no-repeat 50% 50%;
 }
 
 .jplist-thumbs-view .jplist-panel .jplist-views .jplist-thumbs-view {
-    background: url('../img/icons/thumbs-btn.png') no-repeat 50% 50%;
+    background: url('../images/icons/thumbs-btn.png') no-repeat 50% 50%;
 }
 
 .jplist-grid-view .list-item {
     height: 25%;
     width: 17.3%;
     overflow: hidden;
-    margin: 15px 15px;
+    margin: 15px;
     -webkit-box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);
     -moz-box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);
     box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);
@@ -807,11 +820,11 @@
         }
 
         .jplist-grid-view .list-item .block .title {
-            line-height: 1.8em;
-            font-size: 1em;
-            height: 60px;
+            line-height: 2em;
+            font-size: 0.9em;
+            height: 70px;
             color: #000;
-            padding: 7px;
+            padding: 11px;
         }
         .jplist-grid-view .list-item .block .title:hover {
             color: #ff0000;
@@ -1096,16 +1109,16 @@
     }
 
         .jplist-thumbs-view .list-item .block p {
-            padding: 0;
+            padding: 4px;
             color: #fff;
             font-size: 1.2em;    
         }
 
         .jplist-thumbs-view .list-item .block .title {
-            line-height: 2em;
-            font-size: 1.2em;
-            padding: 20px 20px;
-            height: 100px;
+            line-height: 1.9em;
+            font-size: 1.1em;
+            padding: 10px 20px 10px 20px;
+            height: 120px;
             overflow: hidden;
             color: #000;
             text-align: left;

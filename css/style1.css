@@ -14,7 +14,7 @@ body {
 .header {
     padding: 10px 0;
     border-bottom: 0px solid #eaeaea;
-    background-color: rgba(134,229,201,0.95);
+    background-color: rgba(66,66,66,1);
 }
 
     .header.header-small {
@@ -100,4 +100,16 @@ body {
 .touch .object-non-visible {
     opacity: 1 !important;
     filter: alpha(opacity=100) !important;
+}
+.tigger-love { 
+    height: 60px; 
+}
+.tiggerimage { 
+    cursor: pointer; 
+}
+.alipay-wechat-img { 
+    display: none; 
+    height: 0; 
+    position: relative; 
+    top: -410px; 
 }
