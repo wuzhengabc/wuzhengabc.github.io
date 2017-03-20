@@ -3596,7 +3596,8 @@
         }
 
     .editormd-html-preview code, .editormd-html-preview kbd, .editormd-html-preview pre, .editormd-preview-container code, .editormd-preview-container kbd, .editormd-preview-container pre {
-        font-family: "YaHei Consolas Hybrid",Consolas,"Meiryo UI","Malgun Gothic","Segoe UI","Trebuchet MS",Helvetica,monospace,monospace;
+        
+        font-family: "Consolas","Bitstream Vera Sans Mono","Courier New","Microsoft YaHei","微软雅黑","Hiragino Sans GB",STXihei,"华文细黑",STHeiti,Courier,monospace !important;
     }
 
     .editormd-html-preview table thead tr, .editormd-preview-container table thead tr {

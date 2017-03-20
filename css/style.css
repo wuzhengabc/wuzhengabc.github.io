@@ -24,7 +24,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     top: 4%;
     left: 3%;
     width: 95%;
-    height: 20%;
+    height: 2em;
+    overflow: hidden;
 }
 
 .wrapperbottom {
@@ -33,7 +34,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     position: absolute;
     top: 54%;
     left: 3%;
-    height: 35%;
+    height: 1.6em;
     border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     -webkit-border-radius: 0.3em;
@@ -41,12 +42,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 }
 
 .litleTile {
-    padding: 1em 1em 1em 1em;
+
+    padding: 0.5em;
     text-align: center;
+    font-size: 0.5em;
+    height: 15px;
 }
 
 .mainTile {
-    font-size: 1.3em;
+    font-size: 2vmin;
 }
 
 body {
@@ -90,7 +94,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 
 .header-bottom {
     float: right;
-    width: 61%;
+    width: 47em;
 }
 
 .top-nav ul li {
@@ -790,7 +794,7 @@ p.message-para {
     border: 1px dashed rgba(0, 0, 0, 0.61);
     border-left: none;
     margin-top: 20px;
-    border-right: none;
+    border-right: none;height: 100%
 }
 
     .artical-links ul li {

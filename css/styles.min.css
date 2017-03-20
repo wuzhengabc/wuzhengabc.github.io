@@ -33,7 +33,6 @@ pre {
     font-size: 15px;
     font-weight: 700;
     padding: 8px 12px;
-    background: #171717;
     background: #eee;
     border-radius: 4px;
     line-height: 18px;
@@ -53,7 +52,7 @@ pre {
 }
 
 #link-tooltip .tooltip-content {
-    color: #171717;
+    color: #000;
     font-size: 13px;
     font-weight: 100;
     white-space: nowrap;
