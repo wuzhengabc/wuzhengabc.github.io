@@ -587,12 +587,14 @@
 .title {    
     height:30px;
     padding-left: 20px;
+    padding-right: 30px;
     padding-top: 6px;
     font-size: 17px;
     overflow: hidden;
     line-height: 1.5em;
     color: #0381bb;
 }
+
 .title:hover {    
     color: #ff0000;
 }
@@ -619,7 +621,7 @@
     border-bottom:0px dashed rgba(0, 0, 0, 0.61);
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
-    margin:5px 10px 0 129px;
+    margin:5px 35px 0 129px;
     padding:5px 0px 5px 0;
 }
 
@@ -642,11 +644,11 @@
     border-radius: 3px;
 }
 .desc {
-    padding: 4px 0px 0px 0px;
+    padding: 4px 30px 0px 0px;
     color: #111;
     float: left;
     line-height: 2em;
-    width:95%;
+    width:100%;
     font-size: 14px;
 }
 
@@ -661,10 +663,8 @@
 
     .list .img {
         width: 19.4%;
-        margin: 0 0%;
         float: left;
         font-size: 0;
-        text-align: center;
         overflow: hidden;
     }
 
@@ -672,10 +672,6 @@
             max-width: 100%;          
             cursor: pointer;
             transition: all 0.8s;
-            border-top-left-radius: 3px;
-            border-top-right-radius: 3px;
-            border-bottom-right-radius: 0px;
-            border-bottom-right-radius: 0px;
         }
 
         .list .img img:hover {
@@ -686,7 +682,8 @@
     .list .block {
         float: right;
         width: 77%;
-        margin-right: 0%;
+        overflow: hidden;
+        height: 90%;
     }
 
         .list .block p {
@@ -698,7 +695,7 @@
         float: left;
         overflow: hidden;
         transition: all 0.4s;
-        background-color: rgb(255,255,255);
+        background-color: rgb(245,245,245);
     }
     .list .list-item:hover{
         height: 170px;
@@ -849,9 +846,10 @@
         .jplist-grid-view .list-item .block .title {
             line-height: 1.8em;
             font-size: 0.9em;
-            height: 70px;
+            height: 59px;
             color: #000;
-            padding: 10px 12px 18px 12px;
+            padding: 10px 12px 0px 12px;
+            margin: 0px 0px 10px 0px;
         }
         .jplist-grid-view .list-item .block .title:hover {
             color: #1c8bbe;
@@ -1153,8 +1151,8 @@
         .jplist-thumbs-view .list-item .block .title {
             line-height: 1.9em;
             font-size: 1.1em;
-            padding: 10px 20px 10px 20px;
-            height: 120px;
+            padding: 10px 20px 20px 20px;
+            height: 110px;
             overflow: hidden;
             color: #000;
             text-align: left;
