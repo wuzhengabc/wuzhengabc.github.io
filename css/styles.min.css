@@ -18,10 +18,10 @@ pre {
         overflow: hidden;
     }
 
-         .card-heading:hover {
-            color: #38B7EA;
-            text-decoration: none;
-        }
+    .card-heading:hover {
+        color: #38B7EA;
+        text-decoration: none;
+    }
 
 #link-tooltip {
     position: absolute;
