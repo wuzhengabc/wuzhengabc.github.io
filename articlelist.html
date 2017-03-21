@@ -46,6 +46,7 @@
                 //save plugin state
                 , storage: 'localstorage' //'', 'cookies', 'localstorage'
                 , storageName: 'views'
+                ,effect: 'fade'
             });
         });
     </script>
@@ -209,6 +210,98 @@
                         </div>
 
                     </div>
+                    <div class="jplist-panel box panel-top" >
+                    <!-- radio buttons filters -->
+                            <div class="jplist-group">
+                                
+                                <input 
+                                    data-control-type="radio-buttons-filters"
+                                    data-control-action="filter"
+                                    data-control-name="default" 
+                                    data-path="default" 
+                                    
+                                    id="default-radio" 
+                                    type="radio" 
+                                    name="jplist"
+                                    checked="checked"
+                                    class="radiobutton"
+                                /> 
+                                    
+                                <label for="default-radio">全部分类</label>
+                                
+                                <input                                  
+                                    data-control-type="radio-buttons-filters"
+                                    data-control-action="filter"
+                                    data-control-name="Unity3D" 
+                                    data-path=".Unity3D" 
+                                    
+                                    id="Unity3D" 
+                                    type="radio" 
+                                    name="jplist"
+                                    class="radiobutton"
+                                /> 
+                                    
+                                <label for="Unity3D">Unity3D</label>
+                                
+                                <input 
+                                    data-control-type="radio-buttons-filters"
+                                    data-control-action="filter"
+                                    data-control-name="christmas" 
+                                    data-path=".christmas"                                  
+                                    
+                                    id="christmas" 
+                                    type="radio"
+                                    name="jplist"
+                                    class="radiobutton"
+                                /> 
+                                    
+                                <label for="christmas">Christmas</label>
+                                
+                                <input 
+                                    data-control-type="radio-buttons-filters"
+                                    data-control-action="filter"
+                                    data-control-name="nature" 
+                                    data-path=".nature" 
+                                    
+                                    id="nature" 
+                                    type="radio" 
+                                    name="jplist"
+                                    class="radiobutton"
+                                /> 
+                                
+                                <label for="nature">Nature</label>
+                                
+                                <input 
+                                    data-control-type="radio-buttons-filters"
+                                    data-control-action="filter"
+                                    data-control-name="sea" 
+                                    data-path=".sea" 
+                                    
+                                    id="sea" 
+                                    type="radio"
+                                    name="jplist"
+                                    class="radiobutton"
+                                /> 
+                                
+                                <label for="sea">Sea</label>
+                                
+                                <input 
+                                    data-control-type="radio-buttons-filters"
+                                    data-control-action="filter"
+                                    data-control-name="lifestyle" 
+                                    data-path=".lifestyle" 
+                                    
+                                    id="lifestyle" 
+                                    type="radio" 
+                                    name="jplist"
+                                    checked="checked"
+                                    class="radiobutton"
+                                /> 
+                                
+                                <label for="lifestyle">Lifestyle</label>
+                                
+                            </div>
+                            </div>
 
                     <!-- data -->
                     <div class="list box">
@@ -222,16 +315,16 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2019-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
-                                        <li><a ><small class="posts"> </small><span>标签</span></a></li>
+                                        <li><a ><small class="posts"> </small><span class="Unity3D">Unity3D</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
                                     </ul>
                                 </div>
@@ -249,14 +342,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">大家好</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -276,14 +369,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">我叫吴争</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -303,14 +396,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -330,14 +423,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">啦啦啦</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -357,14 +450,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -384,14 +477,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -411,14 +504,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -438,14 +531,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -465,14 +558,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -492,14 +585,14 @@
                             <!-- data -->
                             <div class="block right">
 
-                                <p class="date">01/15/2015</p>
+                                <p class="smalldate">01/15/2015</p>
                                 <a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
                                     <p class="title">测试回复测试回复测试回复测试回复测试回复测试回复</p>
                                 </a>
 
                                 <div class="artical-links tag " >
                                     <ul>
-                                        <li><a ><small> </small><span>2017-01-18</span></a></li>
+                                        <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
                                         <li><a><small class="admin"> </small><span>吴争</span></a></li>
                                         <li><a ><small class="posts"> </small><span>标签</span></a></li>
                                         <li><a ><small class="no"> </small><span>其他</span></a></li>
@@ -509,8 +602,6 @@
                                 <!--<p class="like">25 Likes</p>-->
                             </div>
                         </div>
-
-
 
                         
                     </div>
