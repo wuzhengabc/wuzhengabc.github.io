@@ -3534,12 +3534,12 @@
     text-align: left;
     font-size: 14px;
     line-height: 1.6;
-    padding: 0px;
+    padding: 0p35
     overflow: auto;
     width: 100%;
     background-color: rgba(255,255,255,0);
-    min-height:250px;
-    max-height:500px; 
+    min-height:36px;
+    max-height:515px; 
     border-radius:5px;
     border-top:1px solid #bbb;
     border-left:1px solid #bbb;
