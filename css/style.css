@@ -995,7 +995,7 @@ p.message-para {
 /*-- footer --*/
 .footer {
     background-color: rgba(66,66,66,1);
-    padding-bottom: 0em;
+    padding-bottom: 1em;
     padding-top: 1em;
 }
 
