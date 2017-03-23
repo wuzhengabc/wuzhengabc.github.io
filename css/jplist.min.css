@@ -125,7 +125,7 @@
 
     .jplist-panel .jplist-group {
         height: 35px;
-        margin: 35px 0px 0 0;
+        margin: 20px 0px 0 0;
         padding: 0 0 0 0px;
     }
 
@@ -133,6 +133,7 @@
             height: 40px;
             line-height: 40px;
             color: #279f7c;
+            margin-top: 15px;
             margin-right: 50px;
             background-color: rgba(240,240,240,1);
             width: 110px;

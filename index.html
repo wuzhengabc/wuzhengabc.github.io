@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>吴争个人博客 - 一个追逐梦想的人</title>    
-    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
@@ -72,7 +72,7 @@
                     <ul>
                         <li><a href="index.html">首页</a></li>
                         <li><a href="index.html">最新</a></li>
-                        <li><a href="index.html">项目</a></li>
+                        <li><a href="project.html">项目</a></li>
                         <li><a href="index.html">成长</a></li>
                         <li><a href="articlelist.html">学无止境</a></li>
                         <li><a href="contact.html">关于我</a></li>
@@ -90,7 +90,10 @@
             <div class="clearfix"> </div>
         </div>
     </div>
+<div id="main-content">
+<!--主内容开始-->
 
+    <!---->   
     <div class="container" id="toptop">
         <div class="banner">
             <div class="banner-matter">
@@ -103,10 +106,8 @@
             <div class="clearfix"> </div>
         </div>
     </div>
-    <!---->
 
-        
-
+    <!----> 
     <div class="container">
         <div class="works" id="portfolio">
             <div class=" port-top">
@@ -275,85 +276,11 @@
             <!-- Gallery Script Ends -->
         </div>
     </div>
-    <!---->
-    <div class="container">
-        <div class="service" id="services">
-            <div class=" service-top">
-                <h3 class="ser">项目</h3>
-                <p class="sed">这里是一大段介绍</p>
-                <div class="clearfix"> </div>
-            </div>
-            <div class=" services-grid">
-                <div class="col-md-4 service-grid">
-                    <a href="SDAU_Web/sdau.html"><img class="img-responsive" src="images/s1.png" alt=" "></a>
-                    <h5>山东农业大学三维虚拟漫游系统</h5>
-                    <p>这里是项目一的介绍</p>
-                </div>
-                <div class="col-md-4 service-grid">
-                    <a href="single.html"><img class="img-responsive" src="images/s2.png" alt=" "></a>
-                    <h5>项目二</h5>
-                    <p>这里是项目二的介绍</p>
-                </div>
-                <div class="col-md-4 service-grid">
-                    <a href="single.html"><img class="img-responsive" src="images/s3.png" alt=" "></a>
-                    <h5>项目三</h5>
-                    <p>这里是项目三的介绍</p>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
-    <!---->
-    <div class="container">
-        <div class="meet" id="meet">
-            <div class=" team-top">
-                <h3 class="team">其他</h3>
-                <p class="sit">这里是一大段介绍</p>
-                <div class="clearfix"> </div>
-            </div>
-            <div class=" team-grid">
-                <div class="col-md-4 grid-team">
-                    <a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-                    <h4>吴争</h4>
-                    <h5>筑梦者</h5>
-                    <p>啦啦啦啦啦啦啦啦啦阿拉拉啦啦啦</p>
-                    <ul class="social-in">
-                        <li><a href="#"><i> </i></a></li>
-                        <li><a href="#"><i class="thumblr"> </i></a></li>
-                        <li><a href="#"><i class="pin"> </i></a></li>
 
-                    </ul>
-                </div>
-                <div class="col-md-4  grid-team">
-                    <a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-                    <h4>吴争</h4>
-                    <h5>筑梦者</h5>
-                    <p>啦啦啦啦啦啦啦啦啦阿拉拉啦啦啦</p>
-                    <ul class="social-in">
-                        <li><a href="#"><i> </i></a></li>
-                        <li><a href="#"><i class="thumblr"> </i></a></li>
-                        <li><a href="#"><i class="pin"> </i></a></li>
-
-                    </ul>
-                </div>
-                <div class="col-md-4  grid-team">
-                    <a href="single.html"><img class="img-responsive" src="images/me.png" alt=" "></a>
-                    <h4>吴争</h4>
-                    <h5>筑梦者</h5>
-                    <p>啦啦啦啦啦啦啦啦啦阿拉拉啦啦啦</p>
-                    <ul class="social-in">
-                        <li><a href="#"><i> </i></a></li>
-                        <li><a href="#"><i class="thumblr"> </i></a></li>
-                        <li><a href="#"><i class="pin"> </i></a></li>
-
-                    </ul>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-    </div>
+<!--主内容结束-->        
+</div>
     <!---->
-    <div class="footer">
+    <div class="footer" id="thefooter">
         <div class="container">
             <div class="footer-top">
                 <h2 style="color:#fff;text-align: right;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
@@ -366,11 +293,14 @@
         <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
     </div>
     <script type="text/javascript">
-        $(document).ready(function () {
+        window.onresize = function(){ 
+            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+        }
+        $(document).ready(function () {  
+            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+            $().UItoTop({ easingType: 'easeOutQuart' });
 
-           $().UItoTop({ easingType: 'easeOutQuart' });
-
-      });
+        });
     </script>
 </body>
 </html>

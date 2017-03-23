@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
     <meta name="description" content="一个热爱学习的程序员个人网站，研究生在读学生" />
-    <link rel="shortcut icon" type="image/x-icon" href="images/home.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -46,7 +46,7 @@
                     <ul>
                         <li><a href="index.html">首页</a></li>
                         <li><a href="index.html">最新</a></li>
-                        <li><a href="index.html">项目</a></li>
+                        <li><a href="project.html">项目</a></li>
                         <li><a href="index.html">成长</a></li>
                         <li><a href="articlelist.html">学无止境</a></li>
                         <li><a href="contact.html">关于我</a></li>
@@ -65,7 +65,7 @@
         </div>
     </div>
     <!---->
-    <div class="container">
+    <div class="container" id="main-content">
         <div class="contact-page">
         <!--
             <div class=" map">
@@ -102,7 +102,7 @@
     </div>
 
     <!---->
-    <div class="footer">
+    <div class="footer" id="thefooter">
         <div class="container">
             <div class="footer-top">
                 <h2 style="color:#fff;text-align: right;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
@@ -115,8 +115,13 @@
         <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
     </div>
     <script type="text/javascript">
-        $(document).ready(function () {
-
+    window.onresize = function(){ 
+            //$("#main-content").height($(window).height() - $("#thefooter").height() - $("#home").height() - 35);
+            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+}
+        $(document).ready(function () {  
+            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+            //$("#main-content").height($(window).height() - $("#thefooter").height() - $("#home").height() - 35);
            $().UItoTop({ easingType: 'easeOutQuart' });
 
       });
