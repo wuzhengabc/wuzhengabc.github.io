@@ -48,6 +48,7 @@
                 //save plugin state
                 , storage: 'localstorage' //'', 'cookies', 'localstorage'
                 , storageName: 'views'
+                , effect: 'fade'
             }); 
 		});
 	</script>
@@ -137,13 +138,9 @@
 				<li><span data-path="default" data-default="true">默认排序</span></li>
 				<li><span data-path=".title" data-order="asc" data-type="text">标题升序</span></li>
 				<li><span data-path=".title" data-order="desc" data-type="text">标题降序</span></li>
-				<li><span data-path=".desc" data-order="asc" data-type="text">内容升序</span></li>
-				<li><span data-path=".desc" data-order="desc" data-type="text">内容降序</span></li>
-                                <!--<li><span data-path=".like" data-order="asc" data-type="number">阅读量升序</span></li>
-                                <li><span data-path=".like" data-order="desc" data-type="number">阅读量降序</span></li>-->
-                                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
-                                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
-                            </ul>
+                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
+                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
+            </ul>
                         </div>
 
                         <!-- filter by title -->
@@ -183,18 +180,15 @@
                         </div>
 
 	                    <!-- views -->
-	                     <!--
 	                    <div class="jplist-views"
 	                        data-control-type="views"
 	                        data-control-name="views"
 	                        data-control-action="views"
-	                        data-default="jplist-list-view">
+	                        data-default="jplist-grid-view">
 
-	                        <button type="button" class="jplist-view jplist-list-view" data-type="jplist-list-view" title="列表"></button>
 	                        <button type="button" class="jplist-view jplist-grid-view" data-type="jplist-grid-view" title="小图"></button>
 	                        <button type="button" class="jplist-view jplist-thumbs-view" data-type="jplist-thumbs-view" title="大图"></button>
 	                    </div>
-	                    -->
 
                     <!-- pagination results -->
                     <div class="jplist-label"
@@ -255,38 +249,37 @@
         		class="radiobutton"
         		/> 
         		<label for="other">其他</label>
+        		
 
         	</div>
         </div>
 
         <!-- data -->
-        <div class="list box">
+        <div class="list box">       	
 
-        	<!-- item 1 -->
-        	<div class="list-item box">
-        		<!-- img -->
-        		<div class="img left">
-        			<a href="single.html"><img src="images/article/arch-2.jpg" /></a>
-        		</div>
-        		<!-- data -->
-        		<div class="block right">
+            <!-- item 1 -->
+            <div class="list-item box">
+                <!-- img -->
+                <div class="img left">
+                    <a href="single.html"><img src="images/article/arch-2.jpg" /></a>
+                </div>
+                <!-- data -->
+                <div class="block right">
 
-        			<div class="articlelogo"><img src="images/icons/unity.png" width="40px" height="40px"/></div>
-        			<a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
-        				<p class="title">测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复</p>
-        			</a>
+                    <a class="card-heading link-tooltip" title="你好" href="articles/article.html">
+                        <p class="title title2">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</p>
+                    </a>
 
-        			<div class="artical-links tag " >
-        				<ul>
-        					<li><a ><small> </small><span class="date">2019-01-19</span></a></li>
-        					<li><a><small class="admin"> </small><span>吴争</span></a></li>
-        					<li><a ><small class="posts"> </small><span class="unity">Unity3D</span></a></li>
-        				</ul>
-        			</div>
-        			<p class="desc">谁是随时随看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接着就会发射线，并且排序找到玩家最先触发的那个UI，在抛出事件给逻辑层去响应。看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接</p>
-        			<!--<p class="like">25 Likes</p>-->
-        		</div>
-        	</div>
+                    <div class="artical-links tag2" >
+                        <ul>
+                            <li><a ><small> </small><span class="date">2019-01-18</span></a></li>
+                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
+                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+                        </ul>
+                    </div>
+                    <p class="desc"></p>
+                </div>
+            </div>
 
         	<!-- item 2 -->
         	<div class="list-item box">
@@ -297,20 +290,18 @@
         		<!-- data -->
         		<div class="block right">
 
-        			<div class="articlelogo"><img src="images/icons/up.png" width="40px" height="40px"/></div>
-        			<a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
-        				<p class="title">测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回复</p>
+        			<a class="card-heading link-tooltip" title="你好" href="articles/article.html">
+        				<p class="title  title2">你好</p>
         			</a>
 
-        			<div class="artical-links tag " >
+        			<div class="artical-links tag2" >
         				<ul>
-        					<li><a ><small> </small><span class="date">2019-01-18</span></a></li>
+        					<li><a ><small> </small><span class="date">2019-01-19</span></a></li>
         					<li><a><small class="admin"> </small><span>吴争</span></a></li>
         					<li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
         				</ul>
         			</div>
-        			<p class="desc">谁是随时随看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接着就会发射线，并且排序找到玩家最先触发的那个UI，在抛出事件给逻辑层去响应。看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接</p>
-        			<!--<p class="like">25 Likes</p>-->
+        			<p class="desc"></p>
         		</div>
         	</div>
 
@@ -345,17 +336,14 @@
         data-control-name="sort"
         data-control-action="sort"
         data-control-animate-to-top="true">
-        <ul>
-        	<li><span data-path="default">默认排序</span></li>
-        	<li><span data-path=".title" data-order="asc" data-type="text">标题升序</span></li>
-        	<li><span data-path=".title" data-order="desc" data-type="text">标题降序</span></li>
-        	<li><span data-path=".desc" data-order="asc" data-type="text">内容升序</span></li>
-        	<li><span data-path=".desc" data-order="desc" data-type="text">内容降序</span></li>
-                                <!--<li><span data-path=".like" data-order="asc" data-type="number">阅读量升序</span></li>
-                                <li><span data-path=".like" data-order="desc" data-type="number">阅读量降序</span></li>-->
-                                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
-                                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
-                            </ul>
+       
+            <ul>
+                <li><span data-path="default" data-default="true">默认排序</span></li>
+                <li><span data-path=".title" data-order="asc" data-type="text">标题升序</span></li>
+                <li><span data-path=".title" data-order="desc" data-type="text">标题降序</span></li>
+                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
+                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
+            </ul>
                         </div>
 
                         <!-- pagination results -->
