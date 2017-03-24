@@ -1154,7 +1154,7 @@ ul.social {
     float: right;
     color: #fff;
     font-size: 1.1em;
-    padding-top: 0.9em;
+    padding-top: 0.5em;
 }
 
 .footer-bottom {
@@ -1182,7 +1182,7 @@ ul.social {
     height: 73px;
     border: none;
     text-indent: 100%;
-    background: url('../images/up.png') no-repeat 0px 0px;
+    background: url('../images/icons/up.png') no-repeat 0px 0px;
 }
 /*--responsive--*/
 @media(max-width:1440px) {
