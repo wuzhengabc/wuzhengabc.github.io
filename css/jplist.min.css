@@ -730,13 +730,14 @@
     border-bottom:0px dashed rgba(0, 0, 0, 0.61);
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
-    margin:0px 0px 0 8px;
+    margin:0;
     padding:0px 0px 4px 0;
     float: left;
     width: 100%;
 }
 .jplist-grid-view .list-item .block .tag2 li{
-    padding-right: 1px;
+    padding-right: 0px;
+    padding-left: 4px;
 }
 
 .like {
@@ -916,7 +917,6 @@
     width: 17.2%;
     overflow: hidden;
     margin: 15px;
-    transition: all 0.4s;
 }
 
 
@@ -1222,7 +1222,6 @@
     margin: 20px 20px;
     position: relative; 
     border-radius: 3px;
-    transition: all 0.4s;
 }
 
 
