@@ -705,12 +705,10 @@
     margin:3px 35px 0 77px;
     padding:4px 0px 4px 0;
 }
-
 .jplist-thumbs-view .list-item .block .tag2 {
     height: 35px;
     font-size: 12px;
     overflow: hidden;
-    color: #0381bb;
     border-top:1px dashed rgba(0, 0, 0, 0.61);
     border-bottom:0px dashed rgba(0, 0, 0, 0.61);
     border-left:0px dashed rgba(0, 0, 0, 0.61);
@@ -723,22 +721,32 @@
 
 .jplist-grid-view .list-item .block .tag2 {
     height: 35px;
-    font-size: 9px;
+    font-size: 11px;
     overflow: hidden;
-    color: #0381bb;
     border-top:1px dashed rgba(0, 0, 0, 0.61);
     border-bottom:0px dashed rgba(0, 0, 0, 0.61);
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
-    margin:0;
-    padding:0px 0px 4px 0;
+    margin: 10px 0 0 5px;
+    padding:5px 0px 5px 0;
     float: left;
     width: 100%;
 }
 .jplist-grid-view .list-item .block .tag2 li{
     padding-right: 0px;
-    padding-left: 4px;
+    padding-left: 0px;
 }
+
+.jplist-grid-view .list-item .block .tag2 ul li a{
+    color: #777777
+}
+
+.jplist-grid-view .list-item .block .tag2 ul li small {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            padding: 2px;
+        }
 
 .like {
     color: #440e00;
@@ -777,21 +785,29 @@
 }
 
     .list .img {
-        width: 19.4%;
+        width: 200px;
+        height:  150px;
         float: left;
+        vertical-align: middle;
+        text-align: center;
         font-size: 0;
         overflow: hidden;
+        margin: 10px 0px 10px 10px;
     }
 
         .list .img img {
             max-width: 100%;          
             cursor: pointer;
             transition: all 0.8s;
+        vertical-align: middle;
+        text-align: center;
         }
 
         .list .img img:hover {
              transform: scale(1.1);
             -webkit-transform :scale(1.1);
+        vertical-align: middle;
+        text-align: center;
         }
 
     .list .block {
@@ -914,31 +930,28 @@
 
 .jplist-grid-view .list-item {
     height: 25%;
-    width: 17.2%;
+    width: 18.5%;
     overflow: hidden;
-    margin: 15px;
+    margin: 15px 15px 15px 0px;
+    text-align: center;
 }
 
 
 .jplist-grid-view .list-item:hover {
     height: 25%;
-    width: 17.2%;
+    width: 18.5%;
     overflow: hidden;
-    margin: 15px;
+     margin: 15px 15px 15px 0px;
     -webkit-box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);
     -moz-box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);
     box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);
 }
 
     .jplist-grid-view .list-item .img {
-        width: 100%;
-        text-align: center;
-        margin: 0;
+        width: 90%;
+        height: 85%;
+        margin: 11px;
         overflow: hidden;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 0px;
-        border-bottom-right-radius: 0px;
     }
 
     .jplist-grid-view .list-item .desc {
@@ -962,10 +975,10 @@
         .jplist-grid-view .list-item .block .title {
             line-height: 1.8em;
             font-size: 0.85em;
-            height: 59px;
+            height: 48px;
             color: #000;
-            padding: 10px 12px 0px 12px;
-            margin: 0px 0px 10px 0px;
+            padding: 0px 12px 0px 12px;
+            margin: 0px 0px 0px 0px;
             text-align: left;
         }
         .jplist-grid-view .list-item .block .title:hover {
@@ -1217,9 +1230,9 @@
 
 .jplist-thumbs-view .list-item {
     height: 35%;
-    width: 29.5%;
+    width: 30.6%;
     overflow: hidden;
-    margin: 20px 20px;
+    margin: 15px 30px 15px 0px;
     position: relative; 
     border-radius: 3px;
 }
@@ -1227,9 +1240,9 @@
 
 .jplist-thumbs-view .list-item:hover {
     height: 35%;
-    width: 29.5%;
+    width: 30.6%;
     overflow: hidden;
-    margin: 20px 20px;
+    margin: 15px 30px 15px 0px;
     position: relative; 
     border-radius: 3px;
     -webkit-box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);

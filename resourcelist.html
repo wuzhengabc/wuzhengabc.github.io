@@ -1,44 +1,44 @@
 ﻿<!doctype html>
 <html>
 <head>
-	<title>吴争个人博客 - 文章列表</title>
-	<link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script src="js/main.js"></script>
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
-	<meta name="description" content="一个热爱学习的程序员个人网站，研究生在读学生" />
-	<script type="application/x-javascript"> 
-		addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
-	</script>
+    <title>吴争个人博客 - 文章列表</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
+    <meta name="description" content="一个热爱学习的程序员个人网站，研究生在读学生" />
+    <script type="application/x-javascript"> 
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+    </script>
 
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<link href="css/style1.css" rel="stylesheet">
-	<link href="css/animations.css" rel="stylesheet">
-	<script type="text/javascript" src="js/modernizr.js"></script>
-	<script type="text/javascript" src="js/template.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
 
-	<link href="css/font-awesome.css" rel="stylesheet" />
-	<link rel="stylesheet" href="css/styles.min.css" />
-	<link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
-	<script src="js/modernizr.min.js"></script>
-	<script src="js/jplist.min.js"></script>
-	<script>
-		$('document').ready(function () {
-			$('#demo').jplist({
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/jplist.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('#demo').jplist({
 
                 //main options
                 itemsBox: '.list'
@@ -48,18 +48,18 @@
                 //save plugin state
                 , storage: 'localstorage' //'', 'cookies', 'localstorage'
                 , storageName: 'views'
-                , effect: 'fade'
             }); 
-		});
-	</script>
-</head>
+        });
+    </script>
+        
+    </head>
 <body class="bodycolor">
 	<script type="text/javascript" src="js/bgeffect.js"></script>
 	<!--header fixed clearfix 标题栏始终在顶部-->
     <div class="header" id="home" style="line-height: 1.50">
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html"><img src="images/logo.png" alt="" width="300px" height="75px"></a></h1>
+                <h1><a href="index.html"><img src="images/icons/logo.png" alt="" width="300px" height="75px"></a></h1>
             </div>
             <div class="header-bottom">
                 <div class="top-nav">
@@ -67,7 +67,7 @@
                     <ul>
                         <li><a href="index.html">首页</a></li>
                         <li><a href="resourcelist.html">资源</a></li>
-                        <li><a href="project.html">项目</a></li>
+                        <li><a href="projectlist.html">项目</a></li>
                         <li><a href="articlelist.html">学无止境</a></li>
                         <li><a href="contact.html">关于我</a></li>
                     </ul>
@@ -162,15 +162,14 @@
                         </div>
 
 	                    <!-- views -->
+	                    
 	                    <div class="jplist-views"
 	                        data-control-type="views"
 	                        data-control-name="views"
 	                        data-control-action="views"
 	                        data-default="jplist-grid-view">
-
-	                        <button type="button" class="jplist-view jplist-grid-view" data-type="jplist-grid-view" title="小图"></button>
-	                        <button type="button" class="jplist-view jplist-thumbs-view" data-type="jplist-thumbs-view" title="大图"></button>
 	                    </div>
+
 
                     <!-- pagination results -->
                     <div class="jplist-label"
@@ -230,8 +229,7 @@
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label for="other">其他</label>
-        		
+        		<label for="other">其他</label>        		
 
         	</div>
         </div>
@@ -243,12 +241,12 @@
             <div class="list-item box">
                 <!-- img -->
                 <div class="img left">
-                    <a href="single.html"><img src="images/article/arch-2.jpg" /></a>
+                    <a href="resources/resource.html"><img src="images/resource/arch-2.jpg" /></a>
                 </div>
                 <!-- data -->
                 <div class="block right">
 
-                    <a class="card-heading link-tooltip" title="你好" href="articles/article.html">
+                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
                         <p class="title title2">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</p>
                     </a>
 
@@ -267,12 +265,12 @@
         	<div class="list-item box">
         		<!-- img -->
         		<div class="img left">
-        			<a href="single.html"><img src="images/article/arch-2.jpg" /></a>
+        			<a href="resources/resource.html"><img src="images/resource/arch-2.jpg" /></a>
         		</div>
         		<!-- data -->
         		<div class="block right">
 
-        			<a class="card-heading link-tooltip" title="你好" href="articles/article.html">
+        			<a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
         				<p class="title  title2">你好</p>
         			</a>
 
@@ -286,6 +284,78 @@
         			<p class="desc"></p>
         		</div>
         	</div>
+
+            <!-- item 2 -->
+            <div class="list-item box">
+                <!-- img -->
+                <div class="img left">
+                    <a href="resources/resource.html"><img src="images/resource/arch-2.jpg" /></a>
+                </div>
+                <!-- data -->
+                <div class="block right">
+
+                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
+                        <p class="title  title2">你好</p>
+                    </a>
+
+                    <div class="artical-links tag2" >
+                        <ul>
+                            <li><a ><small> </small><span class="date">2019-01-19</span></a></li>
+                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
+                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+                        </ul>
+                    </div>
+                    <p class="desc"></p>
+                </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="list-item box">
+                <!-- img -->
+                <div class="img left">
+                    <a href="resources/resource.html"><img src="images/resource/arch-2.jpg" /></a>
+                </div>
+                <!-- data -->
+                <div class="block right">
+
+                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
+                        <p class="title  title2">你好</p>
+                    </a>
+
+                    <div class="artical-links tag2" >
+                        <ul>
+                            <li><a ><small> </small><span class="date">2019-01-19</span></a></li>
+                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
+                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+                        </ul>
+                    </div>
+                    <p class="desc"></p>
+                </div>
+            </div>
+
+            <!-- item 2 -->
+            <div class="list-item box">
+                <!-- img -->
+                <div class="img left">
+                    <a href="resources/resource.html"><img src="images/resource/arch-2.jpg" /></a>
+                </div>
+                <!-- data -->
+                <div class="block right">
+
+                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
+                        <p class="title  title2">你好</p>
+                    </a>
+
+                    <div class="artical-links tag2" >
+                        <ul>
+                            <li><a ><small> </small><span class="date">2019-01-19</span></a></li>
+                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
+                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+                        </ul>
+                    </div>
+                    <p class="desc"></p>
+                </div>
+            </div>
 
         </div>
 
