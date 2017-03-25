@@ -135,7 +135,7 @@
             color: #279f7c;
             margin-top: 15px;
             margin-right: 50px;
-            background-color: rgba(240,240,240,1);
+            background-color: rgba(255,255,255,1);
             width: 110px;
             text-align: center;
             vertical-align: middle;
@@ -827,7 +827,7 @@
         float: left;
         overflow: hidden;
         transition: all 0.4s;
-        background-color: rgb(245,245,245);
+        background-color: rgb(255,255,255);
     }
     .list .list-item:hover{
         height: 170px;
