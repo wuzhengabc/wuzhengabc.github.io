@@ -439,7 +439,9 @@
 		window.onresize = function(){ 
 			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
 		}
-		$(document).ready(function () {  
+		$(document).ready(function () { 
+            document.getElementById("unity").click(); 
+            document.getElementById("default-radio").click(); 
 			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
 			$().UItoTop({ easingType: 'easeOutQuart' });
 

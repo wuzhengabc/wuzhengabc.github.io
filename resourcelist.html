@@ -254,7 +254,7 @@
                 data-control-action="filter"
                 data-control-name="sourcecode" 
                 data-path=".sourcecode" 
-
+        		
                 id="sourcecode" 
                 type="radio" 
                 name="jplist"
@@ -448,6 +448,8 @@
 			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
 		}
 		$(document).ready(function () {  
+            document.getElementById("model").click();
+			document.getElementById("default-radio").click();
 			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
