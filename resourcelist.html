@@ -168,6 +168,11 @@
 	                        data-control-name="views"
 	                        data-control-action="views"
 	                        data-default="jplist-grid-view">
+                            <!--
+                            <button type="button" class="jplist-view jplist-list-view" data-type="jplist-list-view" title="列表"></button>
+                            <button type="button" class="jplist-view jplist-grid-view" data-type="jplist-grid-view" title="小图"></button>
+                            <button type="button" class="jplist-view jplist-thumbs-view" data-type="jplist-thumbs-view" title="大图"></button>
+                            -->
 	                    </div>
 
 
@@ -208,35 +213,62 @@
         		<input                                  
         		data-control-type="radio-buttons-filters"
         		data-control-action="filter"
-        		data-control-name="unity" 
-        		data-path=".unity" 
+        		data-control-name="model" 
+        		data-path=".model" 
 
-        		id="unity" 
+        		id="model" 
         		type="radio" 
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label for="unity">Unity3D</label>
+        		<label for="model">模型</label>
 
         		<input                                  
         		data-control-type="radio-buttons-filters"
         		data-control-action="filter"
-        		data-control-name="other" 
-        		data-path=".other" 
+        		data-control-name="texture" 
+        		data-path=".texture" 
 
-        		id="other" 
+        		id="texture" 
         		type="radio" 
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label for="other">其他</label>        		
+        		<label for="texture">贴图</label> 
+
+                <input                                  
+                data-control-type="radio-buttons-filters"
+                data-control-action="filter"
+                data-control-name="plugin" 
+                data-path=".plugin" 
+
+                id="plugin" 
+                type="radio" 
+                name="jplist"
+                class="radiobutton"
+                /> 
+                <label for="plugin">插件</label>  
+
+                <input                                  
+                data-control-type="radio-buttons-filters"
+                data-control-action="filter"
+                data-control-name="sourcecode" 
+                data-path=".sourcecode" 
+
+                id="sourcecode" 
+                type="radio" 
+                name="jplist"
+                class="radiobutton"
+                /> 
+                <label for="sourcecode">源码</label>         		
 
         	</div>
         </div>
 
         <!-- data -->
-        <div class="list box">       	
-
+        <div class="list box">   
+        <!--数据开始-->
+        
             <!-- item 1 -->
             <div class="list-item box">
                 <!-- img -->
@@ -246,15 +278,15 @@
                 <!-- data -->
                 <div class="block right">
 
-                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
-                        <p class="title title2">你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好你好</p>
+                    <a class="card-heading link-tooltip" title="贴图" href="resources/resource.html">
+                        <p class="title title2">贴图</p>
                     </a>
 
                     <div class="artical-links tag2" >
                         <ul>
                             <li><a ><small> </small><span class="date">2019-01-18</span></a></li>
-                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
-                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+        					<!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
+                            <li><a ><small class="posts"> </small><span class="texture">贴图</span></a></li>
                         </ul>
                     </div>
                     <p class="desc"></p>
@@ -270,15 +302,15 @@
         		<!-- data -->
         		<div class="block right">
 
-        			<a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
-        				<p class="title  title2">你好</p>
+        			<a class="card-heading link-tooltip" title="模型" href="resources/resource.html">
+        				<p class="title  title2">模型</p>
         			</a>
 
         			<div class="artical-links tag2" >
         				<ul>
         					<li><a ><small> </small><span class="date">2019-01-19</span></a></li>
-        					<li><a><small class="admin"> </small><span>吴争</span></a></li>
-        					<li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+        					<!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
+        					<li><a ><small class="posts"> </small><span class="model">模型</span></a></li>
         				</ul>
         			</div>
         			<p class="desc"></p>
@@ -294,15 +326,15 @@
                 <!-- data -->
                 <div class="block right">
 
-                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
-                        <p class="title  title2">你好</p>
+                    <a class="card-heading link-tooltip" title="插件" href="resources/resource.html">
+                        <p class="title  title2">插件</p>
                     </a>
 
                     <div class="artical-links tag2" >
                         <ul>
                             <li><a ><small> </small><span class="date">2019-01-19</span></a></li>
-                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
-                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+                            <!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
+                            <li><a ><small class="posts"> </small><span class="plugin">插件</span></a></li>
                         </ul>
                     </div>
                     <p class="desc"></p>
@@ -318,47 +350,24 @@
                 <!-- data -->
                 <div class="block right">
 
-                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
-                        <p class="title  title2">你好</p>
+                    <a class="card-heading link-tooltip" title="源码" href="resources/resource.html">
+                        <p class="title  title2">源码</p>
                     </a>
 
                     <div class="artical-links tag2" >
                         <ul>
                             <li><a ><small> </small><span class="date">2019-01-19</span></a></li>
-                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
-                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
+                            <!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
+                            <li><a ><small class="posts"> </small><span class="sourcecode">源码</span></a></li>
                         </ul>
                     </div>
                     <p class="desc"></p>
                 </div>
             </div>
-
-            <!-- item 2 -->
-            <div class="list-item box">
-                <!-- img -->
-                <div class="img left">
-                    <a href="resources/resource.html"><img src="images/resource/arch-2.jpg" /></a>
-                </div>
-                <!-- data -->
-                <div class="block right">
-
-                    <a class="card-heading link-tooltip" title="你好" href="resources/resource.html">
-                        <p class="title  title2">你好</p>
-                    </a>
-
-                    <div class="artical-links tag2" >
-                        <ul>
-                            <li><a ><small> </small><span class="date">2019-01-19</span></a></li>
-                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
-                            <li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
-                        </ul>
-                    </div>
-                    <p class="desc"></p>
-                </div>
-            </div>
-
+         
+        <!--数据结束-->
         </div>
-
+        
         <!-- ios button: show/hide panel -->
         <div class="jplist-ios-button">
         	<i class="fa fa-sort"></i>
@@ -442,9 +451,19 @@
 			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
+  			var tag2 = document.getElementsByClassName("artical-links");
+			var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+			for (i = 0; i < tag2.length; i++) {
+                if (userAgent.indexOf("Chrome") > -1){
+					
+ 				}
+ 				else
+ 				{
+ 					tag2[i].style.fontSize = '11px';
+ 				}
+            }
 		});
 	</script>
-
 </footer>
 </body>
 </html>

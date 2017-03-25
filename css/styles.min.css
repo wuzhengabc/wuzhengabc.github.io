@@ -28,7 +28,7 @@ pre {
     z-index: 100;
     top: 200px;
     left: 300px;
-    min-width: 80px;
+    min-width: 50px;
     width: auto;
     font-size: 15px;
     font-weight: 700;
@@ -38,6 +38,8 @@ pre {
     line-height: 18px;
     color: #A1A7B7;
     display: none;
+    text-align: center;
+    font-family: "微软雅黑","Microsoft YaHei", sans-serif;
 }
 
 @media screen and (max-width: 767px) {
