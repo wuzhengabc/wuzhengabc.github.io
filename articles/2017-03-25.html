@@ -40,48 +40,6 @@
         		$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
         	});
         });
-
-        function getResponsCount() {
-        	var arr = document.getElementsByClassName("top-comment-right");
-        	var num = arr.length;
-        	var h = document.getElementById("responsnum");
-        	h.innerText = num + "个回复";
-        }
-
-        function getNowFormatDate() {
-        	var date = new Date();
-        	var seperator1 = "-";
-        	var seperator2 = ":";
-        	var month = date.getMonth() + 1;
-        	var strDate = date.getDate();
-        	if (month >= 1 && month <= 9) {
-        		month = "0" + month;
-        	}
-        	if (strDate >= 0 && strDate <= 9) {
-        		strDate = "0" + strDate;
-        	}
-        	var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
-        	+ " " + date.getHours() + seperator2 + date.getMinutes()
-        	+ seperator2 + date.getSeconds();
-        	return currentdate;
-        }
-
-        function test(name, email, content) {
-            //对电子邮件的验证
-            var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
-            if (!myreg.test(email) || name == "" || content == "") {
-            	return false;
-            }
-            else
-            	return true;
-        }
-        function CreatReply(name, email, content) {
-        	if (test(name, email, content)) {
-        		var text = $("<div class=\"comments-top-top top-grid-comment\"><div class=\"top-comment-left\"><img class=\"img-responsive\" src=\"images/co.png\"></div><div class=\"top-comment-right\"><ul><li><span class=\"left-at replyname\">" + name + "</span></li><li><span class=\"right-at\">" + getNowFormatDate() + "</span></li><li></li></ul><p>" + content + "</p></div><div class=\"clearfix\"> </div></div>").appendTo($("#replylist"));
-
-        		getResponsCount();
-        	}
-        }
     </script>
 </head>
 <body class="bodycolor">
@@ -137,7 +95,7 @@
 				<p><span style="font-size:20px">我是一大段文字</span></p>
 
 				<div class="markdown-body editormd-preview-container" previewcontainer="true" ><pre class="prettyprint linenums prettyprinted"><ol class="linenums"><li class="L0"><code class="lang-csharp"><span class="kwd">public</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> </span><span class="typ">CalculateRoute</span><span class="pun">(</span><span class="kwd">bool</span><span class="pln"> needArrive</span><span class="pun">)</span></code></li><li class="L1"><code class="lang-csharp"><span class="pln">    </span><span class="pun">{</span></code></li><li class="L2"><code class="lang-csharp"><span class="pln">        </span><span class="kwd">for</span><span class="pln"> </span><span class="pun">(</span><span class="kwd">int</span><span class="pln"> i </span><span class="pun">=</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> i </span><span class="pun">&lt;</span><span class="pln"> toggleGroup</span><span class="pun">.</span><span class="typ">Length</span><span class="pun">;</span><span class="pln"> i</span><span class="pun">++)</span></code></li><li class="L3"><code class="lang-csharp"><span class="pln">        </span><span class="pun">{</span></code></li><li class="L4"><code class="lang-csharp"><span class="pln">            </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">toggleGroup</span><span class="pun">[</span><span class="pln">i</span><span class="pun">].</span><span class="pln">isOn</span><span class="pun">)</span></code></li><li class="L5"><code class="lang-csharp"><span class="pln">            </span><span class="pun">{</span></code></li><li class="L6"><code class="lang-csharp"><span class="pln">                </span><span class="typ">AIController</span><span class="pun">.</span><span class="typ">GetInstance</span><span class="pun">().</span><span class="pln">isArrive </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">;</span></code></li><li class="L7"><code class="lang-csharp"><span class="pln">                targetName </span><span class="pun">=</span><span class="pln"> toggleGroup</span><span class="pun">[</span><span class="pln">i</span><span class="pun">].</span><span class="typ">GetComponentInChildren</span><span class="pun">&lt;</span><span class="typ">Text</span><span class="pun">&gt;().</span><span class="pln">text</span><span class="pun">;</span></code></li><li class="L8"><code class="lang-csharp"><span class="pln">                targetPosition </span><span class="pun">=</span><span class="pln"> target</span><span class="pun">[</span><span class="pln">i</span><span class="pun">].</span><span class="pln">transform</span><span class="pun">.</span><span class="pln">position</span><span class="pun">;</span></code></li><li class="L9"><code class="lang-csharp"><span class="pln">                </span><span class="typ">AIController</span><span class="pun">.</span><span class="typ">GetInstance</span><span class="pun">().</span><span class="pln">targetPosition </span><span class="pun">=</span><span class="pln"> targetPosition</span><span class="pun">;</span></code></li><li class="L0"><code class="lang-csharp"><span class="pln">                </span><span class="typ">AIController</span><span class="pun">.</span><span class="typ">GetInstance</span><span class="pun">().</span><span class="typ">DrawNavigationLine</span><span class="pun">(</span><span class="pln">targetPosition</span><span class="pun">,</span><span class="pln"> needArrive</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span></code></li><li class="L1"><code class="lang-csharp"><span class="pln">                textInfo</span><span class="pun">.</span><span class="pln">text </span><span class="pun">=</span><span class="pln"> </span><span class="str">"已设置目的地\n"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> targetName</span><span class="pun">;</span></code></li><li class="L2"><code class="lang-csharp"><span class="pln">                </span><span class="kwd">break</span><span class="pun">;</span></code></li><li class="L3"><code class="lang-csharp"><span class="pln">            </span><span class="pun">}</span></code></li><li class="L4"><code class="lang-csharp"><span class="pln">        </span><span class="pun">}</span></code></li><li class="L5"><code class="lang-csharp"><span class="pln">        </span><span class="typ">ShowPanel</span><span class="pun">(</span><span class="lit">1</span><span class="pun">);</span></code></li><li class="L6"><code class="lang-csharp"><span class="pln">    </span><span class="pun">}</span></code></li></ol></pre>
-</div>
+			</div>
 
 			<!--内容结尾-->
 			</div>
@@ -149,46 +107,23 @@
 						<img src="../images/icons/donate.png" alt="weixin" width="500" height="370">
 					</p>    
 				</div>
-			</div>  
-
-			<div id="replylist" class="comment-grid-top">
-				<!--<h3 id="responsnum"></h3>-->
-				<!--留言内容-->
-	    <!--
-	    <div class="comments-top-top top-grid-comment">
-	    	<div class="top-comment-left">
-	        	<img class="img-responsive" src="images/co.png" alt="">
-	        </div>
-	        <div class="top-comment-right">
-	            <ul>
-	                <li><span class="left-at replyname"> Admin</span></li>
-	                <li><span class="right-at">12 July 2014 at 10.30am</span></li>
-	                <li><a class="reply" href="#">REPLY</a></li>
-	            </ul>
-	            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less </p>
-	        </div>
-	         <div class="clearfix"> </div>
-	    </div>
-	-->
-
-</div>
-	<!--
-	 <div class="artical-commentbox">
-	    <h3>发表回复</h3>
-	    <div class="table-form">
-	        <form>
-	            <input id="name" type="text" class="textbox" placeholder="姓名" required="">
-	            <input id="email" type="email" class="textbox" placeholder="邮箱" required="">
-	            <input type="text" class="textbox" placeholder="联系电话" required="">
-	            <textarea id="content" placeholder="内容" required=""></textarea>
-	            <input type="submit" value="留言" onclick="CreatReply(document.getElementById('name').value, document.getElementById('email').value, document.getElementById('content').value)">
-	        </form>
-	    </div>
+			</div>
+		<!--网易云跟帖开始-->
+		<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+		<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+		<script>
+		var cloudTieConfig = {
+		  url: document.location.href, 
+		  sourceId: "",
+		  productKey: "de3fcb335e984ce5ad43266692fc6ea6",
+		  target: "cloud-tie-wrapper"
+		};
+		var yunManualLoad = true;
+		Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+		</script>
+		<!--网易云跟帖结束-->
 	</div>
--->
-
-</div>
-<div class="clearfix"> </div>
+	<div class="clearfix"> </div>
 </div>
 <!---End-blog -->
 
@@ -204,19 +139,17 @@
 	</div>
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
-<script type="text/javascript">
-	window.onresize = function(){ 
-		$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
-	}
-	$(document).ready(function () {  
-		$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
-		$().UItoTop({ easingType: 'easeOutQuart' });
 
-	});
-</script>
+	<script type="text/javascript">
+		window.onresize = function(){ 
+			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+		}
+		$(document).ready(function () {  
+			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+			$().UItoTop({ easingType: 'easeOutQuart' });
 
-<script>
-        //window.onload = getResponsCount();
+		});
+
         $(function(){
         	var show = function() {
         		var $img = $('.alipay-wechat-img');
