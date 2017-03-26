@@ -228,7 +228,7 @@
         		checked="checked"
         		class="radiobutton"
         		/> 
-        		<label for="default-radio">全部分类</label>
+        		<label id="allfilter" for="default-radio">全部</label>
 
         		<input                                  
         		data-control-type="radio-buttons-filters"
@@ -241,7 +241,7 @@
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label for="unity">Unity3D</label>
+        		<label id="unityfilter" for="unity">Unity3D</label>
 
                 <input                                  
                 data-control-type="radio-buttons-filters"
@@ -254,7 +254,7 @@
                 name="jplist"
                 class="radiobutton"
                 /> 
-                <label for="algorithm">算法</label>
+                <label id="algorithmfilter" for="algorithm">算法</label>
 
         		<input                                  
         		data-control-type="radio-buttons-filters"
@@ -267,7 +267,7 @@
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label for="other">其他</label>
+        		<label id="otherfilter" for="other">其他</label>
    
         	</div>
         </div>
@@ -444,6 +444,17 @@
             document.getElementById("default-radio").click(); 
 			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
 			$().UItoTop({ easingType: 'easeOutQuart' });
+
+            var unity = document.getElementsByClassName("unity");
+            var algorithm = document.getElementsByClassName("algorithm");
+            var other = document.getElementsByClassName("other");
+
+            var allcount = unity.length + algorithm.length + other.length ;
+
+            $("#allfilter").text("全部(" + (allcount > 99 ? 99 +"+)" : allcount +")"));
+            $("#unityfilter").text("Unity3D(" + (unity.length > 99 ? 99 +"+)" : unity.length +")"));
+            $("#algorithmfilter").text("算法(" + (algorithm.length > 99 ? 99 +"+)" : algorithm.length +")"));
+            $("#otherfilter").text("其他(" + (other.length > 99 ? 99 +"+)" : other.length +")"));
 
 		});
 	</script>

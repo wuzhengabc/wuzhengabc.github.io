@@ -141,6 +141,7 @@
             vertical-align: middle;
             border-radius: 5px;
             font-size: 16px;
+            font-weight: 500;
         }
 
         .radiobutton:checked + label
@@ -702,7 +703,7 @@
     border-bottom:0px dashed rgba(0, 0, 0, 0.61);
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
-    margin:3px 35px 0 77px;
+    margin:3px 35px 0 75px;
     padding:4px 0px 4px 0;
 }
 .jplist-thumbs-view .list-item .block .tag2 {
@@ -727,14 +728,14 @@
     border-bottom:0px dashed rgba(0, 0, 0, 0.61);
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
-    margin: 10px 0 0 5px;
+    margin: 10px 0 0 0px;
     padding:5px 0px 5px 0;
     float: left;
     width: 100%;
 }
 .jplist-grid-view .list-item .block .tag2 li{
     padding-right: 0px;
-    padding-left: 0px;
+    padding-left: 5px;
 }
 
 .jplist-grid-view .list-item .block .tag2 ul li a{
@@ -824,7 +825,7 @@
 
     .list .list-item {
         height: 170px;
-        margin: 12px 0px;
+        margin: 10px 0px;
         float: left;
         overflow: hidden;
         transition: all 0.4s;
@@ -832,7 +833,7 @@
     }
     .list .list-item:hover{
         height: 170px;
-        margin: 12px 0px;
+        margin: 10px 0px;
         float: left;
         overflow: hidden;
         -webkit-box-shadow: 3px 3px 6px 0px rgba(99,99,99,0.5);

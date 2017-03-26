@@ -5,7 +5,7 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 .bodycolor{
-    background-color: rgb(222,222,222);
+    background-color: rgb(240,240,240);
     background-position:center; 
     background-repeat:repeat-y;
 }
@@ -554,8 +554,8 @@ div#portfoliolist {
 
 .service-grid h5 {
     color: #323232;
-    font-size: 1.3em;
-    font-weight: 700;
+    font-size: 1.4em;
+    font-weight: 600;
     padding: 0.5em 0;
 }
 
@@ -565,7 +565,9 @@ div#portfoliolist {
 }
 
 .service-grid img {
-    margin: 0 auto;
+    margin: 0 auto;    
+    width: auto;
+    max-height: 120px;
 }
 
 .service-grid p {
@@ -851,7 +853,7 @@ p.message-para {
     text-align: left;
     text-transform: uppercase;
     padding: 0px 0px;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .artical-content p {
@@ -998,13 +1000,13 @@ p.message-para {
 /*-- footer --*/
 .footer {
     background-color: rgba(66,66,66,1);
-    padding-bottom: 0em;
+    padding-bottom: 1em;
     padding-top: 1em;
 }
 
 .footer-top {
     padding-bottom: 1em;
-    padding-top: 0.5em;
+    padding-top: 0em;
 }
 
 .twitter h4 {
@@ -1153,13 +1155,13 @@ ul.social {
 .footer-class {
     float: right;
     color: #fff;
-    font-size: 1.1em;
-    padding-top: 0.5em;
+    font-size: 1em;
+    padding-top: 0em;
 }
 
 .footer-bottom {
     border-top: 1px solid #fff;
-    padding: 1em 0;
+    padding: 1em 0 0 0;
 }
 
 .footer-class a {
@@ -1175,8 +1177,8 @@ ul.social {
     display: none;
     text-decoration: none;
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 110px;
+    right: 50px;
     overflow: hidden;
     width: 60px;
     height: 60px;

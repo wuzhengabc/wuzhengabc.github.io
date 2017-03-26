@@ -208,7 +208,7 @@
         		checked="checked"
         		class="radiobutton"
         		/> 
-        		<label for="default-radio">全部分类</label>
+        		<label id="allfilter" for="default-radio">全部</label>
 
         		<input                                  
         		data-control-type="radio-buttons-filters"
@@ -221,7 +221,7 @@
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label for="model">模型</label>
+        		<label id="modelfilter" for="model">模型</label>
 
         		<input                                  
         		data-control-type="radio-buttons-filters"
@@ -234,7 +234,7 @@
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label for="texture">贴图</label> 
+        		<label id="texturefilter" for="texture">贴图</label> 
 
                 <input                                  
                 data-control-type="radio-buttons-filters"
@@ -247,7 +247,7 @@
                 name="jplist"
                 class="radiobutton"
                 /> 
-                <label for="plugin">插件</label>  
+                <label id="pluginfilter" for="plugin">插件</label>  
 
                 <input                                  
                 data-control-type="radio-buttons-filters"
@@ -260,7 +260,7 @@
                 name="jplist"
                 class="radiobutton"
                 /> 
-                <label for="sourcecode">源码</label>         		
+                <label id="sourcecodefilter" for="sourcecode">源码</label>         		
 
         	</div>
         </div>
@@ -450,7 +450,9 @@
 		$(document).ready(function () {  
             document.getElementById("model").click();
 			document.getElementById("default-radio").click();
+
 			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
   			var tag2 = document.getElementsByClassName("artical-links");
@@ -464,6 +466,20 @@
  					tag2[i].style.fontSize = '11px';
  				}
             }
+
+            var model = document.getElementsByClassName("model");
+            var texture = document.getElementsByClassName("texture");
+            var plugin = document.getElementsByClassName("plugin");
+            var sourcecode = document.getElementsByClassName("sourcecode");
+
+            var allcount = model.length + texture.length + plugin.length + sourcecode.length;
+            
+            $("#allfilter").text("全部(" + (allcount > 99 ? 99 +"+)" : allcount +")"));
+            $("#modelfilter").text("模型(" + (model.length > 99 ? 99 +"+)" : model.length +")"));
+            $("#texturefilter").text("贴图(" + (texture.length > 99 ? 99 +"+)" : texture.length +")"));
+            $("#pluginfilter").text("插件(" + (plugin.length > 99 ? 99 +"+)" : plugin.length +")"));
+            $("#sourcecodefilter").text("源码(" + (sourcecode.length > 99 ? 99 +"+)" : sourcecode.length +")"));
+
 		});
 	</script>
 </footer>
