@@ -42,12 +42,9 @@
         function OnClickFilters(obj) {
             obj.setAttribute("class", "active");
             var filters = new Array();
-            filters[0] = document.getElementById("all1");
-            filters[1] = document.getElementById("app1");
-            filters[2] = document.getElementById("card1");
-            filters[3] = document.getElementById("icon1");
-            filters[4] = document.getElementById("set1");
-            filters[5] = document.getElementById("add1");
+            filters[0] = document.getElementById("all");
+            filters[1] = document.getElementById("archive");
+            filters[2] = document.getElementById("resource");
 
             for (i = 0; i < filters.length; i++) {
                 if (filters[i].getAttribute("id") != obj.getAttribute("id"))
@@ -73,7 +70,7 @@
                         <li><a href="index.html">首页</a></li>
                         <li><a href="resourcelist.html">资源</a></li>
                         <li><a href="projectlist.html">项目</a></li>
-                        <li><a href="articlelist.html">学无止境</a></li>
+                        <li><a href="archivelist.html">学无止境</a></li>
                         <li><a href="contact.html">关于我</a></li>
                     </ul>
                     <!--script-->
@@ -97,10 +94,10 @@
         <div class="banner">
             <div class="banner-matter">
                 <h2>永远相信美好的事情即将发生</h2>
-                <p>成为一个有梦想的人</p>
+                <p>不要只在乎眼前的苟且</p>
             </div>
-            <div class="tv">
-                <img class="img-responsive" src="images/tv.png" alt="">
+            <div class="dailyimg">
+                <img class="img-responsive" src="images/daily/2017-03-26.jpg" alt="">
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -109,123 +106,39 @@
     <!----> 
     <div class="container">
         <div class="works" id="portfolio">
+            <!--分类按钮-->
             <div class=" port-top">
-                <h3 class="port">最新发布</h3>
-                <!--  app:Unity3D/card:C#/icon:Java/set:C++/add:其他  -->
+                <h3 class="port">最新发布</h3>                
                 <ul id="filters">
-                    <li id="all1" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="app card icon set sit web add">All</span></li>
-                    <li id="app1" onclick="OnClickFilters(this)"><span class="filter" data-filter="app"> Unity3D </span></li>
-                    <li id="card1" onclick="OnClickFilters(this)"><span class="filter" data-filter="card"> C# </span></li>
-                    <li id="icon1" onclick="OnClickFilters(this)"><span class="filter" data-filter="icon"> Java </span></li>
-                    <li id="set1" onclick="OnClickFilters(this)"><span class="filter" data-filter="set"> 分享 </span></li>
-                    <li id="add1" onclick="OnClickFilters(this)"><span class="filter" data-filter="add"> 资源 </span></li>
+                    <li id="all" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="archive resource">全部</span></li>
+                    <li id="archive" onclick="OnClickFilters(this)"><span class="filter" data-filter="archive"> 文章 </span></li>
+                    <li id="resource" onclick="OnClickFilters(this)"><span class="filter" data-filter="resource"> 资源 </span></li>
                 </ul>
                 <div class="clearfix"> </div>
             </div>
+            <!--列表内容-->
             <div id="portfoliolist">
-                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                <!--列表开始-->
+
+                <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
                     <div class="portfolio-wrapper ">
-                        <a href="single.html" class="b-link-stripe b-animate-go">
-                            <img class="img-responsive" src="images/pi.jpg" alt=""></img>
+                        <a href="archives/archive_templet.html" class="b-link-stripe b-animate-go">
+                            <img class="img-responsive" src="images/archives/2017-03-26.jpg" alt=""></img>
                             <ul class="bg">
-                                <li class="wrappertop"><span class="mainTile">我是一个大标题标题标题标题标题标</span></li>
-                                <li class="wrapperbottom active"><span class=" litleTile ">Unity3D</span></li>
+                                <li class="wrappertop"><span class="mainTile">终于搭建好自己的博客啦</span></li>
+                                <li class="wrapperbottom active"><span class=" litleTile ">碎碎念</span></li>
                             </ul>
                             <div class="b-wrapper">
                                 <h2 class="b-animate b-from-left ">
-                                    <span>456</span>
-                                    <button>Read More</button>
-                                </h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-                    <div class="portfolio-wrapper ">
-                        <a href="single.html" class="b-link-stripe b-animate-go">
-                            <img class="img-responsive" src="images/pi1.jpg" alt=""></img>
-                            <div class="bg">
-                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
-                                <div class="wrapperbottom"><span class="litleTile">C#</span></div>
-                            </div>
-                            <div class="b-wrapper">
-                                <h2 class="b-animate b-from-left ">
-                                    <span>456</span>
-                                    <button>Read More</button>
-                                </h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-                    <div class="portfolio-wrapper ">
-                        <a href="single.html" class="b-link-stripe b-animate-go">
-                            <img class="img-responsive" src="images/pi2.jpg" alt=""></img>
-                            <div class="bg">
-                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
-                                <div class="wrapperbottom"><span class="litleTile">Unity3D</span></div>
-                            </div>
-                            <div class="b-wrapper">
-                                <h2 class="b-animate b-from-left ">
-                                    <span>456</span>
-                                    <button>Read More</button>
-                                </h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-                    <div class="portfolio-wrapper ">
-                        <a href="single.html" class="b-link-stripe b-animate-go">
-                            <img class="img-responsive" src="images/pi3.jpg" alt=""></img>
-                            <div class="bg">
-                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
-                                <div class="wrapperbottom"><span class="litleTile">Java</span></div>
-                            </div>
-                            <div class="b-wrapper">
-                                <h2 class="b-animate b-from-left ">
-                                    <span>456</span>
-                                    <button>Read More</button>
-                                </h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio set mix_all" data-cat="set" style="display: inline-block; opacity: 1;">
-                    <div class="portfolio-wrapper ">
-                        <a href="single.html" class="b-link-stripe b-animate-go">
-                            <img class="img-responsive" src="images/pi4.jpg" alt=""></img>
-                            <div class="bg">
-                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
-                                <div class="wrapperbottom"><span class="litleTile">分享</span></div>
-                            </div>
-                            <div class="b-wrapper">
-                                <h2 class="b-animate b-from-left ">
-                                    <span>456</span>
-                                    <button>Read More</button>
-                                </h2>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="portfolio add mix_all" data-cat="add" style="display: inline-block; opacity: 1;">
-                    <div class="portfolio-wrapper ">
-                        <a href="https://github.com/hustcc/canvas-nest.js" class="b-link-stripe b-animate-go">
-                            <img class="img-responsive" src="images/pi5.jpg" alt=""></img>
-                            <div class="bg">
-                                <div class="wrappertop"><span class="mainTile">我是大标题</span></div>
-                                <div class="wrapperbottom"><span class="litleTile">资源</span></div>
-                            </div>
-                            <div class="b-wrapper">
-                                <h2 class="b-animate b-from-left ">
-                                    <span>456</span>
-                                    <button>Read More</button>
+                                    <span>碎碎念</span>
+                                    <button>详细信息</button>
                                 </h2>
                             </div>
                         </a>
                     </div>
                 </div>
 
+                <!--列表结束-->
                 <div class="clearfix"> </div>
             </div>
             <!-- Script for gallery Here -->

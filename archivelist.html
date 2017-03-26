@@ -67,7 +67,7 @@
                         <li><a href="index.html">首页</a></li>
                         <li><a href="resourcelist.html">资源</a></li>
                         <li><a href="projectlist.html">项目</a></li>
-                        <li><a href="articlelist.html">学无止境</a></li>
+                        <li><a href="archivelist.html">学无止境</a></li>
                         <li><a href="contact.html">关于我</a></li>
                     </ul>
                     <!--script-->
@@ -228,7 +228,7 @@
         		checked="checked"
         		class="radiobutton"
         		/> 
-        		<label id="allfilter" for="default-radio">全部</label>
+        		<label for="default-radio">全部<span class="flitercount" id="allfilter"></span></label>
 
         		<input                                  
         		data-control-type="radio-buttons-filters"
@@ -241,7 +241,7 @@
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label id="unityfilter" for="unity">Unity3D</label>
+        		<label for="unity">Unity3D<span class="flitercount" id="unityfilter"></span></label>
 
                 <input                                  
                 data-control-type="radio-buttons-filters"
@@ -254,7 +254,7 @@
                 name="jplist"
                 class="radiobutton"
                 /> 
-                <label id="algorithmfilter" for="algorithm">算法</label>
+                <label for="algorithm">算法<span class="flitercount" id="algorithmfilter"></span></label>
 
         		<input                                  
         		data-control-type="radio-buttons-filters"
@@ -267,7 +267,7 @@
         		name="jplist"
         		class="radiobutton"
         		/> 
-        		<label id="otherfilter" for="other">其他</label>
+        		<label for="other">碎碎念<span class="flitercount" id="otherfilter"></span></label>
    
         	</div>
         </div>
@@ -278,81 +278,28 @@
 
         	<!-- item 1 -->
         	<div class="list-item box">
-        		<!-- img -->
-        		<div class="img left">
-        			<a href="articles/article.html" ><img src="images/article/arch-2.jpg"/></a>
-        		</div>
         		<!-- data -->
         		<div class="block right">
-
-        			<div class="articlelogo"><img src="images/icons/unity.png" width="40px" height="40px"/></div>
-        			<a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
-        				<p class="title">测试回复测试回复测试回复测试回复测试回复测试回复测试回复测</p>
+        			<div class="articlelogo"><img src="images/icons/other.png" width="46px" height="46px"/></div>
+        			<a class="card-heading link-tooltip" title="终于搭建好自己的博客啦" href="archives/2017-03-26.html">
+        				<p class="title">终于搭建好自己的博客啦</p>
         			</a>
 
         			<div class="artical-links tag " >
         				<ul>
-        					<li><a ><small> </small><span class="date">2019-01-19</span></a></li>
+        					<li><a ><small> </small><span class="date">2017-03-26</span></a></li>
         					<li><a><small class="admin"> </small><span>吴争</span></a></li>
-        					<li><a ><small class="posts"> </small><span class="unity">Unity3D</span></a></li>
+        					<li><a ><small class="posts"> </small><span class="other">碎碎念</span></a></li>
         				</ul>
         			</div>
-        			<p class="desc">谁是随时随看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接着就会发射线，并且排序找到玩家最先触发的那个UI，在抛出事件给逻辑层去响应。看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接</p>
-        			<!--<p class="like">25 Likes</p>-->
         		</div>
-        	</div>
-
-        	<!-- item 2 -->
-        	<div class="list-item box">
-        		<!-- img -->
-        		<div class="img left">
-        			<a href="articles/article.html"><img src="images/article/arch-2.jpg" /></a>
-        		</div>
-        		<!-- data -->
-        		<div class="block right">
-
-        			<div class="articlelogo"><img src="images/icons/up.png" width="40px" height="40px"/></div>
-        			<a class="card-heading link-tooltip" title="测试回复" href="articles/article.html">
-        				<p class="title">测试回复测试回复测试回复测试回复测试回复测试回复测试回复测试回试回复测试回复</p>
-        			</a>
-
-        			<div class="artical-links tag " >
-        				<ul>
-        					<li><a ><small> </small><span class="date">2019-01-18</span></a></li>
-        					<li><a><small class="admin"> </small><span>吴争</span></a></li>
-        					<li><a ><small class="posts"> </small><span class="other">其他</span></a></li>
-        				</ul>
-        			</div>
-        			<p class="desc">谁是随时随看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接着就会发射线，并且排序找到玩家最先触发的那个UI，在抛出事件给逻辑层去响应。看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接</p>
-        			<!--<p class="like">25 Likes</p>-->
-        		</div>
-        	</div>
-
-            <!-- item 2 -->
-            <div class="list-item box">
                 <!-- img -->
                 <div class="img left">
-                    <a href="articles/2017-03-25.html"><img src="images/article/arch-2.jpg" /></a>
+                    <a href="archives/2017-03-26.html" ><img src="images/archives/2017-03-26.jpg"/></a>
                 </div>
-                <!-- data -->
-                <div class="block right">
+                  <p class="desc">终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦</p>
+        	</div>
 
-                    <div class="articlelogo"><img src="images/icons/up.png" width="40px" height="40px"/></div>
-                    <a class="card-heading link-tooltip" title="A*寻路算法" href="articles/2017-03-25.html">
-                        <p class="title">A*寻路算法</p>
-                    </a>
-
-                    <div class="artical-links tag " >
-                        <ul>
-                            <li><a ><small> </small><span class="date">2019-01-18</span></a></li>
-                            <li><a><small class="admin"> </small><span>吴争</span></a></li>
-                            <li><a ><small class="posts"> </small><span class="algorithm">算法</span></a></li>
-                        </ul>
-                    </div>
-                    <p class="desc">谁是随时随看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接着就会发射线，并且排序找到玩家最先触发的那个UI，在抛出事件给逻辑层去响应。看过UGUI源码的朋友一定都知道，UI事件会在EventSystem在Update的Process触发。UGUI会遍历屏幕中所有RaycastTarget是true的UI，接</p>
-                    <!--<p class="like">25 Likes</p>-->
-                </div>
-            </div>
             
         <!--数据结束-->
         </div>
@@ -437,12 +384,12 @@
 	</div>
 	<script type="text/javascript">
 		window.onresize = function(){ 
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 50 + 'px');
 		}
 		$(document).ready(function () { 
             document.getElementById("unity").click(); 
             document.getElementById("default-radio").click(); 
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 50 + 'px');
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
             var unity = document.getElementsByClassName("unity");
@@ -451,10 +398,10 @@
 
             var allcount = unity.length + algorithm.length + other.length ;
 
-            $("#allfilter").text("全部(" + (allcount > 99 ? 99 +"+)" : allcount +")"));
-            $("#unityfilter").text("Unity3D(" + (unity.length > 99 ? 99 +"+)" : unity.length +")"));
-            $("#algorithmfilter").text("算法(" + (algorithm.length > 99 ? 99 +"+)" : algorithm.length +")"));
-            $("#otherfilter").text("其他(" + (other.length > 99 ? 99 +"+)" : other.length +")"));
+            $("#allfilter").text((allcount > 99 ? 99 +"+" : allcount));
+            $("#unityfilter").text((unity.length > 99 ? 99 +"+" : unity.length ));
+            $("#algorithmfilter").text((algorithm.length > 99 ? 99 +"+" : algorithm.length ));
+            $("#otherfilter").text((other.length > 99 ? 99 +"+" : other.length));
 
 		});
 	</script>
