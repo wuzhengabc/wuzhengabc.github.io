@@ -771,11 +771,11 @@
     padding: 0px 0px 0px 0px;
     color: #333333;
     float: left;
-    line-height: 2.1em;
-    width:57%;
+    line-height: 2.2em;
+    width: 57%;
     font-size: 14px;
-    margin: 9px 10px 10px 10px;
-    height: 63.5%;
+    margin: 10px 10px 10px 10px;
+    height: 55%;
     overflow: hidden;
 }
 
@@ -790,13 +790,13 @@
 
     .list .img {
         width:35.5%;
-        height:63.5%;
+        height:62%;
         float: left;
         vertical-align: middle;
         text-align: center;
         font-size: 0;
         overflow: hidden;
-        margin: 9px 0px 10px 10px;
+        margin: 7px 0px 10px 10px;
 
         display: -webkit-box;
       -webkit-box-orient: horizontal;
@@ -843,7 +843,7 @@
         float: left;
         width: 100%;
         overflow: hidden;
-        height: 28%;
+        height: 31%;
         padding:0 10px 0 10px;
         font-family: "微软雅黑","Microsoft YaHei", sans-serif;
     }
@@ -852,7 +852,7 @@
         }
 
     .list .list-item {
-        height: 235px;
+        height: 215px;
         margin: 10px 20px 10px 0;
         float: left;
         overflow: hidden;
@@ -861,7 +861,7 @@
         width: 48%;
     }
     .list .list-item:hover{
-        height: 235px;
+        height: 215px;
         margin: 10px 20px 10px 0;
         float: left;
         overflow: hidden;

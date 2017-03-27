@@ -297,7 +297,7 @@
                 <div class="img left">
                     <a href="archives/2017-03-26.html" ><img src="images/archives/2017-03-26.jpg"/></a>
                 </div>
-                  <p class="desc">终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦终于搭建好自己的博客啦</p>
+                  <p class="desc">历时半个月，终于搭建好自己的博客啦，期间也是费尽周折。尽管还没有什么内容，不过我相信很快内容就会丰富起来的。以后我会时常分享一些游戏资源给大家，并整理一些自己的学习笔记...</p>
         	</div>
 
             
@@ -382,14 +382,75 @@
 		</div>
 		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	</div>
+    <script type="text/javascript">
+        function OnResizeOrLoad()
+        {
+            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 50 + 'px');
+
+            var items = document.getElementsByClassName("list-item");
+            var w = $(window).width()/window.screen.width;
+            console.log(w);
+            for (i = 0; i < items.length; i++) 
+            {                
+                if(w < 0.55)
+                {
+                    items[i].style.width = "100%"; 
+                    if( 0.415 < w)
+                    {
+                        
+                    	items[i].getElementsByTagName("p")[1].style.width = "70%";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "131px";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "192px";
+                    } 
+                    else if( 0.35 < w)
+                    {
+                        
+                    	items[i].getElementsByTagName("p")[1].style.width = "60%";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "131px";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "192px";
+                    } 
+
+                    else if( 0.3 < w)
+                    {
+                        
+                    	items[i].getElementsByTagName("p")[1].style.width = "55%";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "131px";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "192px";
+                    } 
+
+
+                    else if( 0.25 < w)
+                    {
+                        
+                    	items[i].getElementsByTagName("p")[1].style.width = "50%";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "131px";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "192px";
+                    }
+                    else
+                    {
+                    	items[i].getElementsByTagName("p")[1].style.width = "20%";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "131px";
+                    	items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "192px"; 
+                    }                         
+                }
+                else
+                {
+                    items[i].style.width = "48%";
+                    items[i].getElementsByTagName("p")[1].style.width = "57%";
+                    items[i].getElementsByTagName("div")[items[i].getElementsByTagName("div").length-1].style.width = "35.5%";
+                }
+            } 
+            
+        }
+    </script>
 	<script type="text/javascript">
 		window.onresize = function(){ 
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 50 + 'px');
+            OnResizeOrLoad();
 		}
 		$(document).ready(function () { 
+            OnResizeOrLoad();
             document.getElementById("unity").click(); 
             document.getElementById("default-radio").click(); 
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 50 + 'px');
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
             var unity = document.getElementsByClassName("unity");
@@ -401,7 +462,7 @@
             $("#allfilter").text((allcount > 99 ? 99 +"+" : allcount));
             $("#unityfilter").text((unity.length > 99 ? 99 +"+" : unity.length ));
             $("#algorithmfilter").text((algorithm.length > 99 ? 99 +"+" : algorithm.length ));
-            $("#otherfilter").text((other.length > 99 ? 99 +"+" : other.length));
+            $("#otherfilter").text((other.length > 99 ? 99 +"+" : other.length));            
 
 		});
 	</script>
