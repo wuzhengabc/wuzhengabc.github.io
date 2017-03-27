@@ -1,169 +1,167 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>终于搭建好自己的博客啦</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>终于搭建好自己的博客啦</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
     <meta name="description" content="一个热爱开发游戏的程序员个人网站，研究生在读学生" />
-	<link rel="shortcut icon" type="image/x-icon" href="../images/icons/favicon.png" />
-	<!---Editor.md代码块高亮-->
-	<link rel="stylesheet" type="text/css" href="../highlight/css/index.css">
-	<link rel="stylesheet" type="text/css" href="../highlight/css/editormd.min.css">
-	<link rel="stylesheet" type="text/css" href="../highlight/css/planeui.min.css">
-	<!---CkEditor代码块高亮-->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icons/favicon.png" />
+    <!---Editor.md代码块高亮-->
+    <link rel="stylesheet" type="text/css" href="../highlight/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../highlight/css/editormd.min.css">
+    <link rel="stylesheet" type="text/css" href="../highlight/css/planeui.min.css">
+    <!---CkEditor代码块高亮-->
     <!--
-    <link rel="stylesheet" href="../highlight/styles/default.css">
-    <script src="../highlight/highlight.pack.js"></script>
--->    
-<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script type="text/javascript" src="../js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<!--theme-style-->
-<link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link rel="stylesheet" href="../highlight/styles/default.css">
+        <script src="../highlight/highlight.pack.js"></script>
+    -->
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
-<script type="text/javascript" src="../js/move-top.js"></script>
-<script type="text/javascript" src="../js/easing.js"></script>
-<link href="../css/style1.css" rel="stylesheet">
-<link href="../css/animations.css" rel="stylesheet">
-<script type="text/javascript" src="../js/modernizr.js"></script>
-<script type="text/javascript" src="../js/template.js"></script>
-<script type="text/javascript">
-
+    <script type="text/javascript" src="../js/move-top.js"></script>
+    <script type="text/javascript" src="../js/easing.js"></script>
+    <link href="../css/style1.css" rel="stylesheet">
+    <link href="../css/animations.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/modernizr.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript">
         //hljs.initHighlightingOnLoad();
-
         jQuery(document).ready(function ($) {
-        	$(".scroll").click(function (event) {
-        		event.preventDefault();
-        		$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-        	});
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
         });
     </script>
 </head>
 <body class="bodycolor">
-	<script type="text/javascript" src="../js/bgeffect.js"></script>
-	<!--header-->
-	<!--header fixed clearfix 标题栏始终在顶部-->
-	<div class="header" id="home" style="line-height: 1.50">
-		<div class="container">
-			<div class="logo">
-				<h1><a href="../index.html"><img src="../images/icons/logo.png" alt="" width="300px" height="75px"></a></h1>
-			</div>
-			<div class="header-bottom">
-				<div class="top-nav">
-					<span class="menu"> </span>
-					<ul>
-						<li><a href="../index.html">首页</a></li>
+    <script type="text/javascript" src="../js/bgeffect.js"></script>
+    <!--header-->
+    <!--header fixed clearfix 标题栏始终在顶部-->
+    <div class="header" id="home" style="line-height: 1.50">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="../index.html"><img src="../images/icons/logo.png" alt="" width="300px" height="75px"></a></h1>
+            </div>
+            <div class="header-bottom">
+                <div class="top-nav">
+                    <span class="menu"> </span>
+                    <ul>
+                        <li><a href="../index.html">首页</a></li>
                         <li><a href="../resourcelist.html">资源</a></li>
-						<li><a href="../projectlist.html">项目</a></li>
-						<li><a href="../archivelist.html">学无止境</a></li>
-						<li><a href="../contact.html">关于我</a></li>
-					</ul>
-					<!--script-->
-					<script>
-						$("span.menu").click(function () {
-							$(".top-nav ul").slideToggle(500, function () {
-							});
-						});
-					</script>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-	</div>
-	<!---->
+                        <li><a href="../projectlist.html">项目</a></li>
+                        <li><a href="../archivelist.html">学无止境</a></li>
+                        <li><a href="../contact.html">关于我</a></li>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function () {
+                            $(".top-nav ul").slideToggle(500, function () {
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!---->
 
-	<div class="container articlebg" id="main-content">
+    <div class="container articlebg" id="main-content">
 
-		<div class="single-page-artical">
-			<div class="artical-content">
-				<h3>终于搭建好自己的博客啦</h3>
+        <div class="single-page-artical">
+            <div class="artical-content">
+                <h3>终于搭建好自己的博客啦</h3>
 
-				<div class="artical-links">
-					<ul>
-						<li><a href="#"><small> </small><span>2017-03-26</span></a></li>
-						<li><a href="#"><small class="admin"> </small><span>吴争</span></a></li>
-						<li><a href="#"><small class="posts"> </small><span>碎碎念</span></a></li>
-					</ul>
-				</div>
-				<!--内容开始-->				
+                <div class="artical-links">
+                    <ul>
+                        <li><a href="#"><small> </small><span>2017-03-26</span></a></li>
+                        <li><a href="#"><small class="admin"> </small><span>吴争</span></a></li>
+                        <li><a href="#"><small class="posts"> </small><span>碎碎念</span></a></li>
+                    </ul>
+                </div>
+                <!--内容开始-->
 
-				<p>&nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size:14px">历时半个月，终于搭建好自己的博客啦，期间也是费尽周折。尽管还没有什么内容，不过我相信很快内容就会丰富起来的。以后我会时常分享一些游戏资源给大家，并整理一些自己的学习笔记放在网站上，大家一起学习，一起进步嘛。如果大家有什么好的建议可以联系我，下面我的微信：</span></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size:14px">历时半个月，终于搭建好自己的博客啦，期间也是费尽周折。尽管还没有什么内容，不过我相信很快内容就会丰富起来的。以后我会时常分享一些游戏资源给大家，并整理一些自己的学习笔记放在网站上，大家一起学习，一起进步嘛。如果大家有什么好的建议可以联系我，下面我的微信：</span></p>
 
-				<p style="text-align:center"><img alt="" height="289" src="../images/icons/weichat.png" width="289" /></p>
+                <p style="text-align:center"><img alt="" height="289" src="../images/icons/weichat.png" width="289" /></p>
 
-				<p>&nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size:14px">还有两个多月就要毕业了，顿时觉得有些伤感呢，突然觉得大学还有好多事情没有来得及做，所以现在还要继续奋斗，一起为梦想加油把！</span></p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size:14px">还有两个多月就要毕业了，顿时觉得有些伤感呢，突然觉得大学还有好多事情没有来得及做，所以现在还要继续奋斗，一起为梦想加油把！</span></p>
 
-				<p style="text-align:center"><img alt="" height="337" src="../images/archives/2017-03-26.jpg" width="494" /></p>
+                <p style="text-align:center"><img alt="" height="337" src="../images/archives/2017-03-26.jpg" width="494" /></p>
 
-				<!--内容结尾-->
-			</div>
-			<div class="artical-links">
-				<div style="text-align: center;" class="tigger-love">
-					<p style="padding-bottom:12px">如果您觉得本文不错，可以选择打赏。打赏多少，您高兴就行，谢谢您的支持！ ~(@^_^@)~</p>
-					<img id="imglove" class="tiggerimage" src="../images/icons/love.png"  width="25" height="25">
-					<p class="alipay-wechat-img">
-						<img src="../images/icons/donate.png" alt="weixin" width="500" height="370">
-					</p>    
-				</div>
-			</div>
-		<!--网易云跟帖开始-->
-		<div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-		<script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-		<script>
-		var cloudTieConfig = {
-		  url: document.location.href, 
-		  sourceId: "",
-		  productKey: "de3fcb335e984ce5ad43266692fc6ea6",
-		  target: "cloud-tie-wrapper"
-		};
-		var yunManualLoad = true;
-		Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
-		</script>
-		<!--网易云跟帖结束-->
-	</div>
-	<div class="clearfix"> </div>
-</div>
-<!---End-blog -->
+                <!--内容结尾-->
+            </div>
+            <div class="artical-links">
+                <div style="text-align: center;" class="tigger-love">
+                    <p style="padding-bottom:12px">如果您觉得本文不错，可以选择打赏。打赏多少，您高兴就行，谢谢您的支持！ ~(@^_^@)~</p>
+                    <img id="imglove" class="tiggerimage" src="../images/icons/love.png" width="25" height="25">
+                    <p class="alipay-wechat-img">
+                        <img src="../images/icons/donate.png" alt="weixin" width="500" height="370">
+                    </p>
+                </div>
+            </div>
+            <!--网易云跟帖开始-->
+            <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+            <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+            <script>
+                var cloudTieConfig = {
+                    url: document.location.href,
+                    sourceId: "",
+                    productKey: "de3fcb335e984ce5ad43266692fc6ea6",
+                    target: "cloud-tie-wrapper"
+                };
+                var yunManualLoad = true;
+                Tie.loader("aHR0cHM6Ly9hcGkuZ2VudGllLjE2My5jb20vcGMvbGl2ZXNjcmlwdC5odG1s", true);
+            </script>
+            <!--网易云跟帖结束-->
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!---End-blog -->
 
-<div class="footer" id="thefooter">
-	<div class="container">
-		<div class="footer-top">
-			<h2 style="color:#fff;text-align: right;font-size:20px;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
-		</div>
-		<div class="footer-bottom">                       
-			<p class="footer-class">Copyright &copy; 2017 WUZHENG.</p>
-			<div class="clearfix"></div>
-		</div>
-	</div>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-</div>
+    <div class="footer" id="thefooter">
+        <div class="container">
+            <div class="footer-top">
+                <h2 style="color:#fff;text-align: right;font-size:20px;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-class">Copyright &copy; 2017 WUZHENG.</p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
 
-	<script type="text/javascript">
-		window.onresize = function(){ 
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
-		}
-		$(document).ready(function () {  
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
-			$().UItoTop({ easingType: 'easeOutQuart' });
+    <script type="text/javascript">
+        window.onresize = function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+        }
+        $(document).ready(function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+            $().UItoTop({ easingType: 'easeOutQuart' });
 
-		});
+        });
 
-        $(function(){
-        	var show = function() {
-        		var $img = $('.alipay-wechat-img');
-        		if ($img.is(':hidden')) {
-        			$img.fadeIn();
-        			document.getElementById('imglove').setAttribute('src','../images/icons/love_red.png'); 
-        		} else {
-        			$img.fadeOut();
-        			document.getElementById('imglove').setAttribute("src","../images/icons/love.png"); 
-        		}
-        	}
-        	$('.tigger-love img.tiggerimage')
+        $(function () {
+            var show = function () {
+                var $img = $('.alipay-wechat-img');
+                if ($img.is(':hidden')) {
+                    $img.fadeIn();
+                    document.getElementById('imglove').setAttribute('src', '../images/icons/love_red.png');
+                } else {
+                    $img.fadeOut();
+                    document.getElementById('imglove').setAttribute("src", "../images/icons/love.png");
+                }
+            }
+            $('.tigger-love img.tiggerimage')
         	.hover(show, show);
         });
     </script>

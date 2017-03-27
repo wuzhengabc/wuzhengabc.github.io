@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>吴争个人博客 - 项目列表</title>    
+    <title>吴争个人博客 - 项目列表</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -36,30 +36,11 @@
 
         $(window).scroll(function () {
             var scrollTop = $(this).scrollTop();
-
         })
-
-        function OnClickFilters(obj) {
-            obj.setAttribute("class", "active");
-            var filters = new Array();
-            filters[0] = document.getElementById("all1");
-            filters[1] = document.getElementById("app1");
-            filters[2] = document.getElementById("card1");
-            filters[3] = document.getElementById("icon1");
-            filters[4] = document.getElementById("set1");
-            filters[5] = document.getElementById("add1");
-
-            for (i = 0; i < filters.length; i++) {
-                if (filters[i].getAttribute("id") != obj.getAttribute("id"))
-                    filters[i].setAttribute("class", "");
-            }
-        }
     </script>
 </head>
 <body class="bodycolor">
-    <!--<body style="background-color:rgb(241,241,241);">-->
     <script type="text/javascript" src="js/bgeffect.js"></script>
-
     <!--header fixed clearfix 标题栏始终在顶部-->
     <div class="header" id="home" style="line-height: 1.50">
         <div class="container">
@@ -89,75 +70,52 @@
             <div class="clearfix"> </div>
         </div>
     </div>
-<div id="main-content">
-<!--主内容开始-->
-
-    <!---->
-    <div class="container">
-        <div class="service" id="services">
-            <div class=" service-top">
-                <h3 class="ser">项目类别1</h3>
-                <p class="sed">使用Unity开发</p>
-                <div class="clearfix"> </div>
-            </div>
-            <div class=" services-grid">
-
-                <div class="col-md-4 service-grid">
-                    <a href="single.html"><img class="img-responsive" src="images/projects/me.png" width="144" height="117" alt=" "></a>
-                    <h5>山东农业大学三维虚拟漫游系统</h5>
-                    <p>大学毕业设计，实现了简单的漫游功能大学毕业设计</p>
+    <div id="main-content">
+        <!--主内容开始-->
+        <!---->
+        <div class="container">
+            <div class="service" id="services">
+                <div class=" service-top">
+                    <h3 class="ser">Unity3D项目</h3>
+                    <p class="sed">使用Unity开发的一些小型项目</p>
+                    <div class="clearfix"> </div>
                 </div>
+                <div class=" services-grid">
 
-                <div class="clearfix"> </div>
+                    <div class="col-md-4 service-grid">
+                        <a href="projectlist.html"><img class="img-responsive" src="images/projects/sdau.png" width="144" height="117" alt=" "></a>
+                        <h5>山东农业大学三维虚拟漫游系统</h5>
+                        <p>大学毕业设计，实现了简单的漫游功能</p>
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!---->
-    <!---->
-    <div class="container">
-        <div class="service" id="services">
-            <div class=" service-top">
-                <h3 class="ser">项目类别2</h3>
-                <p class="sed">使用Java开发</p>
-                <div class="clearfix"> </div>
-            </div>
-            <div class=" services-grid">
+        <!---->        
 
-                <div class="col-md-4 service-grid">
-                    <a href="single.html"><img class="img-responsive" src="images/projects/me.png" width="144" height="117" alt=" "></a>
-                    <h5>山东农业大学三维虚拟漫游系统漫游</h5>
-                    <p>大学毕业设计，实现了简单的漫游功能大学毕业设计</p>
-                </div>
-                
-                <div class="clearfix"> </div>
-            </div>
-        </div>
+        <!--主内容结束-->
     </div>
-    <!---->
-
- <!--主内容结束-->
-</div>
     <!---->
     <div class="footer" id="thefooter">
         <div class="container">
             <div class="footer-top">
                 <h2 style="color:#fff;text-align: right;font-size:20px;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
             </div>
-            <div class="footer-bottom">                       
+            <div class="footer-bottom">
                 <p class="footer-class" style="font-family: 'Microsoft YaHei','微软雅黑','Hiragino Sans GB',STXihei,'华文细黑',STHeiti,RobotoDraft,Roboto,'Helvetica Neue',Helvetica,Tahoma,'Droid Sans','wenquanyi micro hei',FreeSans,Arimo,Arial,SimSun,'宋体',Heiti,'黑体',sans-serif;">Copyright &copy; 2017 WUZHENG.</p>
                 <div class="clearfix"></div>
             </div>
-         </div>
+        </div>
         <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
     </div>
     <script type="text/javascript">
-        window.onresize = function(){ 
-            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+        window.onresize = function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
         }
-        $(document).ready(function () {  
-            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+        $(document).ready(function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
             $().UItoTop({ easingType: 'easeOutQuart' });
-
         });
     </script>
 </body>

@@ -12,8 +12,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
     <meta name="description" content="一个热爱开发游戏的程序员个人网站，研究生在读学生" />
-    <script type="application/x-javascript"> 
-        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
+    <script type="application/x-javascript">
+
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
     </script>
 
     <script type="text/javascript" src="js/move-top.js"></script>
@@ -48,14 +49,14 @@
                 //save plugin state
                 , storage: 'localstorage' //'', 'cookies', 'localstorage'
                 , storageName: 'views'
-            }); 
+            });
         });
     </script>
-        
-    </head>
+
+</head>
 <body class="bodycolor">
-	<script type="text/javascript" src="js/bgeffect.js"></script>
-	<!--header fixed clearfix 标题栏始终在顶部-->
+    <script type="text/javascript" src="js/bgeffect.js"></script>
+    <!--header fixed clearfix 标题栏始终在顶部-->
     <div class="header" id="home" style="line-height: 1.50">
         <div class="container">
             <div class="logo">
@@ -85,334 +86,313 @@
         </div>
     </div>
 
-	<!-- main content -->
-	<div id="main-content" class="box">
+    <!-- main content -->
+    <div id="main-content" class="box">
 
-		<div class="center">
-			<div id="page-content" class="box">
+        <div class="center">
+            <div id="page-content" class="box">
 
-				<!-- demo -->
-				<div id="demo" class="box jplist">
+                <!-- demo -->
+                <div id="demo" class="box jplist">
 
-					<!-- ios button: show/hide panel -->
-					<div class="jplist-ios-button">
-						<i class="fa fa-sort"></i>
-						点击展开筛选条件
-					</div>
+                    <!-- ios button: show/hide panel -->
+                    <div class="jplist-ios-button">
+                        <i class="fa fa-sort"></i>
+                        点击展开筛选条件
+                    </div>
 
-					<!-- panel -->
-					<div class="jplist-panel box panel-top">
-						<!-- Go Back button -->
-						<button type="button"
-						data-control-type="back-button"
-						data-control-name="back-button"
-						data-control-action="back-button">
-						<i class="fa fa-arrow-left"></i> 撤销
-					</button>
-					<!-- reset button -->
-					<button type="button"
-					class="jplist-reset-btn"
-					data-control-type="reset"
-					data-control-name="reset"
-					data-control-action="reset">
-					默认 &nbsp;<i class="fa fa-share"></i>
-				</button>
+                    <!-- panel -->
+                    <div class="jplist-panel box panel-top">
+                        <!-- Go Back button -->
+                        <button type="button"
+                                data-control-type="back-button"
+                                data-control-name="back-button"
+                                data-control-action="back-button">
+                            <i class="fa fa-arrow-left"></i> 撤销
+                        </button>
+                        <!-- reset button -->
+                        <button type="button"
+                                class="jplist-reset-btn"
+                                data-control-type="reset"
+                                data-control-name="reset"
+                                data-control-action="reset">
+                            默认 &nbsp;<i class="fa fa-share"></i>
+                        </button>
 
-				<div class="jplist-drop-down"
-				data-control-type="drop-down"
-				data-control-name="paging"
-				data-control-action="paging">
-				<ul>
-					<li><span data-number="5"> 每页5条记录 </span></li>
-					<li><span data-number="10" data-default="true"> 每页10条记录 </span></li>
-					<li><span data-number="15"> 每页15条记录 </span></li>
-					<li><span data-number="all"> 显示全部 </span></li>
-				</ul>
-			</div>
+                        <div class="jplist-drop-down"
+                             data-control-type="drop-down"
+                             data-control-name="paging"
+                             data-control-action="paging">
+                            <ul>
+                                <li><span data-number="5"> 每页5条记录 </span></li>
+                                <li><span data-number="10" data-default="true"> 每页10条记录 </span></li>
+                                <li><span data-number="15"> 每页15条记录 </span></li>
+                                <li><span data-number="all"> 显示全部 </span></li>
+                            </ul>
+                        </div>
 
-			<div class="jplist-drop-down"
-			data-control-type="drop-down"
-			data-control-name="sort"
-			data-control-action="sort">
-			<ul>
-				<li><span data-path="default" data-default="true">默认排序</span></li>
-				<li><span data-path=".title" data-order="asc" data-type="text">标题升序</span></li>
-				<li><span data-path=".title" data-order="desc" data-type="text">标题降序</span></li>
-                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
-                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
-            </ul>
+                        <div class="jplist-drop-down"
+                             data-control-type="drop-down"
+                             data-control-name="sort"
+                             data-control-action="sort">
+                            <ul>
+                                <li><span data-path="default" data-default="true">默认排序</span></li>
+                                <li><span data-path=".title" data-order="asc" data-type="text">标题升序</span></li>
+                                <li><span data-path=".title" data-order="desc" data-type="text">标题降序</span></li>
+                                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
+                                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
+                            </ul>
                         </div>
 
                         <!-- filter by title -->
                         <div class="text-filter-box">
 
-                        	<i class="fa fa-search  jplist-icon"></i>
+                            <i class="fa fa-search  jplist-icon"></i>
 
                             <!--[if lt IE 10]>
                             <div class="jplist-label">Filter by Title:</div>
                             <![endif]-->
 
                             <input data-path=".title"
-                            type="text"
-                            value=""
-                            placeholder="搜索"
-                            data-control-type="textbox"
-                            data-control-name="title-filter"
-                            data-control-action="filter" />
+                                   type="text"
+                                   value=""
+                                   placeholder="搜索"
+                                   data-control-type="textbox"
+                                   data-control-name="title-filter"
+                                   data-control-action="filter" />
                         </div>
 
-	                    <!-- views -->
-	                    
-	                    <div class="jplist-views"
-	                        data-control-type="views"
-	                        data-control-name="views"
-	                        data-control-action="views"
-	                        data-default="jplist-grid-view">
+                        <!-- views -->
+                        <div class="jplist-views"
+                             data-control-type="views"
+                             data-control-name="views"
+                             data-control-action="views"
+                             data-default="jplist-grid-view">
                             <!--
                             <button type="button" class="jplist-view jplist-list-view" data-type="jplist-list-view" title="列表"></button>
                             <button type="button" class="jplist-view jplist-grid-view" data-type="jplist-grid-view" title="小图"></button>
                             <button type="button" class="jplist-view jplist-thumbs-view" data-type="jplist-thumbs-view" title="大图"></button>
                             -->
-	                    </div>
+                        </div>
 
 
-                    <!-- pagination results -->
-                    <div class="jplist-label"
-                    data-type="第 {current} 页 / 共 {pages} 页"
-                    data-control-type="pagination-info"
-                    data-control-name="paging"
-                    data-control-action="paging">
-                </div>
+                        <!-- pagination results -->
+                        <div class="jplist-label"
+                             data-type="第 {current} 页 / 共 {pages} 页"
+                             data-control-type="pagination-info"
+                             data-control-name="paging"
+                             data-control-action="paging">
+                        </div>
 
-                <!-- pagination -->
-                <div class="jplist-pagination"
-                data-control-type="pagination"
-                data-control-name="paging"
-                data-control-action="paging">
-            </div>
+                        <!-- pagination -->
+                        <div class="jplist-pagination"
+                             data-control-type="pagination"
+                             data-control-name="paging"
+                             data-control-action="paging">
+                        </div>
 
-        </div>
-        <div class="jplist-panel box panel-top" >
-        	<!-- radio buttons filters -->
-        	<div class="jplist-group">
-
-        		<input 
-        		data-control-type="radio-buttons-filters"
-        		data-control-action="filter"
-        		data-control-name="default" 
-        		data-path="default" 
-
-        		id="default-radio" 
-        		type="radio" 
-        		name="jplist"
-        		checked="checked"
-        		class="radiobutton"
-        		/> 
-        		<label for="default-radio">全部<span class="flitercount" id="allfilter"></label>
-
-        		<input                                  
-        		data-control-type="radio-buttons-filters"
-        		data-control-action="filter"
-        		data-control-name="model" 
-        		data-path=".model" 
-
-        		id="model" 
-        		type="radio" 
-        		name="jplist"
-        		class="radiobutton"
-        		/> 
-        		<label for="model">模型<span class="flitercount" id="modelfilter"></label>
-
-        		<input                                  
-        		data-control-type="radio-buttons-filters"
-        		data-control-action="filter"
-        		data-control-name="texture" 
-        		data-path=".texture" 
-
-        		id="texture" 
-        		type="radio" 
-        		name="jplist"
-        		class="radiobutton"
-        		/> 
-        		<label for="texture">贴图<span class="flitercount" id="texturefilter"></label> 
-
-                <input                                  
-                data-control-type="radio-buttons-filters"
-                data-control-action="filter"
-                data-control-name="plugin" 
-                data-path=".plugin" 
-
-                id="plugin" 
-                type="radio" 
-                name="jplist"
-                class="radiobutton"
-                /> 
-                <label for="plugin">插件<span class="flitercount" id="pluginfilter"></label>  
-
-                <input                                  
-                data-control-type="radio-buttons-filters"
-                data-control-action="filter"
-                data-control-name="sourcecode" 
-                data-path=".sourcecode" 
-        		
-                id="sourcecode" 
-                type="radio" 
-                name="jplist"
-                class="radiobutton"
-                /> 
-                <label for="sourcecode">源码<span class="flitercount" id="sourcecodefilter"></label>        		
-
-        	</div>
-        </div>
-
-        <!-- data -->
-        <div class="list box">   
-        <!--数据开始-->
-        
-            <!-- item 1 -->
-            <div class="list-item box">
-                <!-- img -->
-                <div class="img left">
-                    <a href="resources/resource.html"><img src="images/resources/templet.jpg" /></a>
-                </div>
-                <!-- data -->
-                <div class="block right">
-
-                    <a class="card-heading link-tooltip" title="贴图" href="resources/resource.html">
-                        <p class="title title2">这里写资源介绍：巴拉巴拉</p>
-                    </a>
-
-                    <div class="artical-links tag2" >
-                        <ul>
-                            <li><a ><small> </small><span class="date">2017-01-18</span></a></li>
-        					<!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
-                            <li><a ><small class="posts"> </small><span class="texture">贴图</span></a></li>
-                        </ul>
                     </div>
-                    <p class="desc"></p>
-                </div>
-            </div>
+                    <div class="jplist-panel box panel-top">
+                        <!-- radio buttons filters -->
+                        <div class="jplist-group">
 
-         
-        <!--数据结束-->
-        </div>
-        
-        <!-- ios button: show/hide panel -->
-        <div class="jplist-ios-button">
-        	<i class="fa fa-sort"></i>
-        	点击展开筛选条件
-        </div>
+                            <input data-control-type="radio-buttons-filters"
+                                   data-control-action="filter"
+                                   data-control-name="default"
+                                   data-path="default"
+                                   id="default-radio"
+                                   type="radio"
+                                   name="jplist"
+                                   checked="checked"
+                                   class="radiobutton" />
+                            <label for="default-radio">全部<span class="flitercount" id="allfilter"></label>
 
-        <!-- panel -->
-        <div class="jplist-panel box panel-bottom">
+                            <input data-control-type="radio-buttons-filters"
+                                   data-control-action="filter"
+                                   data-control-name="model"
+                                   data-path=".model"
+                                   id="model"
+                                   type="radio"
+                                   name="jplist"
+                                   class="radiobutton" />
+                            <label for="model">模型<span class="flitercount" id="modelfilter"></label>
 
-        	<div class="box jplist-no-results text-shadow align-center" style="margin: 10em 5em 10em 0em">
-        		<p>无搜索结果！试试其他关键词</p>
-        	</div>
-        	<div class="jplist-drop-down"
-        	data-control-type="drop-down"
-        	data-control-name="paging"
-        	data-control-action="paging"
-        	data-control-animate-to-top="true">
-        	<ul>
-        		<li><span data-number="5"> 每页5条记录 </span></li>
-        		<li><span data-number="10" data-default="true"> 每页10条记录 </span></li>
-        		<li><span data-number="15"> 每页15条记录 </span></li>
-        		<li><span data-number="all"> 显示全部 </span></li>
-        	</ul>
-        </div>
-        <div class="jplist-drop-down"
-        data-control-type="drop-down"
-        data-control-name="sort"
-        data-control-action="sort"
-        data-control-animate-to-top="true">
-       
-            <ul>
-                <li><span data-path="default" data-default="true">默认排序</span></li>
-                <li><span data-path=".title" data-order="asc" data-type="text">标题升序</span></li>
-                <li><span data-path=".title" data-order="desc" data-type="text">标题降序</span></li>
-                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
-                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
-            </ul>
+                            <input data-control-type="radio-buttons-filters"
+                                   data-control-action="filter"
+                                   data-control-name="texture"
+                                   data-path=".texture"
+                                   id="texture"
+                                   type="radio"
+                                   name="jplist"
+                                   class="radiobutton" />
+                            <label for="texture">贴图<span class="flitercount" id="texturefilter"></label>
+
+                            <input data-control-type="radio-buttons-filters"
+                                   data-control-action="filter"
+                                   data-control-name="plugin"
+                                   data-path=".plugin"
+                                   id="plugin"
+                                   type="radio"
+                                   name="jplist"
+                                   class="radiobutton" />
+                            <label for="plugin">插件<span class="flitercount" id="pluginfilter"></label>
+
+                            <input data-control-type="radio-buttons-filters"
+                                   data-control-action="filter"
+                                   data-control-name="sourcecode"
+                                   data-path=".sourcecode"
+                                   id="sourcecode"
+                                   type="radio"
+                                   name="jplist"
+                                   class="radiobutton" />
+                            <label for="sourcecode">源码<span class="flitercount" id="sourcecodefilter"></label>
+
+                        </div>
+                    </div>
+
+                    <!-- data -->
+                    <div class="list box">
+                        <!--数据开始-->
+                        <!-- item 1 -->
+                        <div class="list-item box">
+                            <!-- img -->
+                            <div class="img left">
+                                <a href="resources/resource.html"><img src="images/resources/templet.jpg" /></a>
+                            </div>
+                            <!-- data -->
+                            <div class="block right">
+
+                                <a class="card-heading link-tooltip" title="贴图" href="resources/resource.html">
+                                    <p class="title title2">这里写资源介绍：巴拉巴拉</p>
+                                </a>
+
+                                <div class="artical-links tag2">
+                                    <ul>
+                                        <li><a><small> </small><span class="date">2017-01-18</span></a></li>
+                                        <!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
+                                        <li><a><small class="posts"> </small><span class="texture">贴图</span></a></li>
+                                    </ul>
+                                </div>
+                                <p class="desc"></p>
+                            </div>
+                        </div>
+
+
+                        <!--数据结束-->
+                    </div>
+
+                    <!-- ios button: show/hide panel -->
+                    <div class="jplist-ios-button">
+                        <i class="fa fa-sort"></i>
+                        点击展开筛选条件
+                    </div>
+
+                    <!-- panel -->
+                    <div class="jplist-panel box panel-bottom">
+
+                        <div class="box jplist-no-results text-shadow align-center" style="margin: 10em 5em 10em 0em">
+                            <p>无搜索结果！试试其他关键词</p>
+                        </div>
+                        <div class="jplist-drop-down"
+                             data-control-type="drop-down"
+                             data-control-name="paging"
+                             data-control-action="paging"
+                             data-control-animate-to-top="true">
+                            <ul>
+                                <li><span data-number="5"> 每页5条记录 </span></li>
+                                <li><span data-number="10" data-default="true"> 每页10条记录 </span></li>
+                                <li><span data-number="15"> 每页15条记录 </span></li>
+                                <li><span data-number="all"> 显示全部 </span></li>
+                            </ul>
+                        </div>
+                        <div class="jplist-drop-down"
+                             data-control-type="drop-down"
+                             data-control-name="sort"
+                             data-control-action="sort"
+                             data-control-animate-to-top="true">
+
+                            <ul>
+                                <li><span data-path="default" data-default="true">默认排序</span></li>
+                                <li><span data-path=".title" data-order="asc" data-type="text">标题升序</span></li>
+                                <li><span data-path=".title" data-order="desc" data-type="text">标题降序</span></li>
+                                <li><span data-path=".date" data-order="asc" data-type="datetime">日期升序</span></li>
+                                <li><span data-path=".date" data-order="desc" data-type="datetime">日期降序</span></li>
+                            </ul>
                         </div>
 
                         <!-- pagination results -->
                         <div class="jplist-label"
-                        data-type="第{start} - {end}条记录 / 共{all}条记录"
-                        data-control-type="pagination-info"
-                        data-control-name="paging"
-                        data-control-action="paging">
-                    </div>
+                             data-type="第{start} - {end}条记录 / 共{all}条记录"
+                             data-control-type="pagination-info"
+                             data-control-name="paging"
+                             data-control-action="paging">
+                        </div>
 
-                    <!-- pagination -->
-                    <div class="jplist-pagination"
-                    data-control-type="pagination"
-                    data-control-name="paging"
-                    data-control-action="paging"
-                    data-control-animate-to-top="true">
+                        <!-- pagination -->
+                        <div class="jplist-pagination"
+                             data-control-type="pagination"
+                             data-control-name="paging"
+                             data-control-action="paging"
+                             data-control-animate-to-top="true">
+                        </div>
+                    </div>
                 </div>
+                <!-- end of demo -->
             </div>
         </div>
-        <!-- end of demo -->
     </div>
-</div>
-</div>
 
-<!-- footer -->
-<footer class="box">
-	<div class="footer" id="thefooter">
-		<div class="container">
-			<div class="footer-top">
-				<h2 style="color:#fff;text-align: right; font-size:20px;padding :0;margin:0;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
-			</div>
-			<div class="footer-bottom">                       
-				<p class="footer-class" style="font-family: 'Microsoft YaHei','微软雅黑','Hiragino Sans GB',STXihei,'华文细黑',STHeiti,RobotoDraft,Roboto,'Helvetica Neue',Helvetica,Tahoma,'Droid Sans','wenquanyi micro hei',FreeSans,Arimo,Arial,SimSun,'宋体',Heiti,'黑体',sans-serif;">Copyright &copy; 2017 WUZHENG.</p>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	</div>
-	<script type="text/javascript">
-		window.onresize = function(){ 
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
-		}
-		$(document).ready(function () {  
-            document.getElementById("model").click();
-			document.getElementById("default-radio").click();
-
-			$("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
-
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
-  			var tag2 = document.getElementsByClassName("artical-links");
-			var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
-			for (i = 0; i < tag2.length; i++) {
-                if (userAgent.indexOf("Chrome") > -1){
-					
- 				}
- 				else
- 				{
- 					tag2[i].style.fontSize = '11px';
- 				}
+    <!-- footer -->
+    <footer class="box">
+        <div class="footer" id="thefooter">
+            <div class="container">
+                <div class="footer-top">
+                    <h2 style="color:#fff;text-align: right; font-size:20px;padding :0;margin:0;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
+                </div>
+                <div class="footer-bottom">
+                    <p class="footer-class" style="font-family: 'Microsoft YaHei','微软雅黑','Hiragino Sans GB',STXihei,'华文细黑',STHeiti,RobotoDraft,Roboto,'Helvetica Neue',Helvetica,Tahoma,'Droid Sans','wenquanyi micro hei',FreeSans,Arimo,Arial,SimSun,'宋体',Heiti,'黑体',sans-serif;">Copyright &copy; 2017 WUZHENG.</p>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        </div>
+        <script type="text/javascript">
+            window.onresize = function () {
+                $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
             }
+            $(document).ready(function () {
+                document.getElementById("model").click();
+                document.getElementById("default-radio").click();
 
-            var model = document.getElementsByClassName("model");
-            var texture = document.getElementsByClassName("texture");
-            var plugin = document.getElementsByClassName("plugin");
-            var sourcecode = document.getElementsByClassName("sourcecode");
+                $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
 
-            var allcount = model.length + texture.length + plugin.length + sourcecode.length;
-            
-            $("#allfilter").text((allcount > 99 ? 99 +"+" : allcount ));
-            $("#modelfilter").text((model.length > 99 ? 99 +"+" : model.length ));
-            $("#texturefilter").text((texture.length > 99 ? 99 +"+" : texture.length ));
-            $("#pluginfilter").text((plugin.length > 99 ? 99 +"+" : plugin.length ));
-            $("#sourcecodefilter").text((sourcecode.length > 99 ? 99 +"+" : sourcecode.length ));
+                $().UItoTop({ easingType: 'easeOutQuart' });
 
-		});
-	</script>
-</footer>
+                var tag2 = document.getElementsByClassName("artical-links");
+                var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+                for (i = 0; i < tag2.length; i++) {
+                    if (userAgent.indexOf("Chrome") > -1) {
+
+                    }
+                    else {
+                        tag2[i].style.fontSize = '11px';
+                    }
+                }
+
+                var model = document.getElementsByClassName("model");
+                var texture = document.getElementsByClassName("texture");
+                var plugin = document.getElementsByClassName("plugin");
+                var sourcecode = document.getElementsByClassName("sourcecode");
+
+                var allcount = model.length + texture.length + plugin.length + sourcecode.length;
+
+                $("#allfilter").text((allcount > 99 ? 99 + "+" : allcount));
+                $("#modelfilter").text((model.length > 99 ? 99 + "+" : model.length));
+                $("#texturefilter").text((texture.length > 99 ? 99 + "+" : texture.length));
+                $("#pluginfilter").text((plugin.length > 99 ? 99 + "+" : plugin.length));
+                $("#sourcecodefilter").text((sourcecode.length > 99 ? 99 + "+" : sourcecode.length));
+            });
+        </script>
+    </footer>
 </body>
 </html>
-
-

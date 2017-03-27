@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>吴争个人博客</title>    
+    <title>吴争个人博客</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -22,7 +22,6 @@
     <script type="text/javascript" src="js/template.js"></script>
 
     <script type="application/x-javascript">
-
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); }
     </script>
@@ -87,131 +86,127 @@
         </div>
     </div>
 
-<div id="main-content">
-<!--主内容开始-->
-    <!---->   
-    <div class="container" id="toptop">
-        <div class="banner">
-            <div class="banner-matter">
-                <h2>永远相信美好的事情即将发生</h2>
-                <p>~By Somebody</p>
-            </div>
-            <div class="dailyimg">
-                <img class="img-responsive" src="images/daily/2017-03-27.jpg" alt="">
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-
-    <!----> 
-    <div class="container">
-        <div class="works" id="portfolio">
-            <!--分类按钮-->
-            <div class=" port-top">
-                <h3 class="port">最新发布</h3>                
-                <ul id="filters">
-                    <li id="all" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="archive resource">全部</span></li>
-                    <li id="archive" onclick="OnClickFilters(this)"><span class="filter" data-filter="archive"> 文章 </span></li>
-                    <li id="resource" onclick="OnClickFilters(this)"><span class="filter" data-filter="resource"> 资源 </span></li>
-                </ul>
-                <div class="clearfix"> </div>
-            </div>
-            <!--列表内容-->
-            <div id="portfoliolist">
-                <!--列表开始-->
-
-                <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
-                    <div class="portfolio-wrapper ">
-                        <a href="archives/2017-03-26.html" class="b-link-stripe b-animate-go">
-                            <img class="img-responsive" src="images/archives/2017-03-26.jpg" alt=""></img>
-                            <ul class="bg">
-                                <li class="wrappertop"><span class="mainTile">终于搭建好自己的博客啦</span></li>
-                                <li class="wrapperbottom active"><span class=" litleTile ">碎碎念</span></li>
-                            </ul>
-                            <div class="b-wrapper">
-                                <h2 class="b-animate b-from-left ">
-                                    <span>碎碎念</span>
-                                    <button>详细信息</button>
-                                </h2>
-                            </div>
-                        </a>
-                    </div>
+    <div id="main-content">
+        <!--主内容开始-->
+        <!---->
+        <div class="container" id="toptop">
+            <div class="banner">
+                <div class="banner-matter">
+                    <h2>永远相信美好的事情即将发生</h2>
+                    <p>~By Somebody</p>
                 </div>
-
-                <!--列表结束-->
+                <div class="dailyimg">
+                    <img class="img-responsive" src="images/daily/2017-03-27.jpg" alt="">
+                </div>
                 <div class="clearfix"> </div>
             </div>
-            <!-- Script for gallery Here -->
-            <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-            <script type="text/javascript">
-                $(function () {
-
-                    var filterList = {
-
-                        init: function () {
-
-                            // MixItUp plugin
-                            // http://mixitup.io
-                            $('#portfoliolist').mixitup({
-                                targetSelector: '.portfolio',
-                                filterSelector: '.filter',
-                                effects: ['fade'],
-                                easing: 'snap',
-                                // call the hover effect
-                                onMixEnd: filterList.hoverEffect()
-                            });
-
-                        },
-
-                        hoverEffect: function () {
-
-                            // Simple parallax effect
-                            $('#portfoliolist .portfolio').hover(
-                                function () {
-                                    $(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
-                                    $(this).find('img').stop().animate({ top: -30 }, 500, 'easeOutQuad');
-                                },
-                                function () {
-                                    $(this).find('.label').stop().animate({ bottom: -40 }, 200, 'easeInQuad');
-                                    $(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
-                                }
-                                );
-
-                        }
-
-                    };
-
-                    // Run the show!
-                    filterList.init();
-                });
-            </script>
-            <!-- Gallery Script Ends -->
         </div>
-    </div>
 
-<!--主内容结束-->        
-</div>
+        <!---->
+        <div class="container">
+            <div class="works" id="portfolio">
+                <!--分类按钮-->
+                <div class=" port-top">
+                    <h3 class="port">最新发布</h3>
+                    <ul id="filters">
+                        <li id="all" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="archive resource">全部</span></li>
+                        <li id="archive" onclick="OnClickFilters(this)"><span class="filter" data-filter="archive"> 文章 </span></li>
+                        <li id="resource" onclick="OnClickFilters(this)"><span class="filter" data-filter="resource"> 资源 </span></li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+                <!--列表内容-->
+                <div id="portfoliolist">
+                    <!--列表开始-->
+
+                    <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper ">
+                            <a href="archives/2017-03-26.html" class="b-link-stripe b-animate-go">
+                                <img class="img-responsive" src="images/archives/2017-03-26.jpg" alt=""></img>
+                                <ul class="bg">
+                                    <li class="wrappertop"><span class="mainTile">终于搭建好自己的博客啦</span></li>
+                                    <li class="wrapperbottom active"><span class=" litleTile ">碎碎念</span></li>
+                                </ul>
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left ">
+                                        <span>碎碎念</span>
+                                        <button>详细信息</button>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--列表结束-->
+                    <div class="clearfix"> </div>
+                </div>
+                <!-- Script for gallery Here -->
+                <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+                <script type="text/javascript">
+                    $(function () {
+
+                        var filterList = {
+
+                            init: function () {
+
+                                // MixItUp plugin
+                                // http://mixitup.io
+                                $('#portfoliolist').mixitup({
+                                    targetSelector: '.portfolio',
+                                    filterSelector: '.filter',
+                                    effects: ['fade'],
+                                    easing: 'snap',
+                                    // call the hover effect
+                                    onMixEnd: filterList.hoverEffect()
+                                });
+                            },
+
+                            hoverEffect: function () {
+
+                                // Simple parallax effect
+                                $('#portfoliolist .portfolio').hover(
+                                    function () {
+                                        $(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
+                                        $(this).find('img').stop().animate({ top: -30 }, 500, 'easeOutQuad');
+                                    },
+                                    function () {
+                                        $(this).find('.label').stop().animate({ bottom: -40 }, 200, 'easeInQuad');
+                                        $(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
+                                    }
+                                    );
+                            }
+                        };
+
+                        // Run the show!
+                        filterList.init();
+                    });
+                </script>
+                <!-- Gallery Script Ends -->
+            </div>
+        </div>
+
+        <!--主内容结束-->
+    </div>
     <!---->
     <div class="footer" id="thefooter">
         <div class="container">
             <div class="footer-top">
                 <h2 style="color:#fff;text-align: right;font-size:20px;line-height:1.1em">高度决定视野，角度改变观念，尺度把握人生</h2>
             </div>
-            <div class="footer-bottom">                       
+            <div class="footer-bottom">
                 <p class="footer-class" style="font-family: 'Microsoft YaHei','微软雅黑','Hiragino Sans GB',STXihei,'华文细黑',STHeiti,RobotoDraft,Roboto,'Helvetica Neue',Helvetica,Tahoma,'Droid Sans','wenquanyi micro hei',FreeSans,Arimo,Arial,SimSun,'宋体',Heiti,'黑体',sans-serif;">Copyright &copy; 2017 WUZHENG.</p>
                 <div class="clearfix"></div>
             </div>
-         </div>
+        </div>
         <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
     </div>
     <script type="text/javascript">
-        window.onresize = function(){ 
-            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+        window.onresize = function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
         }
-        $(document).ready(function () {  
-            $("#main-content").css("min-height",$(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+        $(document).ready(function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
             $().UItoTop({ easingType: 'easeOutQuart' });
-
         });
     </script>
 </body>
