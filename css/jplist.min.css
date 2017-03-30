@@ -21,27 +21,30 @@
         box-sizing: border-box;
         border: 1px solid #dbdbdb;
         border-radius: 3px;
-        text-shadow: 1px 1px 1px #fff;
         color: #27252a;
+        margin: 15px 15px 0 0;
         background: #fff;
+        /*        
+        text-shadow: 1px 1px 1px #fff;
         background: -moz-linear-gradient(top, #fff 0, #efefef 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
         background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
         background: -o-linear-gradient(top, #fff 0, #efefef 100%);
         background: -ms-linear-gradient(top, #fff 0, #efefef 100%);
         background: linear-gradient(to bottom, #fff 0, #efefef 100%);
-        margin: 15px 15px 0 0;
+        */
     }
 
         .jplist-panel button:hover {
             color: #0381bb;
-            background: #f2f2f2;
+            /*background: #f2f2f2;
             background: -moz-linear-gradient(top, #fafafa 0, #ededed 100%);
             background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(100%, #ededed));
             background: -webkit-linear-gradient(top, #fafafa 0, #ededed 100%);
             background: -o-linear-gradient(top, #fafafa 0, #ededed 100%);
             background: -ms-linear-gradient(top, #fafafa 0, #ededed 100%);
             background: linear-gradient(to bottom, #fafafa 0, #ededed 100%);
+            */
         }
 
         .jplist-panel button.jplist-disabled {
@@ -63,13 +66,17 @@
         -ms-box-sizing: border-box;
         -o-box-sizing: border-box;
         box-sizing: border-box;
-        border: 1px solid #dbdbdb;
-        border-radius: 3px;
+        /*
         text-shadow: 1px 1px 1px #fff;
+        */
         color: #27252a;
         width: 150px;
         text-indent: 5px;
         background: #fff;
+        border: 1px solid #dbdbdb;
+        border-right: 0;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
     }
 
     .jplist-panel input[type="checkbox"], .jplist-panel input[type="radio"] {
@@ -103,12 +110,13 @@
 
     .jplist-panel .text-filter-box {
         height: 30px;
-        float: left;
+        float: right;
         margin: 15px 15px 0 0;
     }
 
         .jplist-panel .text-filter-box .jplist-icon {
-            background: #e8eff9;
+            /*background: #e8eff9;*/
+            background: #279f7c;
         }
 
         .jplist-panel .text-filter-box .jplist-label {
@@ -188,15 +196,19 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid #dbdbdb;
-    border-radius: 3px;
+    box-sizing: border-box;   
+    /*
     text-shadow: 1px 1px 1px #fff;
     color: #27252a;
+    */
+    color: #fff;
     display: inline-block;
     line-height: 30px;
     padding: 0 10px;
-    border-right: 0;
+    border: 1px solid #dbdbdb;
+    border-left: 0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
     .jplist-icon:hover {
@@ -214,18 +226,20 @@
     box-sizing: border-box;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
-    text-shadow: 1px 1px 1px #fff;
     color: #27252a;
     line-height: 30px;
     padding: 0 10px;
     margin: 15px 15px 0 0;
     background: #fff;
+    /*    
+    text-shadow: 1px 1px 1px #fff;
     background: -moz-linear-gradient(top, #fff 0, #efefef 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
     background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
     background: -o-linear-gradient(top, #fff 0, #efefef 100%);
     background: -ms-linear-gradient(top, #fff 0, #efefef 100%);
     background: linear-gradient(to bottom, #fff 0, #efefef 100%);
+    */
 }
 
 .jplist-selected {
@@ -291,17 +305,19 @@
     box-sizing: border-box;
     border: 1px solid #dbdbdb;
     border-radius: 3px;
-    text-shadow: 1px 1px 1px #fff;
     color: #27252a;
     width: 150px;
+    margin: 15px 15px 0 0;
     background: #fff;
+    /*    
+    text-shadow: 1px 1px 1px #fff;
     background: -moz-linear-gradient(top, #fff 0, #efefef 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
     background: -webkit-linear-gradient(top, #fff 0, #efefef 100%);
     background: -o-linear-gradient(top, #fff 0, #efefef 100%);
     background: -ms-linear-gradient(top, #fff 0, #efefef 100%);
     background: linear-gradient(to bottom, #fff 0, #efefef 100%);
-    margin: 15px 15px 0 0;
+    */
 }
 
     .jplist-drop-down .jplist-dd-panel {
@@ -706,7 +722,7 @@
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
     margin:3px 5px 0 65px;
-    padding:4px 0px 0px 0;
+    padding:5px 0px 0px 0;
 }
 .jplist-thumbs-view .list-item .block .tag2 {
     height: 35px;
@@ -731,7 +747,7 @@
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
     margin: 10px 0 0 0px;
-    padding:5px 0px 5px 0;
+    padding:8px 0px 5px 0;
     float: left;
     width: 100%;
 }
@@ -748,7 +764,8 @@
             width: 20px;
             height: 20px;
             display: inline-block;
-            padding: 2px;
+            padding: 2px 2px;
+
         }
 
 .like {

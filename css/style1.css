@@ -14,11 +14,9 @@ body {
     
 }
 .searchinput{
-    float: right;
 }
 
 .searchinput input[type="text"]{
-    float: right;
     width: 300px;
 }
 .articlebg{
