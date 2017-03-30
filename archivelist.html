@@ -5,21 +5,19 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
     <meta name="description" content="一个热爱开发游戏的程序员个人网站，研究生在读学生" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript">
 
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
     </script>
 
     <script type="text/javascript" src="js/move-top.js"></script>
-    <link href="css/style1.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/template.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
@@ -35,6 +33,10 @@
     <link href="css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.min.css" />
     <link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+
     <script src="js/modernizr.min.js"></script>
     <script src="js/jplist.min.js"></script>
     <script>
@@ -146,37 +148,20 @@
                             </ul>
                         </div>
 
-                        <!-- filter by title -->
-                        <div class="text-filter-box">
-                            <i class="fa fa-search  jplist-icon"></i>
-
-                            <!--[if lt IE 10]>
-                            <div class="jplist-label">Filter by Title:</div>
-                            <![endif]-->
-
-                            <input data-path=".title"
-                                   type="text"
-                                   value=""
-                                   placeholder="搜索标题"
-                                   data-control-type="textbox"
-                                   data-control-name="title-filter desc-filter"
-                                   data-control-action="filter" />
-                        </div>
-
                         <!-- filter by description -->
-                        <div class="text-filter-box">
+                        <div class="searchinput text-filter-box ">
                             <i class="fa fa-search  jplist-icon"></i>
 
                             <!--[if lt IE 10]>
                             <div class="jplist-label">Filter by Description:</div>
                             <![endif]-->
 
-                            <input data-path=".desc"
+                            <input data-path=".cansearch"
                                    type="text"
                                    value=""
-                                   placeholder="搜索内容"
+                                   placeholder="搜索"
                                    data-control-type="textbox"
-                                   data-control-name="desc-filter"
+                                   data-control-name="archives-filter"
                                    data-control-action="filter" />
                         </div>
 
@@ -247,13 +232,14 @@
                     <!-- data -->
                     <div class="list box">
                         <!--数据开始-->
+
                         <!-- item 1 -->
                         <div class="list-item box">
                             <!-- data -->
                             <div class="block right">
                                 <div class="articlelogo"><img src="images/icons/other.png" width="46px" height="46px" /></div>
                                 <a class="card-heading link-tooltip" title="终于搭建好自己的博客啦" href="archives/2017-03-26.html">
-                                    <p class="title">终于搭建好自己的博客啦</p>
+                                    <p class="title cansearch">终于搭建好自己的博客啦</p>
                                 </a>
 
                                 <div class="artical-links tag ">
@@ -268,10 +254,9 @@
                             <div class="img left">
                                 <a href="archives/2017-03-26.html"><img src="images/archives/2017-03-26.jpg" /></a>
                             </div>
-                            <p class="desc">历时半个月，终于搭建好自己的博客啦，期间也是费尽周折。尽管还没有什么内容，不过我相信很快内容就会丰富起来的。以后我会时常分享一些游戏资源给大家，并整理一些自己的学习笔记...</p>
+                            <p class="desc cansearch">历时半个月，终于搭建好自己的博客啦，期间也是费尽周折。尽管还没有什么内容，不过我相信很快内容就会丰富起来的。以后我会时常分享一些游戏资源给大家，并整理一些自己的学习笔记...</p>
                         </div>
-
-
+                        
                         <!--数据结束-->
                     </div>
 

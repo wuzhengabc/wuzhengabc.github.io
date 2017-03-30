@@ -5,21 +5,19 @@
     <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
     <meta name="description" content="一个热爱开发游戏的程序员个人网站，研究生在读学生" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="application/x-javascript">
 
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
     </script>
 
     <script type="text/javascript" src="js/move-top.js"></script>
-    <link href="css/style1.css" rel="stylesheet">
-    <link href="css/animations.css" rel="stylesheet">
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/template.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
@@ -35,24 +33,26 @@
     <link href="css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.min.css" />
     <link href="css/jplist.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+
     <script src="js/modernizr.min.js"></script>
     <script src="js/jplist.min.js"></script>
     <script>
         $('document').ready(function () {
             $('#demo').jplist({
-
                 //main options
                 itemsBox: '.list'
-                , itemPath: '.list-item'
-                , panelPath: '.jplist-panel'
+              , itemPath: '.list-item'
+              , panelPath: '.jplist-panel'
 
                 //save plugin state
-                , storage: 'localstorage' //'', 'cookies', 'localstorage'
-                , storageName: 'views'
+              , storage: 'localstorage' //'', 'cookies', 'localstorage'
+              , storageName: 'views'
             });
         });
     </script>
-
 </head>
 <body class="bodycolor">
     <script type="text/javascript" src="js/bgeffect.js"></script>
@@ -145,7 +145,7 @@
                         </div>
 
                         <!-- filter by title -->
-                        <div class="text-filter-box">
+                        <div class="searchinput text-filter-box">
 
                             <i class="fa fa-search  jplist-icon"></i>
 
@@ -153,12 +153,12 @@
                             <div class="jplist-label">Filter by Title:</div>
                             <![endif]-->
 
-                            <input data-path=".title"
+                            <input data-path=".cansearch"
                                    type="text"
                                    value=""
                                    placeholder="搜索"
                                    data-control-type="textbox"
-                                   data-control-name="title-filter"
+                                   data-control-name="resources-filter"
                                    data-control-action="filter" />
                         </div>
 
@@ -263,14 +263,14 @@
                             <div class="block right">
 
                                 <a class="card-heading link-tooltip" title="贴图" href="resources/resource.html">
-                                    <p class="title title2">这里写资源介绍：巴拉巴拉</p>
+                                    <p class="title title2 cansearch">这里写资源介绍：巴拉巴拉</p>
                                 </a>
 
                                 <div class="artical-links tag2">
                                     <ul>
                                         <li><a><small> </small><span class="date">2017-01-18</span></a></li>
                                         <!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
-                                        <li><a><small class="posts"> </small><span class="texture">贴图</span></a></li>
+                                        <li><a><small class="posts"> </small><span class="texture cansearch">贴图</span></a></li>
                                     </ul>
                                 </div>
                                 <p class="desc"></p>

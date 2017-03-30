@@ -144,12 +144,14 @@
             font-weight: 500;
             padding-left: 10px;
             padding-right: 10px;
+            transition: all 0.4s;
         }
 
         .radiobutton:checked + label
         {
             color: #fff;
             background-color: #279f7c;
+            transition: all 0.4s;
         }
 
         .jplist-panel .jplist-group label:hover {
