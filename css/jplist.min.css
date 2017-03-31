@@ -13,8 +13,6 @@
     .jplist-panel button {
         float: left;
         height: 30px;
-        min-width: 75px;
-        box-shadow: 0 0 1px #fff;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
@@ -25,7 +23,8 @@
         color: #27252a;
         margin: 15px 15px 0 0;
         background: #fff;
-        /*        
+        /* 
+        box-shadow: 0 0 1px #fff;   
         text-shadow: 1px 1px 1px #fff;
         background: -moz-linear-gradient(top, #fff 0, #efefef 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
@@ -61,13 +60,14 @@
     .jplist-panel input[type="text"] {
         float: left;
         height: 30px;
-        box-shadow: 0 0 1px #fff;
+        
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
         -o-box-sizing: border-box;
         box-sizing: border-box;
-        /*
+        /*        
+        box-shadow: 0 0 1px #fff;
         text-shadow: 1px 1px 1px #fff;
         */
         color: #27252a;
@@ -133,7 +133,7 @@
         }
 
     .jplist-panel .jplist-group {
-        height: 75px;
+        height: 70px;
         margin: 15px 15px 0 0;
         padding: 0 0 0 0px;
         border-bottom: 2px solid #dddddd;
@@ -143,7 +143,7 @@
             height: 60px;
             line-height: 40px;
             color: #002834;
-            margin: 15px 50px 0px 0px;
+            margin: 10px 30px 0px 0px;
             background-color: rgba(255,255,255,0);
             min-width: 110px;
             text-align: center;
@@ -195,7 +195,6 @@
 .jplist-icon {
     float: left;
     height: 30px;
-    box-shadow: 0 0 1px #fff;
     background: #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -203,6 +202,7 @@
     -o-box-sizing: border-box;
     box-sizing: border-box;   
     /*
+    box-shadow: 0 0 1px #fff;
     text-shadow: 1px 1px 1px #fff;
     color: #27252a;
     */
@@ -223,7 +223,6 @@
 .jplist-label {
     float: left;
     height: 30px;
-    box-shadow: 0 0 1px #fff;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -237,6 +236,7 @@
     margin: 15px 15px 0 0;
     background: #fff;
     /*    
+    box-shadow: 0 0 1px #fff;
     text-shadow: 1px 1px 1px #fff;
     background: -moz-linear-gradient(top, #fff 0, #efefef 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));
@@ -265,7 +265,6 @@
         line-height: 30px;
         float: left;
         height: 30px;
-        box-shadow: 0 0 1px #fff;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
@@ -275,6 +274,7 @@
         border-radius: 3px;
         text-shadow: 1px 1px 1px #fff;
         color: #27252a;
+        box-shadow: 0 0 1px #fff;
         background: #fff;
         background: -moz-linear-gradient(top, #fff 0, #efefef 100%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff), color-stop(100%, #efefef));

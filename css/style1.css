@@ -22,20 +22,15 @@ body {
 }
 
 .searchinput input[type="text"]{
-    width: 300px;
+    width: 350px;
 }
 
 .searchinput input[type="text"]:hover{
-    width: 300px;
     border: 1px solid #8f8f8f;
-    border-right: 0;
 
 }
 .searchinput input[type="text"]:focus{
-    width: 300px;
     border: 1px solid #002834;
-    border-right: 0;
-
 }
 .articlebg{
     padding: 0px 30px 0px 30px;
