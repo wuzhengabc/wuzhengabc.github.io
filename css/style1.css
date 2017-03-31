@@ -10,6 +10,11 @@ body {
     color: #666666;
     background-color: #ffffff;
 }
+.filtericon{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
 .cansearch{
     
 }
@@ -18,6 +23,19 @@ body {
 
 .searchinput input[type="text"]{
     width: 300px;
+}
+
+.searchinput input[type="text"]:hover{
+    width: 300px;
+    border: 1px solid #8f8f8f;
+    border-right: 0;
+
+}
+.searchinput input[type="text"]:focus{
+    width: 300px;
+    border: 1px solid #002834;
+    border-right: 0;
+
 }
 .articlebg{
     padding: 0px 30px 0px 30px;
@@ -33,7 +51,7 @@ body {
 .header {
     padding: 10px 0;
     border-bottom: 0px solid #eaeaea;
-    background-color: rgba(66,66,66,1);
+    background-color: rgba(0,40,52,1);
 }
 
     .header.header-small {
@@ -133,10 +151,7 @@ body {
     top: -410px; 
 }
 .flitercount{
-    background-color: rgba(140,140,140,1);
-    border-radius: 3px;
-    margin-left: 8px;
-    padding: 1px 6px 1px 6px;
-    color: #fff;
-    font-size: 15px;
+    margin-left: 5px;
+    padding: 0px 3px 0px 3px;
+    color: #F26C4F;
 }

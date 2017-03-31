@@ -194,6 +194,7 @@
                     </div>
                     <div class="jplist-panel box panel-top">
                         <!-- radio buttons filters -->
+
                         <div class="jplist-group">
 
                             <input data-control-type="radio-buttons-filters"
@@ -205,7 +206,7 @@
                                    name="jplist"
                                    checked="checked"
                                    class="radiobutton" />
-                            <label for="default-radio">全部<span class="flitercount" id="allfilter"></label>
+                            <label for="default-radio"><span ><img src="images/icons/filters/other.png" class="filtericon"/></span>全部<span class="flitercount" id="allfilter"></label>
 
                             <input data-control-type="radio-buttons-filters"
                                    data-control-action="filter"
@@ -215,7 +216,7 @@
                                    type="radio"
                                    name="jplist"
                                    class="radiobutton" />
-                            <label for="model">模型<span class="flitercount" id="modelfilter"></label>
+                            <label for="model"><span ><img src="images/icons/filters/model.png" class="filtericon"/></span>模型<span class="flitercount" id="modelfilter"></label>
 
                             <input data-control-type="radio-buttons-filters"
                                    data-control-action="filter"
@@ -225,7 +226,7 @@
                                    type="radio"
                                    name="jplist"
                                    class="radiobutton" />
-                            <label for="texture">贴图<span class="flitercount" id="texturefilter"></label>
+                            <label for="texture"><span ><img src="images/icons/filters/texture.png" class="filtericon"/></span>贴图<span class="flitercount" id="texturefilter"></label>
 
                             <input data-control-type="radio-buttons-filters"
                                    data-control-action="filter"
@@ -235,7 +236,7 @@
                                    type="radio"
                                    name="jplist"
                                    class="radiobutton" />
-                            <label for="plugin">插件<span class="flitercount" id="pluginfilter"></label>
+                            <label for="plugin"><span ><img src="images/icons/filters/plugin.png" class="filtericon"/></span>插件<span class="flitercount" id="pluginfilter"></label>
 
                             <input data-control-type="radio-buttons-filters"
                                    data-control-action="filter"
@@ -245,7 +246,7 @@
                                    type="radio"
                                    name="jplist"
                                    class="radiobutton" />
-                            <label for="sourcecode">源码<span class="flitercount" id="sourcecodefilter"></label>
+                            <label for="sourcecode"><span ><img src="images/icons/filters/sourcecode.png" class="filtericon"/></span>源码<span class="flitercount" id="sourcecodefilter"></label>
 
                         </div>
                     </div>
@@ -268,9 +269,9 @@
 
                                 <div class="artical-links tag2">
                                     <ul>
-                                        <li><a><small> </small><span class="date">2017-01-18</span></a></li>
+                                        <li><a><small class="date2"> </small><span class="date">2017-01-18</span></a></li>
                                         <!--<li><a><small class="admin"> </small><span>吴争</span></a></li>-->
-                                        <li><a><small class="posts"> </small><span class="texture cansearch">贴图</span></a></li>
+                                        <li><a><small class="posts2"> </small><span class="texture cansearch">贴图</span></a></li>
                                     </ul>
                                 </div>
                                 <p class="desc"></p>
@@ -375,7 +376,7 @@
 
                     }
                     else {
-                        tag2[i].style.fontSize = '11px';
+                        tag2[i].style.fontSize = '11.5px';
                     }
                 }
 
@@ -386,11 +387,11 @@
 
                 var allcount = model.length + texture.length + plugin.length + sourcecode.length;
 
-                $("#allfilter").text((allcount > 99 ? 99 + "+" : allcount));
-                $("#modelfilter").text((model.length > 99 ? 99 + "+" : model.length));
-                $("#texturefilter").text((texture.length > 99 ? 99 + "+" : texture.length));
-                $("#pluginfilter").text((plugin.length > 99 ? 99 + "+" : plugin.length));
-                $("#sourcecodefilter").text((sourcecode.length > 99 ? 99 + "+" : sourcecode.length));
+                $("#allfilter").text("("+allcount+")");
+                $("#modelfilter").text("("+model.length+")");
+                $("#texturefilter").text("("+texture.length+")");
+                $("#pluginfilter").text("("+plugin.length+")");
+                $("#sourcecodefilter").text("("+sourcecode.length+")");
             });
         </script>
     </footer>

@@ -7,12 +7,13 @@
 }
 
 .jplist-panel {
-    color: #27252a;
+    color: #002835;
 }
 
     .jplist-panel button {
         float: left;
         height: 30px;
+        min-width: 75px;
         box-shadow: 0 0 1px #fff;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -115,8 +116,8 @@
     }
 
         .jplist-panel .text-filter-box .jplist-icon {
-            /*background: #e8eff9;*/
-            background: #279f7c;
+            background: #002834;
+            cursor: pointer;
         }
 
         .jplist-panel .text-filter-box .jplist-label {
@@ -132,40 +133,44 @@
         }
 
     .jplist-panel .jplist-group {
-        height: 35px;
-        margin: 15px 0px 0 0;
+        height: 75px;
+        margin: 15px 15px 0 0;
         padding: 0 0 0 0px;
+        border-bottom: 2px solid #dddddd;
     }
 
         .jplist-panel .jplist-group input, .jplist-panel .jplist-group label {
-            height: 40px;
+            height: 60px;
             line-height: 40px;
-            color: #279f7c;
-            margin-top: 15px;
-            margin-right: 50px;
-            background-color: rgba(255,255,255,1);
+            color: #002834;
+            margin: 15px 50px 0px 0px;
+            background-color: rgba(255,255,255,0);
             min-width: 110px;
             text-align: center;
             vertical-align: middle;
-            border-radius: 5px;
             font-size: 16px;
             font-weight: 500;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding:8px 10px 0px 10px;
             transition: all 0.4s;
+            border-top-right-radius: 3px;
+            border-top-left-radius: 3px;
+            border-bottom: 2px solid #dddddd;
         }
 
         .radiobutton:checked + label
         {
-            color: #fff;
-            background-color: #279f7c;
+            /*
+            color: #1c8bbe;
+            color: #00bcd4;
+            */
+           	color:#1c8bbe;
             transition: all 0.4s;
+    		border-bottom: 2px solid #1c8bbe;
         }
 
         .jplist-panel .jplist-group label:hover {
             
-            color: #fff;
-            background-color: #279f7c;
+            color: #1c8bbe;
         }
 
         .jplist-panel .jplist-group ul {
@@ -205,7 +210,7 @@
     display: inline-block;
     line-height: 30px;
     padding: 0 10px;
-    border: 1px solid #dbdbdb;
+    border: 1px solid #002834;
     border-left: 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -648,6 +653,11 @@
 .title2:hover {    
     color: #ff0000;
 }
+.articleicon{
+	height: 44px;
+	width: 44px;
+	margin-top: 4px;
+}
 
 .articlelogo{
     text-align: center;
@@ -655,7 +665,6 @@
     height: 52px;
     width: 52px;
     margin-top: 10px;
-    padding:3px 0px 0px 0px;
     float: left;
     border-radius: 26px; 
     -moz-border-radius: 26px;
@@ -670,35 +679,20 @@
     height: 52px;
     width: 52px;
     margin-top: 12px;
-    padding:3px 0px 0px 0px;
+    padding:4px 0px 0px 0px;
     float: left;
     border-radius: 26px; 
     -moz-border-radius: 26px;
     -webkit-border-radius: 26px; 
     border-radius: 26px; 
     background-color: rgba(39,159,124,1);
-    background: url(../images/icons/unity.png) no-repeat scroll 50% 50%;
-    background-size:46px 46px;
+    background: url(../images/icons/filters/unity.png) no-repeat scroll 50% 50%;
+    background-size:44px 44px;
 }
 
-.otherlogo{
-    text-align: center;
-    vertical-align: middle;
-    height: 52px;
-    width: 52px;
-    margin-top: 12px;
-    padding:3px 0px 0px 0px;
-    float: left;
-    border-radius: 26px; 
-    -moz-border-radius: 26px;
-    -webkit-border-radius: 26px; 
-    border-radius: 26px; 
-    background-color: rgba(39,159,124,1);
-    background: url(../images/icons/other.png) no-repeat scroll 50% 50%;
-    background-size:46px 46px;
-}
 .date {
 }
+
 .smalldate {
     padding:17px 10px 17px 10px;
     margin-top: 5px;
@@ -804,7 +798,8 @@
 
 .list {
     background-color: rgba(255,255,255,0);
-    margin: 20px 0 5px 0;
+    margin: 0px 0px 5px 0;
+    padding-top: 20px;
 }
 
     .list .img {

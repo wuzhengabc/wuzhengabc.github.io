@@ -195,7 +195,7 @@
                                    name="jplist"
                                    checked="checked"
                                    class="radiobutton" />
-                            <label for="default-radio">全部<span class="flitercount" id="allfilter"></span></label>
+                            <label for="default-radio"><span ><img src="images/icons/filters/other.png" class="filtericon"/></span>全部<span class="flitercount" id="allfilter"></span></label>
 
                             <input data-control-type="radio-buttons-filters"
                                    data-control-action="filter"
@@ -205,7 +205,7 @@
                                    type="radio"
                                    name="jplist"
                                    class="radiobutton" />
-                            <label for="unity">Unity3D<span class="flitercount" id="unityfilter"></span></label>
+                            <label for="unity"><span ><img src="images/icons/filters/unity.png" class="filtericon"/></span>Unity3D<span class="flitercount" id="unityfilter"></span></label>
 
                             <input data-control-type="radio-buttons-filters"
                                    data-control-action="filter"
@@ -215,7 +215,7 @@
                                    type="radio"
                                    name="jplist"
                                    class="radiobutton" />
-                            <label for="algorithm">算法<span class="flitercount" id="algorithmfilter"></span></label>
+                            <label for="algorithm"><span ><img src="images/icons/filters/algorithm.png" class="filtericon"/></span>算法<span class="flitercount" id="algorithmfilter"></span></label>
 
                             <input data-control-type="radio-buttons-filters"
                                    data-control-action="filter"
@@ -225,14 +225,36 @@
                                    type="radio"
                                    name="jplist"
                                    class="radiobutton" />
-                            <label for="other">碎碎念<span class="flitercount" id="otherfilter"></span></label>
-
+                            <label for="other"><span ><img src="images/icons/filters/other.png" class="filtericon"/></span>碎碎念<span class="flitercount" id="otherfilter"></span></label>
                         </div>
                     </div>
-
                     <!-- data -->
                     <div class="list box">
                         <!--数据开始-->
+
+                        <!-- item 1 -->
+                        <div class="list-item box">
+                            <!-- data -->
+                            <div class="block right">
+                                <div class="articlelogo"><img src="images/icons/filters/other.png" class="articleicon" /></div>
+                                <a class="card-heading link-tooltip" title="终于搭建好自己的博客啦" href="archives/2017-03-26.html">
+                                    <p class="title cansearch">终于搭建好自己的博客啦</p>
+                                </a>
+
+                                <div class="artical-links tag ">
+                                    <ul>
+                                        <li><a><small class="date1"> </small><span class="date">2017-03-26</span></a></li>
+                                        <li><a><small class="admin1"> </small><span class="cansearch">吴争</span></a></li>
+                                        <li><a><small class="posts1"> </small><span class="other cansearch">碎碎念</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- img -->
+                            <div class="img left">
+                                <a href="archives/2017-03-26.html"><img src="images/archives/2017-03-26.jpg" /></a>
+                            </div>
+                            <p class="desc cansearch">历时半个月，终于搭建好自己的博客啦，期间也是费尽周折。尽管还没有什么内容，不过我相信很快内容就会丰富起来的。以后我会时常分享一些游戏资源给大家，并整理一些自己的学习笔记...</p>
+                        </div>
 
                         <!-- item 1 -->
                         <div class="list-item box">
@@ -245,9 +267,9 @@
 
                                 <div class="artical-links tag ">
                                     <ul>
-                                        <li><a><small> </small><span class="date">2017-03-26</span></a></li>
-                                        <li><a><small class="admin"> </small><span>吴争</span></a></li>
-                                        <li><a><small class="posts"> </small><span class="other">碎碎念</span></a></li>
+                                        <li><a><small class="date1"> </small><span class="date">2017-03-26</span></a></li>
+                                        <li><a><small class="admin1"> </small><span class="cansearch">吴争</span></a></li>
+                                        <li><a><small class="posts1"> </small><span class="other cansearch">碎碎念</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -407,10 +429,10 @@
 
                 var allcount = unity.length + algorithm.length + other.length;
 
-                $("#allfilter").text((allcount > 99 ? 99 + "+" : allcount));
-                $("#unityfilter").text((unity.length > 99 ? 99 + "+" : unity.length));
-                $("#algorithmfilter").text((algorithm.length > 99 ? 99 + "+" : algorithm.length));
-                $("#otherfilter").text((other.length > 99 ? 99 + "+" : other.length));
+                $("#allfilter").text("("+allcount+")");
+                $("#unityfilter").text("("+unity.length+")");
+                $("#algorithmfilter").text("("+algorithm.length+")");
+                $("#otherfilter").text("("+other.length+")");
             });
         </script>
     </footer>

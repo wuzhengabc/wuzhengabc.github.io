@@ -15,7 +15,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     height: 30%;
     z-index: auto;
     top: 70%;
-    background-color: rgba(38,38,38,0.7);
+    background-color: rgba(34,44,55,0.7);
 }
 
 .wrappertop {
@@ -31,9 +31,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 .wrapperbottom {
 	list-style-type:none;
     color: #fff;
-    background-color: rgb(39,159,124);
+    background:#002834;
     position: absolute;
-    top: 54%;
+    top: 52%;
     left: 3%;
     height: 1.6em;
     border-radius: 0.3em;
@@ -46,10 +46,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 .litleTile {
 
-    padding: 0.5em;
+    padding: 0.5em 0.7em;
     text-align: center;
-    font-size: 0.8em;
-    height: 15px;
+    font-size: 0.9em;
+    height: 20px;
 }
 
 .mainTile {
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6, label, p {
         position: relative;
         display: inline-block;
         outline: none;
-        color: #eeeeee;
+        color: #fff;
         text-decoration: none;
         font-weight: 700;
         font-size: 1.2em;
@@ -361,7 +361,7 @@ h1, h2, h3, h4, h5, h6, label, p {
             display: block;
             padding: 8px 15px;
             text-decoration: none;
-            color: #279f7c;
+            color: #002834;
             font-size: 1.1em;
             transition: 0.5s all;
             -webkit-transition: 0.5s all;
@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 
             #filters li span:hover, #filters li.active span {
                 color: #fff;
-                background: #279f7c;
+                background: #002834;
                 border-radius: 5px;
             }
 
@@ -532,17 +532,17 @@ div#portfoliolist {
         display: block;
         font-size: 1.5em;
         text-transform: uppercase;
-        padding-top: 3.3em;
+        padding-top: 3.5em;
         display: block;
         font-weight: 500;
     }
 
     .b-animate button {
-        background: #000;
-        padding: 0.9em 1.8em;
+        background: #002834;
+        padding: 0.8em 1.5em;
         color: #fff;
         text-transform: uppercase;
-        font-size: 0.875em;
+        font-size: 0.95em;
         border: none;
         border-radius: 0.3em;
         margin: 0.8em auto;
@@ -561,7 +561,7 @@ div#portfoliolist {
 .b-from-left {
     position: relative;
     left: -100%;
-    background: rgba(39, 159, 124, 0.6);
+    background: rgba(34, 44, 55, 0.6);
     background-size: 100% 100%;
     top: 0px;
     margin: 0;
@@ -851,27 +851,67 @@ p.message-para {
         }
 
         .artical-links ul li small {
-            background: url(../images/img-sprite.png)no-repeat -345px -19px;
+            background: url(../images/img-sprite.png)no-repeat -345px -18px;
             width: 20px;
             height: 20px;
             display: inline-block;
             margin-right: 3px;
         }
-
+            .artical-links ul li small.date {
+                background-position: -345px -18px;
+            }
             .artical-links ul li small.admin {
-                background-position: -375px -19px;
+                background-position: -375px -18px;
             }
 
             .artical-links ul li small.no {
-                background-position: -401px -19px;
+                background-position: -401px -18px;
             }
 
             .artical-links ul li small.posts {
-                background-position: -428px -19px;
+                background-position: -428px -18px;
             }
 
             .artical-links ul li small.link {
+                background-position: -453px -18px;
+            }
+
+            .artical-links ul li small.date1 {
+                background-position: -345px -19px;
+            }
+            .artical-links ul li small.admin1 {
+                background-position: -375px -19px;
+            }
+
+            .artical-links ul li small.no1 {
+                background-position: -401px -19px;
+            }
+
+            .artical-links ul li small.posts1 {
+                background-position: -428px -19px;
+            }
+
+            .artical-links ul li small.link1 {
                 background-position: -453px -19px;
+            }
+
+            .artical-links ul li small.date2 {
+                background-position: -345px -20px;
+            }
+            .artical-links ul li small.admin2 {
+                background-position: -375px -20px;
+            }
+
+            .artical-links ul li small.no2 {
+                background-position: -401px -20px;
+            }
+
+            .artical-links ul li small.posts2 {
+                background-position: -428px -20px;
+            }
+
+            .artical-links ul li small.link2 {
+                background-position: -453px -20px;
             }
 
         .artical-links ul li a {
@@ -1035,7 +1075,7 @@ p.message-para {
 }
 /*-- footer --*/
 .footer {
-    background-color: rgba(66,66,66,1);
+    background-color: rgba(0,40,52,1);
     padding-bottom: 1em;
     padding-top: 1em;
 }
@@ -1216,17 +1256,18 @@ ul.social {
     bottom: 50px;
     right: 50px;
     overflow: hidden;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border: none;
     text-indent: 100%;
     background: url('../images/icons/up.png') no-repeat 0px 0px;
-    background-size:50px 50px;
+    background-size:35px 35px;
+    transition: all 0.4s;
 }
 
-#toTop:hover{
+#toTop:hover{    
     background: url('../images/icons/up_hover.png') no-repeat 0px 0px;
-    background-size:50px 50px;
+    background-size:35px 35px;
 }
 /*--responsive--*/
 @media(max-width:1440px) {
