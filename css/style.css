@@ -830,7 +830,7 @@ p.message-para {
     }
 /*--single--*/
 .artical-links {
-    padding: 10px 0px;
+    padding: 10px 0px 7px 0;
     border: 1px dashed rgba(0, 0, 0, 0.61);
     border-left: none;
     margin-top: 25px;
@@ -1233,6 +1233,7 @@ ul.social {
     color: #fff;
     font-size: 1em;
     padding-top: 0em;
+    font-family: 'Microsoft YaHei','微软雅黑','Hiragino Sans GB',STXihei,'华文细黑',STHeiti,RobotoDraft,Roboto,'Helvetica Neue',Helvetica,Tahoma,'Droid Sans','wenquanyi micro hei',FreeSans,Arimo,Arial,SimSun,'宋体',Heiti,'黑体',sans-serif;
 }
 
 .footer-bottom {

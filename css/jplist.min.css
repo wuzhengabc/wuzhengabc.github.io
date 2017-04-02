@@ -741,7 +741,7 @@
     border-left:0px dashed rgba(0, 0, 0, 0.61);
     border-right:0px dashed rgba(0, 0, 0, 0.61);
     margin: 10px 0 0 0px;
-    padding:8px 0px 5px 0;
+    padding:8px 0px 5px 4px;
     float: left;
     width: 100%;
 }

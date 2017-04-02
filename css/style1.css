@@ -44,7 +44,7 @@ body {
     border-radius: 3px;
 }
 .header {
-    padding: 10px 0;
+    padding: 10px 0 10px 0;
     border-bottom: 0px solid #eaeaea;
     background-color: rgba(0,40,52,1);
 }
@@ -149,4 +149,11 @@ body {
     margin-left: 5px;
     padding: 0px 3px 0px 3px;
     color: #F26C4F;
+}
+.footer-top-title{
+    color:#fff;
+    text-align: right;
+    font-size:20px;
+    line-height:1.1em;
+    margin-top: 0;
 }
