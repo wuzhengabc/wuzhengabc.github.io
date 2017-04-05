@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 }
 
 .top-nav {
-    padding: 0.7em 0 0;    
+    padding: 0.4em 0 0;    
     vertical-align: middle;
     float: left;
 }
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6, label, p {
         outline: none;
         color: #fff;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 1.2em;
         margin: 0 0 0 2em;
     }

@@ -19,18 +19,20 @@ body {
     margin: 0 auto;
     position: relative;
 }
-.blogTitle h1 {
+.blogTitle a div {
+    background-image: url(../images/icons/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
     font-size: 30px;
     width: 310px;
-    height: 100px;
+    height: 162px;
     line-height: 100px;
     text-align: center;
     position: relative;
     top: 80px;
-    left: 17px;
+    left: 18px;
     font-weight: normal;
 }
-
 .header-bottom {
     float: right;
     width: auto;
