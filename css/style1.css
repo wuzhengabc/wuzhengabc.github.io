@@ -25,7 +25,7 @@ body {
     background-position: center;
     font-size: 30px;
     width: 310px;
-    height: 162px;
+    height: 160px;
     line-height: 100px;
     text-align: center;
     position: relative;
@@ -159,7 +159,6 @@ body {
     -ms-transform: scale(0.80);
     -o-transform: scale(0.80);
     transform: scale(0.80);
-    margin: 2px 0 -4px 0;
     display: none;
 }
 
