@@ -65,13 +65,17 @@
     </script>
     <!--百度统计结束--> 
 </head>
-<body class="bodycolor">
+<body>
     <script type="text/javascript" src="js/bgeffect.js"></script>
-    <!--header fixed clearfix 标题栏始终在顶部-->
-    <div class="header" id="home" style="line-height: 1.50">
+
+    <div class="header-top blogTitle" style=""> 
+        <h1><a href="index.html"><img src="images/icons/logo.png" alt="" width="300px" height="100px"></a></h1>
+    </div>
+    <!--header fixed clearfix 标题栏始终在顶部 (template.js455行)-->
+    <div class="header fixed" id="home" style="line-height: 1.50">
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html"><img src="images/icons/logo.png" alt="" width="300px" height="75px"></a></h1>
+                <h1><a href="index.html"><img src="images/icons/logo_width.png" alt="" width="300px" height="50px"></a></h1>
             </div>
             <div class="header-bottom">
                 <div class="top-nav">
@@ -99,7 +103,6 @@
 
     <!-- main content -->
     <div id="main-content" class="box">
-
         <div class="center">
             <div id="page-content" class="box">
 
@@ -269,6 +272,7 @@
                     <!-- data -->
                     <div class="list box">
                         <!--数据开始-->
+                        
                         <!-- item 1 -->
                         <div class="list-item box">
                             <!-- img -->
@@ -373,13 +377,13 @@
         </div>
         <script type="text/javascript">
             window.onresize = function () {
-                $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+                $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - $(".header-top").outerHeight() - 35 + 'px');
             }
             $(document).ready(function () {
                 document.getElementById("model").click();
                 document.getElementById("default-radio").click();
 
-                $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+                $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - $(".header-top").outerHeight() - 35 + 'px');
 
                 $().UItoTop({ easingType: 'easeOutQuart' });
 

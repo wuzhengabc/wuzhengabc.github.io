@@ -18,6 +18,7 @@
 
     <link href="css/style1.css" rel="stylesheet">
     <link href="css/animations.css" rel="stylesheet">
+    <link href="css/imgeffect.css" rel="stylesheet">
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="js/template.js"></script>
 
@@ -33,11 +34,6 @@
                 $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
             });
         });
-
-        $(window).scroll(function () {
-            var scrollTop = $(this).scrollTop();
-
-        })
 
         function OnClickFilters(obj) {
             obj.setAttribute("class", "active");
@@ -64,15 +60,17 @@
     </script>
     <!--百度统计结束--> 
 </head>
-<body class="bodycolor">
-    <!--<body style="background-color:rgb(241,241,241);">-->
+<body>
     <script type="text/javascript" src="js/bgeffect.js"></script>
 
-    <!--header fixed clearfix 标题栏始终在顶部-->
-    <div class="header" id="home" style="line-height: 1.50">
+    <div class="header-top blogTitle" style="">	
+        <h1><a href="index.html"></a></h1>
+	</div>
+    <!--header fixed clearfix 标题栏始终在顶部 (template.js455行)-->
+    <div class="header fixed" id="home" style="line-height: 1.50">
         <div class="container">
             <div class="logo">
-                <h1><a href="index.html"><img src="images/icons/logo.png" alt="" width="300px" height="75px"></a></h1>
+                <h1><a href="index.html"><img src="images/icons/logo_width.png" alt="" width="300px" height="50px"></a></h1>
             </div>
             <div class="header-bottom">
                 <div class="top-nav">
@@ -102,14 +100,29 @@
         <!--主内容开始-->
         <!---->
         <div class="container" id="toptop">
-            <div class="banner">
-                <div class="banner-matter">
-                    <h2>永远相信美好的事情即将发生</h2>
-                    <p>~By Somebody</p>
-                </div>
-                <div class="dailyimg">
-                    <img class="img-responsive" src="images/daily/2017-03-27.jpg" alt="">
-                </div>
+            <div class="banner">				
+			
+			<div class="poster-main" id="carousel" data-setting='{
+								"width":1000,
+								"height":300,
+								"posterWidth":600,
+								"posterHeight":300,
+								"scale":0.8,
+								"speed":1000,
+								"autoPlay":true,
+								"delay":5000,
+								"verticalAlign":"middle"
+								}'> 
+				   <div class="poster-btn poster-prev-btn"></div> 
+				   <ul class="poster-list"> 
+					<li class="poster-item"><a href="#"><img src="images/1.png" alt="" width="100%" /></a></li> 
+					<li class="poster-item"><a href="#"><img src="images/2.png" alt="" width="100%" /></a></li> 
+					<li class="poster-item"><a href="#"><img src="images/3.png" alt="" width="100%" /></a></li> 
+					<li class="poster-item"><a href="#"><img src="images/4.png" alt="" width="100%" /></a></li> 
+				   </ul> 
+              <div class="poster-btn poster-next-btn"></div> 
+			  </div> 
+
                 <div class="clearfix"> </div>
             </div>
         </div>
@@ -214,12 +227,19 @@
     </div>
     <script type="text/javascript">
         window.onresize = function () {
-            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - $(".header-top").outerHeight() - 35 + 'px');
         }
         $(document).ready(function () {
-            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - 35 + 'px');
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - $(".header-top").outerHeight() - 35 + 'px');
             $().UItoTop({ easingType: 'easeOutQuart' });
         });
     </script>
+    <script src="js/Carousel.js"></script> 
+	<script type="text/javascript">
+		$(function(){
+			Carousel.init($("#carousel"));
+			$("#carousel").init();
+		});
+	</script>
 </body>
 </html>
