@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, label, p {
 
 .logo {
     float: left;
-    margin-left: 1em;
+    margin-left: 0.5em;
     width: 240px;
     height: 40px;
     background-image: url(../images/icons/logo_width.png);
@@ -545,7 +545,9 @@ div#portfoliolist {
 .service-grid img {
     margin: 0 auto;    
     width: auto;
-    max-height: 120px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
 }
 
 .service-grid p {
@@ -723,7 +725,7 @@ p.message-para {
 }
 
 .contact-page {
-    padding: 3em 0 4em;
+    padding: 3em 0 3em;
 }
 
 .contact-grid input[type="text"], .contact-grid textarea {
@@ -775,7 +777,7 @@ p.message-para {
     padding: 10px 0px 7px 0;
     border: 1px dashed rgba(0, 0, 0, 0.61);
     border-left: none;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 10px;
     border-right: none;height: 100%
 }
@@ -1013,7 +1015,7 @@ p.message-para {
 }
 
 .single-page-artical {
-    padding: 2em 0 4em;
+    padding: 0;
 }
 /*-- footer --*/
 .footer {
