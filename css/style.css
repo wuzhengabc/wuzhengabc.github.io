@@ -871,7 +871,7 @@ p.message-para {
 .artical-content h3 {
     color: #279f7c;
     text-align: left;
-    text-transform: uppercase;
+    text-transform: none;
     padding: 0px 0px;
     font-size: 1.5em;
 }
