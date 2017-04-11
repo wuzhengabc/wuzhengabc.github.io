@@ -63,7 +63,7 @@ body {
 .wrapperbottom {
     list-style-type:none;
     color: #fff;
-    background:#002834;
+    background-color: rgba(0,150,136,1);
     position: absolute;
     top: 52%;
     left: 3%;
