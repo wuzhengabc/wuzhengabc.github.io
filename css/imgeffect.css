@@ -1,0 +1,25 @@
+﻿.poster-main{
+    position: relative;
+    margin: 15px auto;
+  }
+  .poster-main .poster-list .poster-item{
+    position: absolute;
+    left: 0;
+    top: 0;
+    list-style-type: none;
+  }
+  .poster-main .poster-btn{
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+  }
+  .poster-main .poster-prev-btn{
+    margin-left: -180px;
+    left: 0;
+    background: url("../images/btn_l.png") no-repeat center center;
+  }
+  .poster-main .poster-next-btn{
+    margin-right: -180px;
+    right: 0;
+    background: url("../images/btn_r.png") no-repeat center center;
+  }
