@@ -33,7 +33,8 @@ defaults:
 paginate: 20
 
 #### Site
-title : Jekyll Jacman
+title: wuzheng Blog
+SEOTitle: 吴争的博客 | wuzheng Blog
 tagline: A fresh looking and responsive theme for Jekyll
 assets: /assets
 baseurl: 
