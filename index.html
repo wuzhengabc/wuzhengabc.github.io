@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>吴争个人博客</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/favicon1.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="个人博客,吴争个人博客,吴争个人博客,吴争,unity" />
+    <meta name="description" content="一个热爱开发游戏的程序员个人网站，研究生在读学生" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+
+    <link href="css/style.wu.css" rel="stylesheet">
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="css/imgeffect.css" rel="stylesheet">
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/template.js"></script>
+
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+    
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+
+        function OnClickFilters(obj) {
+            obj.setAttribute("class", "active");
+            var filters = new Array();
+            filters[0] = document.getElementById("all");
+            filters[1] = document.getElementById("archive");
+            filters[2] = document.getElementById("resource");
+
+            for (i = 0; i < filters.length; i++) {
+                if (filters[i].getAttribute("id") != obj.getAttribute("id"))
+                    filters[i].setAttribute("class", "");
+            }
+        }
+    </script>  
+    <!--百度统计开始-->    
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?579059f081c983fbddf6bfb0a07d7306";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+    <!--百度统计结束--> 
+</head>
+<body>
+    <script type="text/javascript" src="js/bgeffect.js"></script>
+    <div class="header-top blogTitle" style="">	
+        <a href="index.html"><div></div></a>
+	</div>
+    <!--header fixed clearfix 标题栏始终在顶部 (template.js455行)-->
+    <div class="header fixed" id="home" style="line-height: 1.50">
+        <div class="container">
+        	<a href="index.html"><div class="logo"></div></a>
+            <div class="header-bottom">
+                <div class="top-nav">
+                    <span class="menu"> </span>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="resourcelist.html">资源</a></li>
+                        <li><a href="portfoliolist.html">作品</a></li>
+                        <li><a href="archivelist.html">学无止境</a></li>
+                        <li><a href="contact.html">关于我</a></li>
+                    </ul>
+                    <!--script-->
+                    <script>
+                        $("span.menu").click(function () {
+                            $(".top-nav ul").slideToggle(500, function () {
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <!--主内容开始-->
+        <!---->
+        <div class="container" id="toptop">
+            <div class="banner">				
+			
+			<div class="poster-main" id="carousel" data-setting='{
+								"width":1000,
+								"height":300,
+								"posterWidth":600,
+								"posterHeight":300,
+								"scale":0.8,
+								"speed":1000,
+								"autoPlay":true,
+								"delay":5000,
+								"verticalAlign":"middle"
+								}'> 
+				   <div class="poster-btn poster-prev-btn"></div> 
+				   <ul class="poster-list"> 
+					<li class="poster-item"><a href="#"><img src="images/1.jpg" alt="" width="100%" /></a></li> 
+					<li class="poster-item"><a href="#"><img src="images/2.jpg" alt="" width="100%" /></a></li> 
+					<li class="poster-item"><a href="#"><img src="images/3.jpg" alt="" width="100%" /></a></li> 
+					<li class="poster-item"><a href="#"><img src="images/4.jpg" alt="" width="100%" /></a></li> 
+					<li class="poster-item"><a href="#"><img src="images/5.jpg" alt="" width="100%" /></a></li> 
+				   </ul> 
+              <div class="poster-btn poster-next-btn"></div> 
+			  </div> 
+
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+
+        <!---->
+        <div class="container">
+            <div class="works" id="portfolio">
+                <!--分类按钮-->
+                <div class=" port-top">
+                    <h3 class="port">最新发布</h3>
+                    <ul id="filters">
+                        <li id="all" onclick="OnClickFilters(this)" class="active"><span class="filter" data-filter="archive resource">全部</span></li>
+                        <li id="archive" onclick="OnClickFilters(this)"><span class="filter" data-filter="archive"> 文章 </span></li>
+                        <li id="resource" onclick="OnClickFilters(this)"><span class="filter" data-filter="resource"> 资源 </span></li>
+                    </ul>
+                    <div class="clearfix"> </div>
+                </div>
+                <!--列表内容-->
+                <div id="portfoliolist">
+                    <!--列表开始-->
+
+                    <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper ">
+                            <a href="archives/2017-05-02.html" class="b-link-stripe b-animate-go">
+                                <img class="img-responsive" src="images/archives/2017-05-02-1.png" alt=""></img>
+                                <ul class="bg">
+                                    <li class="wrappertop"><span class="mainTile">Unity3D的Mecanim动画系统之动画混合树(五)</span></li>
+                                    <li class="wrapperbottom active"><span class=" litleTile ">Unity3D</span></li>
+                                </ul>
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left ">
+                                        <p>Unity3D的Mecanim动画系统之动画混合树(五)</p>
+                                        <button>详细信息</button>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper ">
+                            <a href="archives/2017-04-26.html" class="b-link-stripe b-animate-go">
+                                <img class="img-responsive" src="images/archives/2017-04-26-1.png" alt=""></img>
+                                <ul class="bg">
+                                    <li class="wrappertop"><span class="mainTile">Unity3D的Mecanim动画系统之动画参数(四)</span></li>
+                                    <li class="wrapperbottom active"><span class=" litleTile ">Unity3D</span></li>
+                                </ul>
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left ">
+                                        <p>Unity3D的Mecanim动画系统之动画参数(四)</p>
+                                        <button>详细信息</button>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                     <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper ">
+                            <a href="archives/2017-04-17.html" class="b-link-stripe b-animate-go">
+                                <img class="img-responsive" src="images/archives/2017-04-17-3.png" alt=""></img>
+                                <ul class="bg">
+                                    <li class="wrappertop"><span class="mainTile">Unity3D的Mecanim动画系统之动画转换(三)</span></li>
+                                    <li class="wrapperbottom active"><span class=" litleTile ">Unity3D</span></li>
+                                </ul>
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left ">
+                                        <p>Unity3D的Mecanim动画系统之动画转换(三)</p>
+                                        <button>详细信息</button>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                     <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper ">
+                            <a href="archives/2017-04-12.html" class="b-link-stripe b-animate-go">
+                                <img class="img-responsive" src="images/archives/2017-04-12-5.png" alt=""></img>
+                                <ul class="bg">
+                                    <li class="wrappertop"><span class="mainTile">Unity3D的Mecanim动画系统之动画状态(二)</span></li>
+                                    <li class="wrapperbottom active"><span class=" litleTile ">Unity3D</span></li>
+                                </ul>
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left ">
+                                        <p>Unity3D的Mecanim动画系统之动画状态(二)</p>
+                                        <button>详细信息</button>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                     <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper ">
+                            <a href="archives/2017-04-11.html" class="b-link-stripe b-animate-go">
+                                <img class="img-responsive" src="images/archives/2017-04-11-2.png" alt=""></img>
+                                <ul class="bg">
+                                    <li class="wrappertop"><span class="mainTile">Unity3D的Mecanim动画系统之动画器组件和动画器控制器(一)</span></li>
+                                    <li class="wrapperbottom active"><span class=" litleTile ">Unity3D</span></li>
+                                </ul>
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left ">
+                                        <p>Unity3D的Mecanim动画系统之动画器组件和动画器控制器(一)</p>
+                                        <button>详细信息</button>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="portfolio archive mix_all" data-cat="archive" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper ">
+                            <a href="archives/2017-03-26.html" class="b-link-stripe b-animate-go">
+                                <img class="img-responsive" src="images/archives/2017-03-26.jpg" alt=""></img>
+                                <ul class="bg">
+                                    <li class="wrappertop"><span class="mainTile">终于搭建好自己的博客啦</span></li>
+                                    <li class="wrapperbottom active"><span class=" litleTile ">碎碎念</span></li>
+                                </ul>
+                                <div class="b-wrapper">
+                                    <h2 class="b-animate b-from-left ">
+                                        <p>终于搭建好自己的博客啦</p>
+                                        <button>详细信息</button>
+                                    </h2>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--列表结束-->
+                    <div class="clearfix"> </div>
+                </div>
+                <!-- Script for gallery Here -->
+                <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+                <script type="text/javascript">
+                    $(function () {
+
+                        var filterList = {
+
+                            init: function () {
+
+                                // MixItUp plugin
+                                // http://mixitup.io
+                                $('#portfoliolist').mixitup({
+                                    targetSelector: '.portfolio',
+                                    filterSelector: '.filter',
+                                    effects: ['fade'],
+                                    easing: 'snap',
+                                    // call the hover effect
+                                    onMixEnd: filterList.hoverEffect()
+                                });
+                            },
+
+                            hoverEffect: function () {
+
+                                // Simple parallax effect
+                                $('#portfoliolist .portfolio').hover(
+                                    function () {
+                                        $(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
+                                        $(this).find('img').stop().animate({ top: -30 }, 500, 'easeOutQuad');
+                                    },
+                                    function () {
+                                        $(this).find('.label').stop().animate({ bottom: -40 }, 200, 'easeInQuad');
+                                        $(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
+                                    }
+                                    );
+                            }
+                        };
+
+                        // Run the show!
+                        filterList.init();
+                    });
+                </script>
+                <!-- Gallery Script Ends -->
+            </div>
+        </div>
+
+        <!--主内容结束-->
+    </div>
+    <!---->
+    <div class="footer" id="thefooter">
+        <div class="container">
+            <div class="footer-top">
+                <h2 class = "footer-top-title">高度决定视野，角度改变观念，尺度把握人生</h2>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-class" style="">Copyright &copy; 2017 WUZHENG.</p>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    </div>
+    <script type="text/javascript">
+        window.onresize = function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - $(".header-top").outerHeight() - 35 + 'px');
+        }
+        $(document).ready(function () {
+            $("#main-content").css("min-height", $(window).height() - $("#thefooter").height() - $("#home").height() - $(".header-top").outerHeight() - 35 + 'px');
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <script src="js/Carousel.js"></script> 
+	<script type="text/javascript">
+		$(function(){
+			Carousel.init($("#carousel"));
+			$("#carousel").init();
+		});
+	</script>
+</body>
+</html>
