@@ -87,11 +87,6 @@ body {
 .mainTile {
     font-size: 1.1em;
 }
-.filtericon{
-    margin-right: 10px;
-    width: 40px;
-    height: 40px;
-}
 .cansearch{
     
 }
@@ -254,8 +249,84 @@ body {
 .project a{
     text-decoration: none;
 }
+.filtericon{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
 .archivetitleicon{
     margin:0px 15px 3px 0;
     width: 40px;
     height: 40px;
+}
+
+/*全部*/
+.allicon{
+    background: url('../images/icons/filters/all.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*算法*/
+.algorithmicon{
+    background: url('../images/icons/filters/algorithm.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*模型*/
+.modelicon{
+    background: url('../images/icons/filters/model.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*碎碎念*/
+.othericon{
+    background: url('../images/icons/filters/other.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*插件*/
+.pluginicon{
+    background: url('../images/icons/filters/plugin.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*源码*/
+.sourcecodeicon{
+    background: url('../images/icons/filters/sourcecode.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*贴图*/
+.textureicon{
+    background: url('../images/icons/filters/texture.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*工具*/
+.toolicon{
+    background: url('../images/icons/filters/tool.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Unity3D*/
+.unityicon{
+    background: url('../images/icons/filters/unity.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*视频*/
+.videoicon{
+    background: url('../images/icons/filters/video.png');
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
