@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url(../images/body_bg.png) repeat-x scroll 0 0 #f0eef5;
+    /*background: url(../images/body_bg.png) repeat-x scroll 0 0 #f0eef5;*/
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     line-height: 1.50;
